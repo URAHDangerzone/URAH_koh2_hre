@@ -1,0 +1,26 @@
+# Rivers below tools/hre_rivers.py's VISIBLE_RANK (Natural Earth scalerank 10) that still get water
+# on the map: the historically important ones. One Natural Earth name per line, # comments.
+
+# Holy Roman Empire
+Saale
+Neckar
+Isar
+Aller
+Spree
+Regnitz
+Aare
+Saône
+Sarre
+# Bohemia, Hungary, Poland
+Váh
+Raab
+Narew
+San
+Noteć
+# Italy
+Piave
+Tanaro
+# France, England
+Lot
+Charente
+Great Ouse

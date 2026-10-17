@@ -1,0 +1,44 @@
+// URAH HRE map: province features. Vanilla spawns Camels in the southern 23 % of the map
+// (ProvinceFeatures.def `area`), which on the HRE map is Italy and the Balkans; no camels there.
+// Pirates need has_distant_port, which tools/import_hre.py sets from data/pirate_provinces.txt.
+Camels.spawn_chance = 0
+
+// Feature spread (simulated, checked against a campaign save: 2.48 features per province
+// besides Rivers / Mountain / Coastal / Pirates in game, 2.46 simulated). Target ~2 with few above 3:
+// at most 2 special settlements per province (hre_settlements.def) does most of it; castle features a
+// bit more likely to make up for it. Result: mean 2.06, median 2, 9 % with 4 or more (was 2.5 / 26 %),
+// every resource in 9+ provinces.
+RareGame.spawn_chance = 42
+// mining regions: gold, silver and lodestone cluster in the mountains (mostly the Alps), minerals,
+// sulfur and saltpeter in the lowlands, about 3x either way (`Mountains` adds to the chance in realms
+// with has_mountains). The ores come only as a mine's secondary feature, so the mines move to the
+// mountains too (hre_settlements.def)
+MineralsDeposit.spawn_chance = 55
+{
+	Mountains = -40
+}
+SulfurDeposits.spawn_chance = 30
+{
+	Mountains = -22
+}
+SaltpeterDeposits.spawn_chance = 24
+{
+	Mountains = -18
+}
+GoldOre.spawn_chance = 30
+{
+	Mountains = 45
+}
+SilverOre.spawn_chance = 40
+{
+	Mountains = 45
+}
+LodestoneDeposits.spawn_chance = 40
+{
+	Mountains = 40
+}
+// vanilla's areas are fitted to the whole of Europe; on the HRE frame (44-56 N) they would keep vines
+// and logging camps out of Italy and mines (gold) out of the north. Vineyards follow wine_region instead
+Vines.area = [0, 0, 1, 1]
+GoldOre.area = [0, 0, 1, 1]
+DeepForests.area = [0, 0, 1, 1]

@@ -1,0 +1,146 @@
+// Title sets for the HRE map's princes, churches and cities (kingdoms.csv NobilityTitles, written by
+// tools/import_hre.py from data/period_kingdoms.csv). Levels: Duchy / Kingdom / Empire; King / Queen
+// follow Nobility.title_keys (Duchy -> Duke / Duchess). German texts: Texts/de/de_hre_*.csv.
+
+def ArchbishopNobility : Nobility
+{
+	Duchy = "Archbishopric"
+	Kingdom = "Archbishopric"
+	Duke = "Archbishop"
+	Duchess = "Abbess"
+	King = "Archbishop"
+	Queen = "Abbess"
+}
+
+def ElectorBishopNobility : Nobility
+{
+	Duchy = "Electorate"
+	Kingdom = "Electorate"
+	Duke = "Archbishop-Elector"
+	Duchess = "Abbess"
+	King = "Archbishop-Elector"
+	Queen = "Abbess"
+}
+
+def ElectorNobility : Nobility
+{
+	Duchy = "Electorate"
+	Kingdom = "Electorate"
+	Duke = "Prince-Elector"
+	Duchess = "Electress"
+	King = "Prince-Elector"
+	Queen = "Electress"
+}
+
+def PrinceBishopNobility : Nobility
+{
+	Duchy = "Prince-Bishopric"
+	Kingdom = "Prince-Bishopric"
+	Duke = "Prince-Bishop"
+	Duchess = "Abbess"
+	King = "Prince-Bishop"
+	Queen = "Abbess"
+}
+
+def PrinceAbbotNobility : Nobility
+{
+	Duchy = "Prince-Abbey"
+	Kingdom = "Prince-Abbey"
+	Duke = "Prince-Abbot"
+	Duchess = "Abbess"
+	King = "Prince-Abbot"
+	Queen = "Abbess"
+}
+
+def PatriarchNobility : Nobility
+{
+	Duchy = "Patriarchate"
+	Kingdom = "Patriarchate"
+	Duke = "Patriarch"
+	Duchess = "Abbess"
+	King = "Patriarch"
+	Queen = "Abbess"
+}
+
+def LandgraveNobility : Nobility
+{
+	Duchy = "Landgraviate"
+	Kingdom = "Landgraviate"
+	Duke = "Landgrave"
+	Duchess = "Landgravine"
+	King = "Landgrave"
+	Queen = "Landgravine"
+}
+
+def BurgraveNobility : Nobility
+{
+	Duchy = "Burgraviate"
+	Kingdom = "Burgraviate"
+	Duke = "Burgrave"
+	Duchess = "Burgravine"
+	King = "Burgrave"
+	Queen = "Burgravine"
+}
+
+def PrincipalityNobility : Nobility
+{
+	Duchy = "Principality"
+	Kingdom = "Principality"
+	Duke = "Prince"
+	Duchess = "Princess"
+	King = "Prince"
+	Queen = "Princess"
+}
+
+def DauphinNobility : Nobility
+{
+	Duchy = "Dauphiné"
+	Kingdom = "Dauphiné"
+	Duke = "Dauphin"
+	Duchess = "Dauphine"
+	King = "Dauphin"
+	Queen = "Dauphine"
+}
+
+def LordshipNobility : Nobility
+{
+	Duchy = "Lordship"
+	Kingdom = "Lordship"
+	Duke = "Lord"
+	Duchess = "Lady"
+	King = "Lord"
+	Queen = "Lady"
+}
+
+def FreeCityNobility : Nobility
+{
+	Duchy = "Free City"
+	Kingdom = "Free City"
+	Knight = "Councillor"
+	Duke = "Burgomaster"
+	Duchess = "Lady"
+	King = "Burgomaster"
+	Queen = "Lady"
+}
+
+def CommuneNobility : Nobility
+{
+	Duchy = "Commune"
+	Kingdom = "Republic"
+	Knight = "Consul"
+	Duke = "Podestà"
+	Duchess = "Lady"
+	King = "Gonfalonier"
+	Queen = "Lady"
+}
+
+def LeagueNobility : Nobility
+{
+	Duchy = "League"
+	Kingdom = "League"
+	Knight = "Consul"
+	Duke = "Rector"
+	Duchess = "Lady"
+	King = "Rector"
+	Queen = "Lady"
+}

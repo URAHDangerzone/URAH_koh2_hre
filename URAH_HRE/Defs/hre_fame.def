@@ -1,0 +1,10 @@
+// Great powers of the HRE map. GreatPowers.TopKingdoms lists the top 9
+// of the fame ranking whose fame reaches Fame.max (10000) * min_fame_perc / 100; the percentage
+// fades from this value to 0 over min_fame_perc_fade_time minutes. Vanilla's 25 (2500 fame) left
+// only Germany in the list on this fragmented map: at the start the 9th kingdom has ~700-1150 fame,
+// and 5 % would not drop anyone either (fame report, plugin F7).
+
+FameRanking
+{
+	min_fame_perc = 0
+}

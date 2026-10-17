@@ -1,0 +1,368 @@
+key,kind,action,castle,lat,lon,source,color
+Aberdeenshire,land,delete,Aberdeen,57.17,-2.08,name,
+Achaea,land,delete,Mistras,37.72,22.13,fit,
+Acre,land,delete,Acre,33.019,34.654,fit,
+Aden,land,delete,Aden,23.672,40.803,fit,
+Adiyaman,land,delete,Samsat,38.05,37.9,fit,
+Adrar,land,delete,Wadan,26.098,-9.854,fit,
+Agder,land,delete,Oddernes,58.151,6.476,fit,
+Agnafit,land,delete,Stockholm,59.353,18.095,name,
+Air,land,delete,Assode,26.041,7.65,fit,
+Al_Duwadimi,land,delete,Duwadimi,26.851,42.017,fit,
+Al_Halab,land,delete,Aleppo,36.232,37.168,name,
+Al_Jadid,land,delete,New_Sarai,49.646,43.565,fit,
+Al_Khanafah,land,delete,Tebuk,30.005,36.367,fit,
+Al_Maqhrus,land,delete,Old_Sarai,48.256,44.99,fit,
+Al_Maqqah,land,delete,Mecca,25.961,39.06,fit,
+Al_Qasr,land,delete,Dakhla,26.975,31.255,fit,
+Al_Wahran,land,delete,Oran,35.712,-0.622,name,
+Alania,land,delete,Majar,43.547,41.237,fit,
+Alexandria,land,delete,Alexandria,31.202,29.948,name,
+Algarve,land,delete,Faro,37.017,-7.933,name,
+Algiers,land,delete,Al_Jazair,35.732,2.844,fit,
+Alodia,land,delete,Soba,24.23,34.294,fit,
+Amasya,land,delete,Amasya,40.654,35.833,name,
+Amogjar,land,delete,Chinguetti,24.95,-13.593,fit,
+Andalucia,land,delete,Seville,37.405,-5.98,name,
+Ankara,land,delete,Ankara,39.929,32.862,name,
+Antioch,land,delete,Antiochia,36.233,36.117,name,
+Apulia,land,delete,Bari,41.114,16.873,name,
+Aqaba,land,delete,Aqaba,29.527,35.078,name,
+Ascalon,land,delete,Ascalon,31.896,34.318,fit,
+Asrir,land,delete,Nul,28.984,-12.783,fit,
+Astrakhan,land,delete,Xacitarxan,46.775,45.395,fit,
+Asturia,land,delete,Oviedo,43.35,-5.83,name,
+Attica,land,delete,Athens,37.985,23.731,name,
+Aydhab,land,delete,Aydhab,26.621,35.85,fit,
+Baghdad,land,delete,Baghdad,34.167,39.651,fit,
+Basra,land,delete,Basra,31.983,40.835,fit,
+Bdin,land,delete,Bdin,43.958,23.091,fit,
+Belgorod,land,delete,Belgorod,50.63,36.6,name,
+Bessarabia,land,delete,Akkerman,45.657,29.595,fit,
+Bolghar,land,delete,Bolghar,55.453,47.635,fit,
+Bosnia,land,delete,Visoko,43.99,18.18,known,
+Botnia,land,delete,Ladoga,60.325,32.769,fit,
+Burgos,land,delete,Burgos,42.35,-3.68,name,
+Bursa,land,delete,Bursa,40.202,29.068,name,
+Bushehr,land,delete,Bushehr,30.257,42.765,fit,
+Cairo,land,delete,Cairo,30.052,31.248,name,
+Calabria,land,delete,Reggio,38.968,16.08,fit,
+Campania,land,delete,Naples,40.842,14.243,name,
+Cappadocia,land,delete,Caesaraea,38.379,34.854,fit,
+Catalonia,land,delete,Barcelona,41.385,2.181,name,
+Chaldia,land,delete,Trebizond,40.684,37.701,fit,
+Cherkasy,land,delete,Cherkasy,49.435,32.071,name,
+Chernigov,land,delete,Chernigov,51.656,32.155,fit,
+Cilicia,land,delete,Tarsus,36.92,34.88,name,
+Cirta,land,delete,Sirt,31.65,17.865,fit,
+Connaught,land,delete,Galway,53.272,-9.049,name,
+Constantinopolis,land,delete,Constantinople,41.154,28.39,fit,
+Cordoba,land,delete,Cordoba,37.88,-4.77,name,
+Corsica,land,delete,Ajaccio,41.927,8.728,name,
+Crete,land,delete,Kydonia,35.971,25.114,fit,
+Crimea,land,delete,Cherson,44.405,33.109,fit,
+Cyprus,land,delete,Famagusta,35.125,33.95,name,
+Cyrenaica,land,delete,Benghazi,32.119,20.065,name,
+Dagestan,land,delete,Derbent,41.499,44.76,fit,
+Damascus,land,delete,Damascus,33.502,36.298,name,
+Darfur,land,delete,El_Atrun,25.855,26.659,fit,
+Devon,land,delete,Exeter,50.7,-3.53,name,
+Dongola,land,delete,Dongola,25.336,33.135,fit,
+Draa,land,delete,Sijilmassa,30.801,-4.74,fit,
+Dumyat,land,delete,Damietta,31.42,31.82,name,
+Dyrrachion,land,delete,Durres,41.318,19.448,name,
+Edessa,land,delete,Edessa,36.63,38.257,fit,
+Epirus,land,delete,Arta,39.616,20.8,fit,
+Erzurum,land,delete,Theodosiopolis,39.551,39.863,fit,
+Estland,land,delete,Reval,58.914,24.465,fit,
+Estremadura,land,delete,Lisbon,38.725,-9.147,name,
+Extremadura,land,delete,Badajoz,38.88,-6.97,name,
+Faras,land,delete,Para,26.349,34.34,fit,
+Fez,land,delete,Fez,34.057,-5.002,name,
+Fezzan,land,delete,Murzuk,29.374,16.299,fit,
+Finland,land,delete,Turku,60.454,22.255,name,
+Galicia,land,delete,Compostella,42.088,-7.797,fit,
+Galitch,land,delete,Galitch,59.388,45.13,fit,
+Ghadames,land,delete,Ghadames,30.133,9.5,name,
+Ghat,land,delete,Ghat,28.867,11.828,fit,
+Gilan,land,delete,Rasht,37.622,45.227,fit,
+Glamorgan,land,delete,Cardiff,51.5,-3.225,name,
+Gotland,land,delete,Visby,57.634,18.3,name,
+Granada,land,delete,Granada,37.165,-3.585,name,
+Gwynedd,land,delete,Caernarfon,53.058,-3.681,fit,
+Hajrah,land,delete,Hajrah,28.128,40.106,fit,
+Halland,land,delete,Varberg,57.075,11.905,fit,
+Halychyna,land,delete,Halych,49.12,24.72,known,
+Hayastan,land,delete,Ani,39.724,41.765,fit,
+Hoggar,land,delete,Tamanrasset,28.283,5.161,fit,
+Homs,land,delete,Palmyra,33.995,37.413,fit,
+Hordaland,land,delete,Bergen,60.391,5.325,name,
+Imereti,land,delete,Kutaisi,42.25,42.73,name,
+Ispahan,land,delete,Ispahan,33.736,43.783,fit,
+Izmir,land,delete,Smyrna,38.319,27.208,fit,
+Izyum,land,delete,Izyum,48.962,37.713,fit,
+Jeddah,land,delete,Jeddah,26.716,37.967,fit,
+Jutland,land,delete,Aarhus,56.157,10.211,name,
+Kabylia,land,delete,Bejaia,36.76,5.07,name,
+Kaouar,land,delete,Bilma,27.623,19.62,fit,
+Karelia,land,delete,Vyborg,60.704,28.755,name,
+Karvuna,land,delete,Karvuna,43.785,28.131,fit,
+Kazan,land,delete,Kazan,55.752,49.124,name,
+Kermanshah,land,delete,Kermanshah,34.077,42.194,fit,
+Khuzestan,land,delete,Hormuz,28.727,44.456,fit,
+Konya,land,delete,Konya,37.877,32.473,name,
+Kurdistan,land,delete,Erbil,36.181,44.007,name,
+Kursk,land,delete,Kursk,51.74,36.19,name,
+Laanemaa,land,delete,Haapsalu,58.943,23.541,name,
+Lazika,land,delete,Sukhumi,43.02,41.02,name,
+Lebanon,land,delete,Tripoli,34.422,35.868,name,
+Leinster,land,delete,Dublin,53.335,-6.251,name,
+Leon,land,delete,Leon,42.58,-5.57,name,
+Livonia,land,delete,Dorpatt,58.011,26.912,fit,
+Lothian,land,delete,Edinborough,56.091,-3.338,fit,
+Lycia,land,delete,Laranda,36.294,32.48,fit,
+Mallorca,land,delete,Palma,39.574,2.654,name,
+Malta,land,delete,Mdina,36.313,15.744,fit,
+Manych,land,delete,Manych,45.319,40.212,fit,
+Marrakesh,land,delete,Marrakesh,31.632,-8.002,name,
+Mascat,land,delete,Mascat,26.109,45.283,fit,
+Matrouh,land,delete,Al_Baretoun,31.88,25.75,fit,
+Melitene,land,delete,Melitene,39.122,37.151,fit,
+Menteshe,land,delete,Milas,37.131,29.154,fit,
+Minsk,land,delete,Minsk,56.263,30.598,fit,
+Moldavia,land,delete,Yash,47.089,28.07,fit,
+Mologa,land,delete,Mologa,59.162,37.772,fit,
+Mosul,land,delete,Mosul,36.953,39.376,fit,
+Munster,land,delete,Cork,51.899,-8.496,name,
+Murcia,land,delete,Murcia,37.98,-1.13,name,
+Murom,land,delete,Moramar,55.616,45.639,fit,
+Muscovy,land,delete,Moscow,55.754,37.614,name,
+Narbonnais,land,delete,Nice,43.717,7.263,name,
+Narva,land,delete,Narva,59.378,28.16,name,
+Navarra,land,delete,Pamplona,42.82,-1.65,name,
+Nicaea,land,delete,Nicaea,40.627,29.583,fit,
+Nis,land,delete,Nis,43.33,21.9,name,
+Nizhniy_Novgorod,land,delete,Nizhniy_Novgorod,56.335,43.998,name,
+Novgorod,land,delete,Novgorod,58.5,31.33,name,
+Ohrid,land,delete,Ohrid,41.322,21.498,fit,
+Ostergotland,land,delete,Linkoping,58.41,15.63,name,
+Ouargla,land,delete,Ouargla,31.97,5.34,name,
+Palestine,land,delete,Jerusalem,31.778,35.207,name,
+Pars,land,delete,Shiraz,31.552,43.854,fit,
+Pereyaslavl,land,delete,Pereyaslavl,49.558,31.989,fit,
+Perm,land,delete,Perm,60.872,49.986,fit,
+Podolia,land,delete,Kamianets,48.758,27.4,fit,
+Polesia,land,delete,Pinsk,55.293,29.17,fit,
+Polotsk,land,delete,Polotsk,55.489,28.786,name,
+Poltava,land,delete,Poltava,49.574,34.57,name,
+Pontos,land,delete,Sinope,42.023,35.153,name,
+Porto,land,delete,Porto,41.152,-8.622,name,
+Provence,land,delete,Marseille,43.292,5.373,name,
+Pskov,land,delete,Pskov,57.83,28.33,name,
+Qazvin,land,delete,Qazvin,36.103,44.136,fit,
+Qeirwan,land,delete,Qeirwan,33.658,10.384,fit,
+Qena,land,delete,Qift,28.404,33.933,fit,
+Qufa,land,delete,Qufa,32.648,38.98,fit,
+Rabat,land,delete,Rabat,34.025,-6.836,name,
+Ragusa,land,delete,Dubrovnik,42.661,18.091,name,
+Raqqa,land,delete,Raqqa,35.93,39.02,name,
+Raska,land,delete,Ras,43.303,19.968,fit,
+Rhodes,land,delete,Rhodes,36.441,28.223,name,
+Riga,land,delete,Riga,56.95,24.1,name,
+Rogaland,land,delete,Stavanger,58.97,5.68,name,
+Rostov,land,delete,Rostov,57.189,39.404,name,
+Ryazan,land,delete,Ryazan,54.62,39.72,name,
+Saaremaa,land,delete,Arensburg,58.076,22.031,fit,
+Safi,land,delete,Safi,32.32,-9.24,name,
+Salalah,land,delete,Salalah,24.509,43.51,fit,
+Salamanca,land,delete,Salamanca,40.97,-5.67,name,
+Samandar,land,delete,Samandar,44.353,43.655,fit,
+Samara,land,delete,Samara,53.197,50.149,name,
+Sardinia,land,delete,Cagliari,39.222,9.104,name,
+Sardis,land,delete,Sardis,38.67,29.73,fit,
+Sarkel,land,delete,Sarkel,48.057,40.478,fit,
+Sawakin,land,delete,Sawakin,24.944,37.602,fit,
+Scodra,land,delete,Scodra,42.119,19.783,fit,
+Shirvan,land,delete,Shamakhi,39.13,44.326,fit,
+Sicily,land,delete,Palermo,38.127,13.348,name,
+Sinai,land,delete,Nekhel,30.216,33.8,fit,
+Siveria,land,delete,Novgorod_Seversky,53.268,33.432,fit,
+Siwa,land,delete,Siwa,29.2,25.517,name,
+Smaland,land,delete,Kalmar,56.667,16.367,name,
+Smolensk,land,delete,Smolensk,54.783,32.047,name,
+Sredets,land,delete,Sredets,42.088,23.786,fit,
+Strymon,land,delete,Thessalonica,40.705,23.016,fit,
+Sutherland,land,delete,Inverness,57.467,-4.233,name,
+Suzdal,land,delete,Suzdal,56.975,42.706,fit,
+Svealand,land,delete,Falun,60.613,15.647,name,
+Tabriz,land,delete,Tabriz,37.348,42.852,fit,
+Taghaza,land,delete,Taghara,28.887,-2.247,fit,
+Tahert,land,delete,Tiaret,35.38,1.32,name,
+Taman,land,delete,Tmutarakhan,44.528,36.595,fit,
+Tamdoult,land,delete,Tamdoult,28.961,-8.953,fit,
+Tangier,land,delete,Tangier,35.747,-5.833,name,
+Taoudenni,land,delete,Taoudenni,26.324,-2.59,fit,
+Tarnovo,land,delete,Tarnovo,43.102,25.289,fit,
+Taron,land,delete,Van,38.495,43.4,name,
+Tbilisi,land,delete,Tiflis,41.727,44.789,name,
+Thrace,land,delete,Adrianople,41.536,26.086,fit,
+Tikrit,land,delete,Tikrit,35.562,39.888,fit,
+Tlemcen,land,delete,Tlemcen,34.89,-1.32,name,
+Toledo,land,delete,Toledo,39.867,-4.017,name,
+Toulouse,land,delete,Toulouse,43.622,1.448,name,
+Transjordania,land,delete,Kerak,31.185,35.705,name,
+Transylvania,land,delete,Kolozvar,46.533,24.834,fit,
+Tripolitania,land,delete,Tripoli_in_Lybia,32.948,12.699,fit,
+Trondheim,land,delete,Nidaros,61.424,4.568,fit,
+Tunisia,land,delete,Tunis,36.803,10.18,name,
+Turov,land,delete,Turov,52.418,28.759,fit,
+Tuscany,land,delete,Florence,43.78,11.25,name,
+Tver,land,delete,Tver,56.86,35.89,name,
+Uglich,land,delete,Uglich,60.52,38.936,fit,
+Ukek,land,delete,Ukek,51.846,44.317,fit,
+Ulster,land,delete,Armagh,54.77,-6.656,fit,
+Uppland,land,delete,Uppsala,59.86,17.64,name,
+Ustyug,land,delete,Ustyug,61.533,47.223,fit,
+Uusima,land,delete,Helsinki,60.178,24.932,name,
+Valencia,land,delete,Valencia,39.487,-0.402,name,
+Vastergotland,land,delete,Gothenburg,57.75,12.0,name,
+Vastermanland,land,delete,Vasteras,59.63,16.54,name,
+Viken,land,delete,Oslo,59.919,10.748,name,
+Vinnytsia,land,delete,Bratslav,48.122,30.71,fit,
+Vladimir,land,delete,Vladimir,56.13,40.41,name,
+Volhynia,land,delete,Lutsk,50.747,25.333,name,
+Volodymyr,land,delete,Volodymyr,50.85,24.32,known,
+Vologda,land,delete,Vologda,59.21,39.92,name,
+Voronezh,land,delete,Voronezh,51.732,39.268,name,
+Vyatka,land,delete,Vyatka,58.59,49.67,name,
+Vytebsk,land,delete,Vytebsk,57.021,32.343,fit,
+Waddai,land,delete,Wara,26.385,15.176,fit,
+Wadi_Al_Batin,land,delete,Khafr_Al_Batin,30.443,40.581,fit,
+Wallachia,land,delete,Tirgoviste,44.753,25.664,fit,
+Yaroslavl,land,delete,Yaroslavl,57.62,39.87,name,
+Yathrib,land,delete,Medina,28.443,37.964,fit,
+Yazd,land,delete,Yazd,32.871,44.989,fit,
+Yedisan,land,delete,Oleshye,46.102,32.213,fit,
+Zalesye,land,delete,Kostroma,57.77,40.94,name,
+Zaragoza,land,delete,Zaragoza,41.65,-0.89,name,
+Zemaitija,land,delete,Windau,56.945,21.359,fit,
+Zhytomyr,land,delete,Zhytomyr,50.246,28.662,name,
+Abauj,land,province,Kassa,48.73,21.25,name,#6e8ad0
+Alsace,land,province,Strasbourg,48.58,7.75,name,#74ea33
+Anjou,land,province,Angers,47.48,-0.53,name,#508cb8
+Aquitaine,land,province,Bordeaux,44.852,-0.597,name,#4beda5
+Austria,land,province,Vienna,48.202,16.365,name,#de9631
+Auvergne,land,province,Clermont,45.78,3.08,known,#51b4bf
+Bacs,land,province,Bacs,45.39,19.23,"known, moved",#ce3982
+Banat,land,province,Temesvar,45.759,21.223,name,#605bbd
+Baranya,land,province,Pecs,46.08,18.22,name,#92238c
+Bavaria,land,province,Augsburg,48.35,10.9,name,#c94884
+Berestia,land,province,Berestye,52.1,23.69,known,#4caac5
+Bern,land,province,Bern,46.917,7.467,name,#7a8eef
+Bohemia,land,province,Prague,50.085,14.464,name,#aac63a
+Brandenburg,land,province,Magdeburg,52.13,11.62,name,#703b93
+Branichevo,land,province,Belgrade,44.821,20.466,name,#258a9f
+Bremen,land,province,Bremen,53.08,8.8,name,#a1c75e
+Brittany,land,province,Rennes,48.1,-1.67,name,#a142b2
+Buda,land,province,Buda,47.5,19.04,known,#aad45a
+Burgundy,land,province,Dijon,47.33,5.03,name,#77ba2c
+Calais,land,province,Calais,50.95,1.833,name,#3ab73b
+Carinthia,land,province,Klagenfurt,46.62,14.31,name,#4faef2
+Champagne,land,province,Rheims,49.26,4.03,known,#aa516a
+Dalmatia,land,province,Zadar,44.12,15.262,name,#4fdb6d
+East_Flanders,land,province,Ghent,51.03,3.7,name,#b16424
+Emilia,land,province,Bologna,44.5,11.34,name,#e654a7
+Franconia,land,province,Nuremberg,49.45,11.08,name,#3fa183
+Friesland,land,province,Leeuwarden,53.25,5.783,name,#7fae36
+Grodno,land,province,Hrodna,53.678,23.834,"name, moved",#5b8ab9
+Hajdusag,land,province,Debrecen,47.53,21.63,name,#432ea5
+Hamburg,land,province,Hamburg,53.552,9.998,name,#ec9524
+Hampshire,land,province,Winchester,51.06,-1.31,known,#7b318e
+Holland,land,province,The_Hague,52.08,4.27,name,#c77621
+Ile_de_France,land,province,Paris,48.869,2.331,name,#2fc061
+Kashubia,land,province,Gdansk,54.36,18.64,name,#6d9a49
+Kent,land,province,Canterbury,51.28,1.08,"known, moved",#4cb0ed
+Komarom,land,province,Eztergom,47.79,18.74,known,#39e0b8
+Kuyava,land,province,Torun,53.01,18.6,known,#334dd5
+Liguria,land,province,Genoa,44.41,8.93,name,#6a9f39
+Ljubljana,land,province,Ljubljana,46.055,14.515,name,#50d9ad
+Lombardy,land,province,Milan,45.472,9.203,name,#cc9d46
+London,land,province,London,51.502,-0.119,name,#a4ae36
+Lorraine,land,province,Nancy,48.684,6.2,name,#d5bc69
+Lublin,land,province,Lublin,51.25,22.573,name,#7335d9
+Luxembourg,land,province,Luxembourg,49.612,6.13,name,#7197ea
+Lyonnais,land,province,Lyon,45.772,4.828,name,#6dd65b
+Malopolska,land,province,Krakow,50.062,19.958,name,#a0a130
+Mazovia,land,province,Plotsk,52.55,19.7,"known, moved",#839a2d
+Mecklenburg,land,province,Wismar,53.89,11.47,known,#cb623a
+Meissen,land,province,Meissen,51.16,13.47,known,#5e58b9
+Moravia,land,province,Brno,49.2,16.61,name,#b8a735
+Nitra,land,province,Nitra,48.31,18.09,known,#d02928
+Normandy,land,province,Rouen,49.43,1.08,name,#c58f3f
+Northumberland,land,province,Newcastle,55.002,-1.602,name,#1e9884
+Nottinghamshire,land,province,Nottingham,52.97,-1.17,name,#26cb1f
+Orleannais,land,province,Orleans,47.9,1.9,name,#e1645d
+Pfalz,land,province,Worms,49.63,8.36,known,#e278e9
+Poitou,land,province,Poitiers,46.583,0.333,name,#666ae6
+Pomerania,land,province,Sczieczin,53.43,14.55,known,#933824
+Pomerelia,land,province,Malbork,54.04,19.03,"known, moved",#b76c60
+Poznan,land,province,Poznan,52.406,16.9,name,#47a670
+Prussia,land,province,Konigsberg,54.71,20.51,known,#a756e0
+Regensburg,land,province,Regensburg,49.02,12.12,name,#a61c2f
+Rhineland,land,province,Cologne,50.932,6.948,name,#54bb81
+Ruthenia,land,province,Rzeszow,50.07,22.0,name,#45a64d
+Savoy,land,province,Torino,45.072,7.668,name,#92365e
+Saxony,land,province,Hanover,52.367,9.717,name,#61e480
+Scania,land,province,Malmo,55.583,13.033,name,#72ea96
+Schleswig,land,province,Hedeby,54.49,9.57,known,#5e2fdc
+Severin,land,province,Severin,44.63,22.66,known,#ed6edd
+Sieradz,land,province,Sieradz,51.6,18.73,known,#cc9c3b
+Silesia,land,province,Breslau,51.11,17.03,name,#49d5d7
+Swabia,land,province,Konstanz,47.66,9.18,known,#d64a7a
+Thuringia,land,province,Erfurt,50.97,11.03,name,#da688b
+Trakai,land,province,Kaunas,54.95,23.88,name,#a73161
+Tyrol,land,province,Innsbruck,47.28,11.41,name,#a85259
+Veneto,land,province,Venice,45.439,12.335,name,#5755c9
+Warsawa,land,province,Warsawa,52.23,21.01,known,#984e9e
+Warwickshire,land,province,Warwick,52.28,-1.58,known,#d13b6d
+West_Flanders,land,province,Bruges,51.22,3.23,name,#52ad44
+Yorkshire,land,province,York,53.97,-1.08,name,#6133ea
+Zagreb,land,province,Gradets,45.81,15.97,known,#355da1
+Zealand,land,province,Roskilde,55.65,12.083,name,#934bbc
+Zurich,land,province,Zurich,47.382,8.548,name,#6125c6
+Kyiv,land,required,Kyiv,50.435,30.515,name,#2b36af
+Latium,land,required,Rome,41.898,12.481,name,#892cd2
+Lithuania,land,required,Vilnus,54.839,25.71,fit,#469dc2
+Aegaean_Sea,sea,delete,,38.572,25.029,"fit, 0% in frame",
+Alboran_Sea,sea,delete,,36.936,-0.233,"fit, 0% in frame",
+Azores_Reach,sea,delete,,29.443,-15.636,"fit, 0% in frame",
+Balearic_Sea,sea,delete,,40.96,4.173,"fit, 0% in frame",
+Botnic_And_Finnish_Gulf,sea,delete,,59.463,20.692,"fit, 0% in frame",
+Central_Mediterranean,sea,delete,,34.346,17.132,"fit, 0% in frame",
+Eastern_Black_Sea,sea,delete,,43.18,36.297,"fit, 0% in frame",
+Farose_Reach,sea,delete,,61.005,-3.051,"fit, 0% in frame",
+Gulf_Of_Hormuz,sea,delete,,28.374,43.542,"fit, 0% in frame",
+Indian_Ocean,sea,delete,,23.392,45.135,"fit, 0% in frame",
+Ionian_Sea,sea,delete,,37.586,19.444,"fit, 0% in frame",
+Irish_Sea,sea,delete,,52.006,-5.94,"fit, 0% in frame",
+Northern_Caspian,sea,delete,,44.624,45.858,"fit, 0% in frame",
+Outer_Hebriders_Reach,sea,delete,,55.975,-8.731,"fit, 0% in frame",
+Propontis,sea,delete,,40.62,27.675,"fit, 0% in frame",
+Reach_Of_Cyprus,sea,delete,,35.47,31.549,"fit, 0% in frame",
+Reach_Of_Egypt,sea,delete,,33.441,28.689,"fit, 0% in frame",
+Red_Sea,sea,delete,,26.305,37.28,"fit, 0% in frame",
+Rim_Of_The_World,sea,delete,,57.022,-13.991,"fit, 0% in frame",
+Southern_Caspian,sea,delete,,39.684,45.895,"fit, 0% in frame",
+Southern_Ocean,sea,delete,,32.019,-19.136,"fit, 0% in frame",
+Tyrrhenian_Sea,sea,delete,,40.258,12.329,"fit, 0% in frame",
+Western_Black_Sea,sea,delete,,43.363,30.615,"fit, 0% in frame",
+Western_Mediterranean,sea,delete,,37.796,8.097,"fit, 0% in frame",
+Western_Ocean,sea,delete,,44.774,-13.679,"fit, 0% in frame",
+Adriatic_Sea,sea,sea,,44.677,13.413,"fit, 23% in frame",
+Baltic_Sea,sea,sea,,55.136,17.116,"fit, 49% in frame",
+Bay_Of_Biscay,sea,sea,,45.333,-1.812,"fit, 7% in frame",
+Dogger_Bank,sea,sea,,54.047,3.683,"fit, 96% in frame",
+Gulf_Of_Liguria,sea,sea,,43.95,8.6,manual,
+North_Sea,sea,sea,,55.743,1.973,"fit, 10% in frame",
+Skagerrak_And_Kattegat,sea,sea,,54.927,11.731,"fit, 22% in frame",
+The_Channel,sea,sea,,50.267,-0.064,"fit, 39% in frame",

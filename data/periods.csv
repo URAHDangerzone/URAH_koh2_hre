@@ -1,0 +1,303 @@
+color,key,province,country,suggested_town,E_1110,M_1224,L_1360,note
+#8adb2a,Nordburgenland,Nordburgenland,AT,,Hungary,Hungary,Hungary,Burgenland stayed Hungarian until 1921
+#ab4f9b,Waldviertel,Waldviertel,AT,,Austria,Austria,Austria,
+#1c8d7f,Niederosterreich_Sud,Niederösterreich-Süd,AT,,Austria,Austria,Austria,Pitten (Bucklige Welt) was Styrian 1158-1254
+#de9631,Austria,Wiener Umland Nord,AT,,Austria,Austria,Austria,
+#5e3eab,Mostviertel_Eisenwurzen,Mostviertel-Eisenwurzen,AT,,Austria,Austria,Austria,
+#49a649,Weinviertel,Weinviertel,AT,,Austria,Austria,Austria,
+#c0476a,Oberkarnten,Oberkärnten,AT,,Carinthia,Carinthia,Austria,
+#4faef2,Carinthia,Klagenfurt-Villach,AT,,Carinthia,Carinthia,Austria,
+#b8cc2f,Unterkarnten,Unterkärnten,AT,,Carinthia,Carinthia,Austria,Wolfsberg / Lavanttal belonged to Bamberg
+#8b19a2,Liezen,Liezen,AT,Judenburg,Carinthia,Austria,Austria,E: Murtal was Eppenstein land; M: Styria held by the Babenbergs since 1192
+#63cb9b,Oststeiermark,Oststeiermark,AT,,Styria,Austria,Austria,
+#905d4d,Ostliche_Obersteiermark,Östliche Obersteiermark,AT,,Styria,Austria,Austria,
+#4146bc,West_und_Sudsteiermark,West- und Südsteiermark,AT,,Styria,Austria,Austria,E capital of Styria (Graz)
+#5dcc25,Innviertel,Innviertel,AT,,Bavaria,Bavaria,Lower_Bavaria,Bavarian until 1779
+#bf4290,Muhlviertel,Mühlviertel,AT,Linz,Bavaria,Austria,Austria,Linz bought by the Babenbergs ~1205
+#40878d,Traunviertel,Traunviertel,AT,,Styria,Austria,Austria,Steyr / Traungau was the Otakars' home
+#d3bc64,Pinzgau_Pongau,Pinzgau-Pongau,AT,,Salzburg,Salzburg,Salzburg,
+#8354b2,Salzburg_und_Umgebung,Salzburg und Umgebung,AT,,Salzburg,Salzburg,Salzburg,
+#7be190,Tiroler_Unterland,Tiroler Unterland,AT,Kufstein,Bavaria,Bavaria,Bavaria,Kufstein / Kitzbuehel / Rattenberg Bavarian until 1504
+#a85259,Tyrol,Tiroler Oberland,AT,,Bavaria,Merania,Bavaria,M: Inn valley (Innsbruck) held by Andechs-Merania; L: Ludwig V rules Tyrol by his wife Margarete Maultasch
+#2660c0,Osttirol,Osttirol,AT,,Gorizia,Gorizia,Gorizia,Lienz was a seat of the counts of Goerz
+#98ce2b,Bludenz_Bregenzer_Wald,Bludenz-Bregenzer Wald,AT,Feldkirch,Swabia,Montfort,Montfort,Habsburg buys Feldkirch 1375
+#962691,Turnhout,Arr. Turnhout,BE,Antwerp,Brabant,Brabant,Flanders,Antwerp and Mechelen went to Flanders 1357 (Brabant succession war)
+#40c0a0,Maaseik,Arr. Maaseik,BE,Tongeren,Liege,Liege,Liege,"County of Loon, annexed by Liege 1366"
+#b16424,East_Flanders,Arr. Gent,BE,,Flanders,Flanders,Flanders,includes Zeeland (claimed by Flanders and Holland)
+#3e2d92,Leuven,Arr. Leuven,BE,Leuven,Brabant,Brabant,Luxembourg,L: Wenceslaus of Luxembourg duke of Brabant by his wife Joanna (1355)
+#52ad44,West_Flanders,Arr. Ieper,BE,,Flanders,Flanders,Flanders,
+#e06e9d,Nivelles,Arr. Nivelles,BE,Mons,Hainaut,Flanders,Holland,M: Joan countess of Flanders and Hainaut; L: Holland-Hainaut union (Wittelsbach)
+#60c6f0,Verviers,Arr. Verviers — communes francophones,BE,,Liege,Liege,Liege,capital (Liege)
+#caca3f,Neufchateau,Arr. Neufchâteau,BE,,Luxembourg,Luxembourg,Luxembourg,
+#a63ed1,Dinant,Arr. Dinant,BE,,Namur,Namur,Namur,
+#5bb982,Valais,Valais,CH,,Sion,Sion,Sion,Prince-bishopric of Sion; Lower Valais Savoyard
+#b55e52,Vaud,Vaud,CH,,Geneva,Geneva,Savoy,L: Amadeus VI bought Vaud 1359; Geneva city under its bishop
+#7a8eef,Bern,Bern,CH,,Zahringen,Bern,Switzerland,"Bern founded 1191 by Zaehringen, free imperial city 1218, joins the Confederacy 1353"
+#95d161,Delemont,Delémont,CH,Porrentruy,Basel,Basel,Basel,Prince-bishopric of Basel (Jura); Solothurn imperial city
+#e563c5,Freiburg,Freiburg,CH,,Zahringen,Kyburg,Austria,"Fribourg founded 1157 (Zaehringen), Kyburg 1218, Habsburg 1277"
+#2c9a95,Aargau,Aargau,CH,Brugg,Swabia,Habsburg,Austria,Habsburg castle; Basel city under its bishop
+#edae32,Graubunden,Graubünden,CH,,Chur,Chur,Chur,Prince-bishopric of Chur
+#6125c6,Zurich,Zürich,CH,,Zahringen,Kyburg,Switzerland,E: Zaehringen imperial reeves; L: joins 1351
+#4fa055,St_Gallen,St. Gallen,CH,,St_Gallen,St_Gallen,St_Gallen,Prince-abbey; Glarus joins the Confederacy 1352
+#c52346,Luzern,Luzern,CH,,Swabia,Habsburg,Switzerland,Forest cantons + Lucerne (1332) + Zug (1352)
+#6eabe6,Ticino,Ticino,CH,,Milan,Lombard_League,Milan,"Como's lands; Como sided with the emperor 1220s, Visconti from 1335"
+#aac63a,Bohemia,Středočeský kraj,CZ,,Bohemia,Bohemia,Bohemia,capital (Prague)
+#ac49b6,Jihocesky_kraj,Jihočeský kraj,CZ,,Bohemia,Bohemia,Bohemia,
+#419072,Plzensky_kraj,Plzeňský kraj,CZ,,Bohemia,Bohemia,Bohemia,
+#bc5726,Ustecky_kraj,Ústecký kraj,CZ,,Bohemia,Bohemia,Bohemia,
+#3d39ad,Karlovarsky_kraj,Karlovarský kraj,CZ,Cheb,Bohemia,Bohemia,Bohemia,"Egerland (Cheb) was Bavarian Nordgau (E), Staufer (M), pledged to Bohemia 1322"
+#3f8f24,Kralovehradecky_kraj,Královéhradecký kraj,CZ,,Bohemia,Bohemia,Bohemia,
+#8f3968,Liberecky_kraj,Liberecký kraj,CZ,,Bohemia,Bohemia,Bohemia,
+#78dcef,Pardubicky_kraj,Pardubický kraj,CZ,,Bohemia,Bohemia,Bohemia,
+#b8a735,Moravia,Jihomoravský kraj,CZ,,Moravia,Moravia,Moravia,Margraviate under Bohemia; capital (Brno)
+#a54ee5,Kraj_Vysocina,Kraj Vysočina,CZ,Jihlava,Moravia,Moravia,Moravia,
+#53c874,Olomoucky_kraj,Olomoucký kraj,CZ,,Moravia,Moravia,Moravia,
+#b13132,Zlinsky_kraj,Zlínský kraj,CZ,,Moravia,Moravia,Moravia,
+#4b76da,Moravskoslezsky_kraj,Moravskoslezský kraj,CZ,Opava,Moravia,Moravia,Opava,Duchy of Opava split off 1269
+#689c1d,Ostalbkreis,Ostalbkreis,DE,Schwaebisch Hall,Swabia,Swabia,Wurttemberg,Hohenstaufen castle (Goeppingen)
+#8d197f,Main_Tauber_Kreis,Main-Tauber-Kreis,DE,Bad Mergentheim,Wurzburg,Wurzburg,Wurzburg,
+#37dfc2,Heilbronn,"Heilbronn, Landkreis",DE,Stuttgart,Swabia,Swabia,Wurttemberg,L capital (Stuttgart since 1321)
+#b78c5b,Neckar_Odenwald_Kreis,Neckar-Odenwald-Kreis,DE,Heidelberg,Wurzburg,Bavaria,Palatinate,M: Ludwig I of Bavaria holds the Palatinate for his son (1214-28); L: Heidelberg
+#3a208e,Freudenstadt,Freudenstadt,DE,Baden-Baden,Baden,Baden,Baden,Margraviate of Baden (Baden-Baden) - suggest main town Baden-Baden
+#4add42,Ortenaukreis,Ortenaukreis,DE,Offenburg,Zahringen,Swabia,Strasbourg,L: Ortenau pledged to the bishop of Strasbourg 1351
+#d64a7a,Swabia,Schwarzwald-Baar-Kreis,DE,Konstanz,Swabia,Swabia,Austria,"L: Villingen (1326), Hegau Habsburg; Konstanz free city"
+#4a81a0,Breisgau_Hochschwarzwald,Breisgau-Hochschwarzwald,DE,,Zahringen,Swabia,Austria,"E capital of Zaehringen (Freiburg founded 1120); M: counts of Urach-Freiburg; L: Habsburg landgraviate, Freiburg city submits 1368"
+#979f40,Ravensburg,Ravensburg,DE,Ravensburg,Bavaria,Swabia,Wurttemberg,Welf homeland (Altdorf/Weingarten); Staufer from 1191; L: imperial cities / Landvogtei
+#cf62ed,Alb_Donau_Kreis,Alb-Donau-Kreis,DE,Ulm,Swabia,Swabia,Wurttemberg,Ulm imperial city; Tuebingen Wuerttemberg 1342; Zollern at Hechingen
+#38af73,Traunstein,Traunstein,DE,Burghausen,Bavaria,Bavaria,Lower_Bavaria,"Burghausen, Reichenhall in Lower Bavaria"
+#ed8369,Landsberg_am_Lech,Landsberg am Lech,DE,Landsberg,Bavaria,Bavaria,Bavaria,Andechs (Starnberg) seat until 1209
+#5967f0,Bad_Tolz_Wolfratshausen,Bad Tölz-Wolfratshausen,DE,Weilheim,Bavaria,Bavaria,Bavaria,
+#73c142,Rosenheim,"Rosenheim, Landkreis",DE,,Bavaria,Bavaria,Bavaria,L capital (Munich)
+#d8299f,Eichstatt,Eichstätt,DE,Ingolstadt,Bavaria,Bavaria,Bavaria,Ingolstadt; Prince-bishopric of Eichstaett small
+#3ab4b8,Passau,"Passau, Landkreis",DE,Passau,Bavaria,Passau,Passau,Prince-bishopric from 1217
+#b69024,Landshut,"Landshut, Landkreis",DE,,Bavaria,Bavaria,Lower_Bavaria,"M capital (Landshut, founded 1204); Straubing went to Holland-Straubing 1353"
+#511b93,Cham,Cham,DE,Cham,Bavaria,Bavaria,Palatinate,Cham pledged to the Palatinate 1352; Schwandorf Upper Palatinate
+#49c15c,Neustadt_a_d_Waldnaab,Neustadt a. d. Waldnaab,DE,Amberg,Bavaria,Bavaria,Palatinate,E counts of Sulzbach; L: Charles IV's 'New Bohemia' (Sulzbach) since 1353
+#a61c2f,Regensburg,"Regensburg, Landkreis",DE,,Bavaria,Bavaria,Lower_Bavaria,E capital of Bavaria; L: free imperial city (Neumarkt Palatinate)
+#3074d1,Bayreuth,"Bayreuth, Landkreis",DE,Kulmbach,Bamberg,Merania,Zollern,M: Andechs-Merania (Plassenburg); L: burgraves of Nuremberg
+#a2cc36,Bamberg,"Bamberg, Landkreis",DE,,Bamberg,Bamberg,Bamberg,
+#ad1cae,Ansbach,"Ansbach, Landkreis",DE,,Wurzburg,Swabia,Zollern,Ansbach bought by the burgraves 1331
+#3fa183,Franconia,Roth,DE,,Bavaria,Swabia,Zollern,"Nuremberg: Salian / Staufer castle, L free imperial city"
+#a27556,Main_Spessart,Main-Spessart,DE,,Wurzburg,Wurzburg,Wurzburg,capital (Wuerzburg); Aschaffenburg Mainz
+#3f2ae2,Rhon_Grabfeld,Rhön-Grabfeld,DE,,Wurzburg,Wurzburg,Wurzburg,"counts of Henneberg, Schweinfurt imperial city"
+#78ca66,Oberallgau,Oberallgäu,DE,,Bavaria,Swabia,Wurttemberg,"Welf lands to Staufer 1191; L: Kempten, Lindau imperial"
+#c94884,Bavaria,Donau-Ries,DE,,Swabia,Swabia,Bavaria,Augsburg Swabian; Aichach / Wittelsbach castle in the province
+#318eac,Ostallgau,Ostallgäu,DE,Memmingen,Bavaria,Swabia,Wurttemberg,"Memmingen founded by Welf VI; L: Memmingen, Kaufbeuren imperial"
+#bcb41f,Uckermark,Uckermark,DE,,Liutizi,Pomerania,Brandenburg,Pomeranian until 1250
+#9c3dcd,Elbe_Elster,Elbe-Elster,DE,,Meissen,Meissen,Meissen,"Lower Lusatia; L pledged to the Wettins 1353, sold to Charles IV 1367"
+#469362,Teltow_Flaming,Teltow-Fläming,DE,Jueterbog,Hevelli,Magdeburg,Brandenburg,"M: Jueterbog belongs to Magdeburg, Teltow contested (Teltow war 1239-45)"
+#da5e54,Ostprignitz_Ruppin,Ostprignitz-Ruppin,DE,,Liutizi,Brandenburg,Brandenburg,counts of Ruppin (Arnstein)
+#3055d7,Oberhavel,Oberhavel,DE,Spandau,Liutizi,Pomerania,Brandenburg,Barnim Pomeranian until ~1230
+#b1e976,Oder_Spree,Oder-Spree,DE,,Poland,Silesia,Brandenburg,"Lubusz land (Polish, Silesian), Brandenburg from 1249"
+#e635c3,Prignitz,Prignitz,DE,,Mecklenburg,Brandenburg,Brandenburg,E: Linones under Obodrite rule
+#50eadb,Potsdam_Mittelmark,Potsdam-Mittelmark,DE,,Hevelli,Brandenburg,Brandenburg,"Brandenburg an der Havel - capital of Brandenburg (M, L)"
+#8f754c,Markisch_Oderland,Märkisch-Oderland,DE,,Poland,Silesia,Brandenburg,Lubusz land
+#725aa6,Main_Kinzig_Kreis,Main-Kinzig-Kreis,DE,Frankfurt,Mainz,Mainz,Mainz,"Frankfurt (election city), Gelnhausen, Wetterau Landvogtei"
+#489f4a,Bergstrasse,Bergstraße,DE,Darmstadt,Mainz,Mainz,Mainz,Lorsch abbey (imperial) given to Mainz 1232
+#902f48,Vogelsbergkreis,Vogelsbergkreis,DE,Marburg,Thuringia,Thuringia,Hesse,"Gisonen lands, to the Ludowingians 1122/37; Marburg"
+#316d9d,Lahn_Dill_Kreis,Lahn-Dill-Kreis,DE,Weilburg,Nassau,Nassau,Nassau,Laurenburg / Nassau counts; Wetzlar imperial city
+#7f8e28,Waldeck_Frankenberg,Waldeck-Frankenberg,DE,,Thuringia,Thuringia,Hesse,L capital of Hesse (Kassel)
+#d964ec,Schwalm_Eder_Kreis,Schwalm-Eder-Kreis,DE,,Fulda,Fulda,Fulda,Prince-abbey of Fulda (+ Hersfeld)
+#4bdf9f,Mecklenburgische_Seenplatte,Mecklenburgische Seenplatte,DE,Neubrandenburg,Liutizi,Pomerania,Mecklenburg,M: land of Stargard Pomeranian until 1236; L Mecklenburg-Stargard
+#cb623a,Mecklenburg,Nordwestmecklenburg,DE,,Mecklenburg,Mecklenburg,Mecklenburg,Mecklenburg castle; M: county of Schwerin (Henry the Black)
+#5e5fc7,Ludwigslust_Parchim,Ludwigslust-Parchim,DE,,Mecklenburg,Mecklenburg,Mecklenburg,county of Schwerin bought 1358
+#96de77,Landkreis_Rostock,Landkreis Rostock,DE,Rostock,Mecklenburg,Mecklenburg,Mecklenburg,
+#e32697,Vorpommern_Greifswald,Vorpommern-Greifswald,DE,,Pomerania,Pomerania,Pomerania,
+#5da6af,Vorpommern_Rugen,Vorpommern-Rügen,DE,,Rugia,Rugia,Pomerania,pagan Rani (Arkona until 1168); princes of Ruegen under Denmark; to Pomerania 1325
+#988840,Gottingen,Göttingen,DE,,Saxony,Brunswick,Brunswick,Northeim inheritance of Lothar; L: Brunswick-Goettingen
+#9442de,Gifhorn,Gifhorn,DE,Braunschweig,Saxony,Brunswick,Brunswick,"Brunswick - capital of Saxony (E) and Brunswick (M, L)"
+#61e480,Saxony,Region Hannover,DE,,Saxony,Brunswick,Luneburg,
+#99232a,Hildesheim,Hildesheim,DE,,Saxony,Hildesheim,Hildesheim,
+#3874e6,Diepholz,Diepholz,DE,,Saxony,Brunswick,Luneburg,"counts of Hoya, Diepholz, Schaumburg; bishopric of Minden"
+#a1c75e,Bremen,Rotenburg (Wümme),DE,,Bremen,Bremen,Bremen,
+#ca3cc0,Uelzen,Uelzen,DE,,Saxony,Brunswick,Luneburg,L capital (Lueneburg)
+#6ad0b9,Cuxhaven,Cuxhaven,DE,,Bremen,Bremen,Bremen,Land Hadeln: Saxe-Lauenburg
+#e08f43,Heidekreis,Heidekreis,DE,Celle,Saxony,Brunswick,Luneburg,Celle
+#4228ae,Emsland,Emsland,DE,Meppen,Muenster,Muenster,Muenster,"counts of Bentheim, Tecklenburg; Emsland bought by Muenster 1252"
+#4ce53c,Osnabruck,"Osnabrück, Landkreis",DE,,Osnabruck,Osnabruck,Osnabruck,
+#9d1e50,Cloppenburg,Cloppenburg,DE,Delmenhorst,Oldenburg,Oldenburg,Oldenburg,Delmenhorst
+#6fb0cf,Ammerland,Ammerland,DE,Oldenburg,Oldenburg,Oldenburg,Oldenburg,Egilmar I count 1108; East Frisia is Frisian freedom
+#c3c65c,Kleve,Kleve,DE,Kleve,Cleves,Cleves,Cleves,
+#8c1fb3,Viersen,Viersen,DE,Duesseldorf,Berg,Cologne,Berg,M: Archbishop Engelbert I is also count of Berg (1218-25)
+#54bb81,Rhineland,Rhein-Sieg-Kreis,DE,,Cologne,Cologne,Cologne,capital (Cologne; archbishop resides in Bonn by L)
+#973b2b,Euskirchen,Euskirchen,DE,Aachen,Julich,Julich,Julich,Aachen coronation city (imperial)
+#3d4a9a,Steinfurt,Steinfurt,DE,Muenster,Muenster,Muenster,Muenster,capital
+#86e140,Borken,Borken,DE,Recklinghausen,Muenster,Muenster,Muenster,Vest Recklinghausen belongs to Cologne
+#b24795,Paderborn,Paderborn,DE,Paderborn,Paderborn,Paderborn,Paderborn,
+#36a2a0,Lippe,Lippe,DE,Lemgo,Saxony,Lippe,Lippe,Ravensberg (Bielefeld) to Juelich-Berg 1346
+#ae914e,Hochsauerlandkreis,Hochsauerlandkreis,DE,Soest,Cologne,Cologne,Cologne,Soest / Duchy of Westphalia; Arnsberg county sold to Cologne 1368; Siegen Nassau
+#5c3795,Markischer_Kreis,Märkischer Kreis,DE,Dortmund,Berg,Mark,Mark,Altena-Mark split from Berg 1160s; Dortmund imperial city
+#32c742,Westerwaldkreis,Westerwaldkreis,DE,Koblenz,Trier,Trier,Trier,"Koblenz; Nassau, Sayn, Isenburg counts"
+#94404f,Rhein_Hunsruck_Kreis,Rhein-Hunsrück-Kreis,DE,Kreuznach,Trier,Trier,Trier,county of Sponheim (Kreuznach) could be its own minor
+#265d9a,Eifelkreis_Bitburg_Prum,Eifelkreis Bitburg-Prüm,DE,,Trier,Trier,Trier,capital (Trier)
+#889a4c,Sudwestpfalz,Südwestpfalz,DE,,Swabia,Swabia,Palatinate,"Kaiserslautern palace, Trifels (imperial regalia)"
+#e278e9,Pfalz,Donnersbergkreis,DE,Mainz,Mainz,Mainz,Mainz,"Mainz, Worms, Speyer - suggest main town Mainz; Worms/Speyer Salian heartland and free cities"
+#4cac8a,Merzig_Wadern,Merzig-Wadern,DE,Saarbruecken,Lorraine,Lorraine,Lorraine,"counts of Saarbruecken (vassals of Metz), Merzig Lorraine/Trier"
+#cb652c,Bautzen,Bautzen,DE,,Bohemia,Bohemia,Bohemia,Upper Lusatia (Milsko); Brandenburg 1253-1319
+#5e58b9,Meissen,Sächsische Schweiz-Osterzgebirge,DE,,Meissen,Meissen,Meissen,capital (Meissen / Dresden)
+#43b323,Mittelsachsen,Mittelsachsen,DE,Freiberg,Meissen,Meissen,Meissen,Freiberg silver
+#962861,Vogtlandkreis,Vogtlandkreis,DE,,Meissen,Meissen,Meissen,M: Voegte of Weida as imperial bailiffs; Vogtland war 1354-59
+#39bcdb,Nordsachsen,Nordsachsen,DE,,Meissen,Meissen,Meissen,"Eilenburg (E dynasty seat), Leipzig"
+#d1c12e,Stendal,Stendal,DE,,Nordmark,Brandenburg,Brandenburg,E: margraves of the Nordmark (Udonids of Stade)
+#703b93,Brandenburg,Börde,DE,Magdeburg,Magdeburg,Magdeburg,Magdeburg,Archbishopric of Magdeburg (vanilla key Brandenburg sits on Magdeburg)
+#4ada78,Mansfeld_Sudharz,Mansfeld-Südharz,DE,,Magdeburg,Magdeburg,Magdeburg,Halle; bishoprics Merseburg and Naumburg; counts of Mansfeld
+#a7514f,Wittenberg,Wittenberg,DE,Wittenberg,Anhalt,Saxony,Saxony,"M, L capital of Saxony (Saxe-Wittenberg); Dessau Anhalt"
+#496fd9,Altmarkkreis_Salzwedel,Altmarkkreis Salzwedel,DE,,Nordmark,Brandenburg,Brandenburg,
+#63991d,Harz,Harz,DE,Halberstadt,Anhalt,Anhalt,Anhalt,"Ballenstedt (Ascanian seat); Halberstadt bishopric, Quedlinburg abbey"
+#de6acd,Rendsburg_Eckernforde,Rendsburg-Eckernförde,DE,Rendsburg,Holstein,Denmark,Holstein,Danish 1201-1227
+#3ed6c0,Ostholstein,Ostholstein,DE,Luebeck,Mecklenburg,Denmark,Lubeck,"E: Old Luebeck seat of the Obodrite prince Henry; L: Luebeck, suggest main town Luebeck"
+#ec9524,Hamburg,Dithmarschen,DE,,Holstein,Denmark,Holstein,Adolf I of Schauenburg count of Holstein 1110/11
+#5e2fdc,Schleswig,Schleswig-Flensburg,DE,,Denmark,Denmark,Denmark,L: duchy of Schleswig under Valdemar V
+#53ce51,Wartburgkreis,Wartburgkreis,DE,Eisenach,Thuringia,Thuringia,Meissen,Wartburg - capital of Thuringia; Henneberg counts in the south
+#da688b,Thuringia,Kyffhäuserkreis,DE,,Thuringia,Thuringia,Meissen,Erfurt belongs to Mainz
+#3596d6,Unstrut_Hainich_Kreis,Unstrut-Hainich-Kreis,DE,,Thuringia,Thuringia,Meissen,Eichsfeld Mainz; Muehlhausen imperial
+#a7b343,Greiz,Greiz,DE,Altenburg,Meissen,Meissen,Meissen,M: Pleissenland imperial domain (Altenburg)
+#7f3790,Saale_Orla_Kreis,Saale-Orla-Kreis,DE,,Thuringia,Thuringia,Meissen,"counts of Weimar-Orlamuende, Schwarzburg"
+#2ac47a,Haute_Saone,Haute-Saône,FR,Vesoul,Burgundy_County,Merania,Burgundy,
+#c4694d,Jura,Jura,FR,Dole,Burgundy_County,Merania,Burgundy,
+#2f37b3,Doubs,Doubs,FR,Besancon,Burgundy_County,Merania,Burgundy,"Besancon (archbishop, imperial city); M capital of the county"
+#74ea33,Alsace,Bas-Rhin,FR,,Swabia,Swabia,Strasbourg,L: free city + prince-bishop; Decapolis 1354
+#9a3d79,Haut_Rhin,Haut-Rhin,FR,,Swabia,Habsburg,Austria,Habsburg landgraves of Upper Alsace from 1135; Sundgau (Ferrette) 1324
+#3be6f2,Meuse,Meuse,FR,,Bar,Bar,Bar,"Verdun (bishop, city)"
+#d5bc69,Lorraine,Meurthe-et-Moselle,FR,,Lorraine,Lorraine,Lorraine,capital (Nancy)
+#8b33ea,Vosges,Vosges,FR,,Lorraine,Lorraine,Lorraine,
+#4b9659,Moselle,Moselle,FR,,Metz,Metz,Metz,"E bishop; city republic of Metz (M, L)"
+#981825,Isere,Isère,FR,Grenoble,Dauphine,Dauphine,France,counts of Albon / Viennois; Dauphine to France 1349
+#5f88c7,Ardeche,Ardèche,FR,,Toulouse,Toulouse,France,Vivarais imperial until 1308 (bishop of Viviers)
+#aed951,Loire,Loire,FR,,France,France,France,Forez west of the Rhone (French)
+#ea6fe7,Ain,Ain,FR,,Savoy,Savoy,Savoy,"Bugey, Bresse (Baage to Savoy 1272)"
+#65dbbb,Haute_Savoie,Haute-Savoie,FR,,Geneva,Geneva,Geneva,Genevois - capital of Geneva (Annecy); Chablais Savoyard
+#bd8a63,Savoie,Savoie,FR,,Savoy,Savoy,Savoy,capital (Chambery from 1295; E/M Montmelian)
+#685cac,Drome,Drôme,FR,Valence,Toulouse,Toulouse,Valentinois,Marquisate of Provence (Toulouse) north of the Durance
+#6dd65b,Lyonnais,Rhône,FR,,Lyon,Lyon,France,"archbishop of Lyon (imperial, Kingdom of Arles) until 1312"
+#92365e,Savoy,Torino,IT,,Savoy,Savoy,Piedmont,L: Savoy-Achaea lords of Piedmont
+#23b2e7,Verbano_Cusio_Ossola,Verbano-Cusio-Ossola,IT,,Milan,Lombard_League,Milan,
+#a5a21e,Alessandria,Alessandria,IT,Casale,Montferrat,Montferrat,Milan,Casale (Montferrat seat); Alessandria founded 1168; Visconti from 1348
+#8440a3,Cuneo,Cuneo,IT,,Saluzzo,Saluzzo,Saluzzo,E: Boniface del Vasto (Saluzzo marquisate split off 1142)
+#489064,Asti,Asti,IT,,Asti,Asti,Montferrat,commune; Montferrat 1356-78
+#993f35,Vercelli,Vercelli,IT,Novara,Montferrat,Lombard_League,Milan,Novara
+#6d84e4,Aosta,Aosta,IT,,Savoy,Savoy,Savoy,
+#6a9f39,Liguria,Genova,IT,,Genoa,Genoa,Genoa,
+#a72f8c,Brescia,Brescia,IT,Brescia,Tuscany,Lombard_League,Milan,Bergamo
+#39a9a2,Pavia,Pavia,IT,,Montferrat,Cremona,Milan,capital of the Kingdom of Italy; Visconti 1359
+#cc9d46,Lombardy,Milano,IT,Milan,Milan,Lombard_League,Milan,Milan - capital of the Lombard League (M) and the Visconti (L)
+#673db5,Sondrio,Sondrio,IT,,Milan,Lombard_League,Milan,Valtellina (Como)
+#36e540,Cremona,Cremona,IT,,Tuscany,Cremona,Milan,Lodi
+#9a4a5c,Mantova,Mantova,IT,,Tuscany,Lombard_League,Mantua,E: Canossa; L: Gonzaga
+#79b7f0,Bozen,Bozen,IT,Meran,Trento,Tyrol,Bavaria,M: Tirol castle near Meran - capital of Tyrol; L: Tyrol under Ludwig V
+#8ba41c,Trento,Trento,IT,,Trento,Trento,Trento,Prince-bishopric of Trent
+#931aa1,Belluno,Belluno,IT,,Carinthia,Lombard_League,Padua,E: March of Verona; M: Treviso; L: Feltre and Belluno to Carrara 1360
+#42bf8d,Verona,Verona,IT,Verona,Carinthia,Lombard_League,Verona,E: March of Verona (Carinthian dukes); L: della Scala
+#903f1b,Vicenza,Vicenza,IT,Padua,Carinthia,Lombard_League,Padua,Padua - suggest main town Padua; L: Carrara (Vicenza Scaliger)
+#5755c9,Veneto,Treviso,IT,,Venice,Venice,Venice,Treviso Venetian 1339-81
+#6ca456,Udine,Udine,IT,Udine,Aquileia,Aquileia,Aquileia,"Patriarchate of Aquileia (Friuli); Goerz, Trieste"
+#e654a7,Emilia,Bologna,IT,,Tuscany,Lombard_League,Papal_States,"Bologna (Albornoz 1360), Ferrara (Este)"
+#37c9e1,Parma,Parma,IT,,Tuscany,Cremona,Milan,Visconti from 1346
+#d4bc34,Modena,Modena,IT,,Tuscany,Cremona,Ferrara,Reggio; L: Este (Reggio Gonzaga 1335-71)
+#892cd2,Latium,Forlì-Cesena,IT,Forli,Papal_States,Papal_States,Papal_States,Romagna; M: imperial county of Romagna under Frederick II (kept papal for the papacy mechanic)
+#2cab4e,Piacenza,Piacenza,IT,,Montferrat,Lombard_League,Milan,
+#d9696c,Massa_Carrara,Massa-Carrara,IT,,Tuscany,Florence,Florence,"Florence, Lucca, Pistoia"
+#7197ea,Luxembourg,Luxembourg,LU,,Luxembourg,Luxembourg,Luxembourg,
+#7fae36,Friesland,Noord-Drenthe,NL,Groningen,Frisia,Frisia,Frisia,Frisian freedom; Groningen / Drenthe under the bishop of Utrecht
+#9c1b8f,Twente,Twente,NL,Deventer,Utrecht,Utrecht,Utrecht,"Oversticht (Deventer, Zwolle); Utrecht city lies in the Holland province"
+#339683,Veluwe,Veluwe,NL,Nijmegen,Guelders,Guelders,Guelders,capital (Arnhem / Nijmegen)
+#c77621,Holland,Utrecht,NL,,Holland,Holland,Holland,The Hague; Utrecht city
+#4427a9,Zuidoost_Noord_Brabant,Zuidoost-Noord-Brabant,NL,'s-Hertogenbosch,Brabant,Brabant,Luxembourg,"'s-Hertogenbosch, Breda"
+#3cd431,Noord_Limburg,Noord-Limburg,NL,Roermond,Guelders,Guelders,Guelders,Upper Quarter (Roermond); Maastricht shared by Liege and Brabant
+#ed4582,Czestochowski,Częstochowski,PL,,Poland,Poland,Poland,
+#458fb7,Bielski,Bielski,PL,,Poland,Opole,Cieszyn,"Cieszyn, Oswiecim"
+#d8e13e,Sosnowiecki,Sosnowiecki,PL,,Poland,Opole,Cieszyn,Bytom castellany; Bedzin Polish
+#b457d1,Rybnicki,Rybnicki,PL,Raciborz,Poland,Opole,Opava,Raciborz (Opava-Raciborz duke)
+#5cc58d,Szczecinecko_pyrzycki,Szczecinecko-pyrzycki,PL,,Pomerania,Pomerania,Pomerania,
+#933824,Pomerania,Szczeciński,PL,,Pomerania,Pomerania,Pomerania,capital (Stettin)
+#25308e,Koszalinski,Koszaliński,PL,Kolobrzeg,Pomerania,Pomerania,Pomerania,"Kolobrzeg, bishopric of Kammin"
+#5ebc1f,Zielonogorski,Zielonogórski,PL,Zagan,Poland,Silesia,Glogow,Zagan-Glogow
+#d653ae,Gorzowski,Gorzowski,PL,,Poland,Greater_Poland,Brandenburg,Santok; Neumark from 1250s
+#49d5d7,Silesia,Wrocławski,PL,,Poland,Silesia,Legnica,Wroclaw direct Bohemian since 1335
+#c6ab66,Walbrzyski,Wałbrzyski,PL,Swidnica,Poland,Silesia,Swidnica,Swidnica - capital of Swidnica-Jawor; Klodzko
+#914deb,Legnicko_glogowski,Legnicko-głogowski,PL,,Poland,Silesia,Legnica,
+#64ba70,Jeleniogorski,Jeleniogórski,PL,Jawor,Poland,Silesia,Swidnica,Jawor
+#c43a50,Opolski,Opolski,PL,,Poland,Opole,Opole,
+#6893c9,Nyski,Nyski,PL,Nysa,Poland,Silesia,Nysa,bishop of Wroclaw's duchy of Nysa; Brzeg
+#89a04a,Jugovzhodna_Slovenija,Jugovzhodna Slovenija,SI,Celje,Carinthia,Austria,Celje,Celje (Lower Styria); L: counts of Cilli
+#9d20a0,Podravska,Podravska,SI,Ptuj,Styria,Austria,Austria,Maribor; Ptuj belongs to Salzburg
+#50d9ad,Ljubljana,Osrednjeslovenska,SI,,Aquileia,Carinthia,Austria,March of Carniola granted to the patriarchs 1077/93; Ljubljana Spanheim town
+#c56d35,Goriska,Goriška,SI,,Gorizia,Gorizia,Gorizia,Koper Venetian from 1279
+#392bbc,Vidin,Vidin,BG,,Byzantium,Bulgaria,Vidin,Vidin; Tsardom of Vidin 1356
+#62e044,Banja_Luka,Banja Luka,BIH,,Croatia,Croatia,Bosnia,Banja Luka; L: Donji Kraji under Bosnia
+#ce3982,Bacs,Zenica-Doboj,BIH,,Hungary,Bosnia,Bosnia,Zenica-Doboj (vanilla key Bacs parked here); Bosnian banate
+#4caac5,Berestia,Brest,BLR,,Volhynia,Halych_Volhynia,Lithuania,
+#d8cf55,Sydjylland,Sydjylland,DK,,Denmark,Denmark,Denmark,
+#934bbc,Zealand,Vest- og Sydsjælland,DK,,Denmark,Denmark,Denmark,
+#2fc061,Ile_de_France,Seine-et-Marne,FR,,France,France,France,
+#e1645d,Orleannais,Cher,FR,,France,France,France,
+#5a7ae2,Indre,Indre,FR,,Anjou,France,France,Touraine Angevin since 1044
+#77ba2c,Burgundy,Côte-d’Or,FR,,Burgundy,Burgundy,Burgundy,
+#90267d,Yonne,Yonne,FR,,Burgundy,Burgundy,Burgundy,Nevers / Auxerre
+#5ae4d4,Manche,Manche,FR,,England,France,France,L: Cotentin held by Charles of Navarre
+#c58f3f,Normandy,Seine-Maritime,FR,,England,France,France,
+#693bd1,Aisne,Aisne,FR,,France,France,France,
+#3ab73b,Calais,Pas-de-Calais,FR,,Flanders,France,England,E: Artois Flemish; L: Calais / Ponthieu English (Bretigny 1360)
+#aa516a,Champagne,Marne,FR,,Champagne,Champagne,France,
+#508cb8,Anjou,Maine-et-Loire,FR,,Anjou,France,France,
+#9cb01a,Sarthe,Sarthe,FR,,Anjou,France,France,Maine (Fulk V married Eremburga 1109/10)
+#a142b2,Brittany,Ille-et-Vilaine,FR,,Brittany,Brittany,Brittany,
+#4beda5,Aquitaine,Gironde,FR,,Aquitaine,England,England,
+#b34823,Dordogne,Dordogne,FR,,Aquitaine,France,England,"Perigord, Agenais"
+#666ae6,Poitou,Vienne,FR,,Aquitaine,France,England,Louis VIII took Poitou and La Rochelle in 1224
+#76d24a,Charente,Charente,FR,,Aquitaine,France,England,"Limousin, Angoumois"
+#e577ba,Aveyron,Aveyron,FR,,Toulouse,Toulouse,England,"Quercy, Rouergue English 1360"
+#51b4bf,Auvergne,Puy-de-Dôme,FR,,Aquitaine,France,France,
+#b7a456,Cantal,Cantal,FR,,Aquitaine,France,France,
+#8b31e1,Hautes_Alpes,Hautes-Alpes,FR,Sisteron,Provence,Provence,Naples,"L: Joanna I countess of Provence; Gap Dauphine, Avignon / Venaissin papal"
+#4fdb6d,Dalmatia,Ličko-senjska županija,HR,,Croatia,Venice,Croatia,"Zadar: Venetian 1202, Hungarian by the treaty of Zadar 1358"
+#b2414a,Osjecko_baranjska_zupanija,Osječko-baranjska županija,HR,,Hungary,Hungary,Hungary,"Osijek, Slavonia"
+#355da1,Zagreb,Primorsko-goranska županija,HR,,Croatia,Croatia,Croatia,
+#aad45a,Buda,Pest,HU,,Hungary,Hungary,Hungary,
+#92238c,Baranya,Somogy,HU,,Hungary,Hungary,Hungary,
+#39e0b8,Komarom,Veszprém,HU,,Hungary,Hungary,Hungary,
+#936237,Bacs_Kiskun,Bács-Kiskun,HU,,Hungary,Hungary,Hungary,Szeged
+#432ea5,Hajdusag,Hajdú-Bihar,HU,,Hungary,Hungary,Hungary,
+#43b334,Borsod_Abauj_Zemplen,Borsod-Abaúj-Zemplén,HU,,Hungary,Hungary,Hungary,
+#a73161,Trakai,Kauno apskritis,LT,,Lithuania,Lithuania,Lithuania,
+#469dc2,Lithuania,Tauragės apskritis,LT,,Lithuania,Lithuania,Teutonic_Order,Memel (Teutonic from 1328); Samogitia Lithuanian
+#a0a130,Malopolska,Krakowski,PL,,Poland,Poland,Poland,capital (Krakow)
+#821caa,Pilski,Pilski,PL,,Poland,Greater_Poland,Poland,Naklo taken by Boleslaw III 1109/13
+#47a670,Poznan,Koniński,PL,,Poland,Greater_Poland,Poland,M capital of Greater Poland
+#b76c60,Pomerelia,Olsztyński,PL,,Prussia,Prussia,Teutonic_Order,Malbork / Warmia (vanilla key Pomerelia); L capital of the Order
+#334dd5,Kuyava,Grudziądzki,PL,,Poland,Masovia,Teutonic_Order,Chelmno land (Torun) to the Order 1230; Kuyavia Polish
+#6d9a49,Kashubia,Słupski,PL,,Pomerelia,Pomerelia,Teutonic_Order,Gdansk - capital of Pomerelia; Order since 1308
+#db5cba,Elcki,Ełcki,PL,,Prussia,Prussia,Teutonic_Order,"Elk, Galindia"
+#53eae5,Sandomiersko_jedrzejowski,Sandomiersko-jędrzejowski,PL,,Poland,Poland,Poland,
+#cc9c3b,Sieradz,Piotrkowski,PL,,Poland,Masovia,Poland,Leczyca / Sieradz held by Konrad of Masovia
+#7335d9,Lublin,Chełmsko-zamojski,PL,,Poland,Poland,Poland,
+#45a64d,Ruthenia,Krośnieński,PL,,Kyiv,Halych_Volhynia,Poland,Przemysl; Red Ruthenia Polish 1349
+#be475f,Lomzynski,Łomżyński,PL,,Volhynia,Halych_Volhynia,Lithuania,"Bialystok, Podlachia"
+#5b8ab9,Grodno,Suwalski,PL,,Yotvingia,Yotvingia,Lithuania,Sudovians conquered 1283
+#839a2d,Mazovia,Ostrołęcki,PL,,Poland,Masovia,Masovia,Plock
+#984e9e,Warsawa,Radomski,PL,,Poland,Masovia,Masovia,capital of Masovia (L Warsaw; M Plock / Czersk)
+#68eebd,Bihor,Bihor,RO,,Hungary,Hungary,Hungary,Cluj
+#9f6f56,Alba,Alba,RO,,Hungary,Hungary,Hungary,"Sibiu, Transylvanian Saxons"
+#605bbd,Banat,Timiş,RO,,Hungary,Hungary,Hungary,
+#7bbb66,Caras_Severin,Caraş-Severin,RO,,Hungary,Hungary,Hungary,Resita
+#a85180,Hunedoara,Hunedoara,RO,,Hungary,Hungary,Hungary,Hunedoara; if Craiova / Oltenia dominates: Wallachia in L
+#258a9f,Branichevo,Južnobačka oblast,RS,,Hungary,Hungary,Hungary,"Bačka, Srem, Belgrade, Mačva: mostly Hungarian land in every period (Belgrade Byzantine 1110, Bulgarian / Serbian at times)"
+#b6a737,Branicevska_oblast,Braničevska oblast,RS,Požarevac,Byzantium,Bulgaria,Serbia,Branicevo
+#a756e0,Prussia,Kaliningrad,RUS,,Prussia,Prussia,Teutonic_Order,
+#72ea96,Scania,Skåne län,SE,,Denmark,Denmark,Sweden,Swedish 1332-60; Valdemar IV retakes Scania in summer 1360
+#d02928,Nitra,Nitriansky kraj,SK,,Hungary,Hungary,Hungary,
+#6e8ad0,Abauj,Prešovský kraj,SK,,Hungary,Hungary,Hungary,
+#9bdb44,Banskobystricky_kraj,Banskobystrický kraj,SK,,Hungary,Hungary,Hungary,
+#ed6edd,Severin,Južnobanatska oblast,RS,,Hungary,Hungary,Hungary,Banat (Pancevo)
+#1e9884,Northumberland,Northumberland,UK,,England,England,England,
+#906a3d,Cheshire_East,Cheshire East,UK,,England,England,England,Manchester / Cheshire
+#6133ea,Yorkshire,North Yorkshire CC,UK,,England,England,England,
+#26cb1f,Nottinghamshire,Lincolnshire,UK,,England,England,England,
+#d13b6d,Warwickshire,Staffordshire CC,UK,,England,England,England,
+#4cb0ed,Kent,Suffolk,UK,,England,England,England,
+#a4ae36,London,Harrow and Hillingdon,UK,,England,England,England,
+#7b318e,Hampshire,Oxfordshire,UK,,England,England,England,
+#37d386,Wiltshire,Wiltshire CC,UK,,England,England,England,
+#e37457,Scottish_Borders,Scottish Borders,UK,Berwick-upon-Tweed,Scotland,Scotland,England,"Roxburgh English 1346-1460; north Northumberland up to the Aln (Berwick: Scottish until 1296 / 1333, then English)"
+#2b36af,Kyiv,L'viv,UKR,,Kyiv,Halych_Volhynia,Poland,Lviv; E: Rostislavichi of Peremyshl (Volodar)
+#6b9a50,Transcarpathia,Transcarpathia,UKR,,Hungary,Hungary,Hungary,

@@ -1,0 +1,7 @@
+The campaign map replaced by the Holy Roman Empire at about 2.6x the vanilla detail: 302 provinces
+from the Low Countries to Hungary and from Denmark to northern Italy, with real terrain, rivers,
+roads and mountains, and three historical starting periods (1110, 1224, 1360) with the Empire's
+princes, prince-bishops, free cities and Italian communes.
+
+Requires the URAH_HRE and URAH_MapKit BepInEx plugins (see README / INSTALL.txt). Without it this mod does nothing.
+Do not activate together with URAH Iceland. Experimental.

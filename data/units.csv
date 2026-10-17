@@ -1,0 +1,7 @@
+kind,key,E,M,L,note
+from_kingdom,Germany,Crossbowman_Special,Crossbowman_Special,Crossbowman_Special,"vanilla Germany's kingdom unit (all periods); the split-up Germany's provinces (by donor) recruit it locally"
+province,Westerwaldkreis,,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,"Koblenz: Deutschherrenhaus 1216, seat of the bailiwick of Koblenz"
+province,Main_Tauber_Kreis,,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,"Mergentheim: commandery 1219, later the Order's seat"
+province,Franconia,,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,"Nuremberg: commandery 1209, bailiwick of Franconia"
+province,Bozen,,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,"Bolzano: hospital 1202, bailiwick of An der Etsch"
+kingdom_set,Saxony,WesternUnitSet,,,"the Saxon culture's set like the other Saxon kingdoms; vanilla's EuropeanUnitSet was for a 3-province duchy"

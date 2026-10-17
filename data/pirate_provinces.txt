@@ -1,0 +1,23 @@
+# Provinces with a known medieval pirate coast. tools/import_hre.py sets has_distant_port on them
+# (only if they are coastal), which the Pirates province feature needs (vanilla: islands and remote
+# coasts, 24 of 135 coastal realms). One realm key per line, # comments.
+
+# Baltic: the Rani of Rügen and the Wendish raiders, Danish sea kings, the Jomsvikings of Wolin,
+# the Victual Brothers of Wismar and Rostock
+Vorpommern_Rugen
+Zealand
+Scania
+Schleswig
+Pomerania
+Mecklenburg
+# North Sea: Frisian sea robbers and the Likedeeler of Störtebeker at the Elbe and Weser mouths
+Friesland
+Cuxhaven
+# Channel and Atlantic: Eustace the Monk of the Channel Islands, Cinque Ports raiders, Breton corsairs
+Manche
+Kent
+Brittany
+# Adriatic: Narentine and Uskok pirates of the Dalmatian coast
+Dalmatia
+# Ligurian Sea: Saracen raids and Genoese corsairs
+Liguria

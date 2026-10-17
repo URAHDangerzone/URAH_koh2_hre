@@ -1,0 +1,40 @@
+#!/usr/bin/env sh
+# Rebuild the HRE map data into URAH_HRE/, deploy the mod and the plugins URAH_HRE + URAH_MapKit.
+#
+# Copy to build.sh (ignored by git) and set the paths of your machine below; each one can also come
+# from the environment. Run with the game closed.
+set -e
+cd "$(dirname "$0")"
+W=$(cd ../.. && pwd)  # the koh2-knowledge workspace, when this repo sits in its mods/
+
+# the game's data folder as shipped (Maps, Defs, Texts), extracted from your own install
+KOH2_VANILLA=${KOH2_VANILLA:-$W/KoH2Data/Sovereign}
+# BigMap_WV.png, the political view's paper map:
+#   python external/URAH_shared/python/extract_bundle_assets.py "<game>/AssetBundles/ui" out BigMap_WV
+BIGMAP_WV=${BIGMAP_WV:-$W/research/out/bundle/BigMap_WV.png}
+# the game's Mods folder (Windows: %USERPROFILE%\AppData\LocalLow\BlackSeaGames\Sovereign\Mods)
+KOH2_MODS=${KOH2_MODS:-$HOME/.local/share/Steam/steamapps/compatdata/736820/pfx/drive_c/users/steamuser/AppData/LocalLow/BlackSeaGames/Sovereign/Mods}
+# python with numpy, scipy, Pillow, UnityPy
+PYTHON=${PYTHON:-$W/.venv/bin/python}
+# the game folder with BepInEx 5, the plugin compiles against it
+GAME_DIR=${GAME_DIR:-$HOME/.steam/steam/steamapps/common/Knights of Honor II}
+
+if pgrep -f Sovereign.exe >/dev/null; then
+    echo "Knights of Honor II is running - close it first." >&2
+    exit 1
+fi
+export KOH2_VANILLA
+
+M=URAH_HRE/Maps/europe; P=$PYTHON; V=$KOH2_VANILLA
+mkdir -p $M out
+$P tools/make_hre_terrain.py data/dem/hre_etopo.nc $M/terrain.pmt
+$P tools/import_hre.py $V/Maps/europe data URAH_HRE
+$P tools/make_hre_mountains.py $M && $P tools/make_hre_trees.py $M
+$P tools/make_hre_roads.py $M && $P tools/make_hre_terrain_types.py $M
+$P tools/paint_hre_coa.py $V/Maps/europe data URAH_HRE --preview out/kingdom_arms.png
+$P tools/paint_hre_bigmap.py "$BIGMAP_WV" $M
+
+rsync -a --delete URAH_HRE/ "$KOH2_MODS/URAH_HRE/"
+
+# builds and deploys URAH_MapKit too (project reference in the workspace)
+(cd plugin && dotnet build -c Release -p:Deploy=true "-p:GameDir=$GAME_DIR")

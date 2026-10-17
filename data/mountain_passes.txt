@@ -1,0 +1,20 @@
+# Alpine passes kept free of mountain massifs (tools/make_hre_terrain.py massif_mask), so armies and
+# roads can cross the Alps where medieval traffic did. One pass per line:
+#   name: lat lon; lat lon; ...   (the route from valley town to valley town over the pass)
+
+Brenner: 47.27 11.39; 47.00 11.51; 46.90 11.43; 46.72 11.65; 46.50 11.35
+Reschen: 47.14 10.57; 46.89 10.50; 46.83 10.52; 46.69 10.55; 46.67 11.16
+Arlberg: 47.15 9.82; 47.13 10.27; 47.14 10.57
+Fernpass: 47.49 10.72; 47.36 10.83; 47.24 10.74
+Scharnitz: 47.49 11.10; 47.39 11.26; 47.27 11.24
+St Gotthard: 46.88 8.64; 46.63 8.59; 46.56 8.57; 46.53 8.61; 46.19 9.02
+Great St Bernard: 46.10 7.07; 45.95 7.21; 45.87 7.17; 45.74 7.32
+Simplon: 46.32 7.99; 46.25 8.03; 46.12 8.29
+Mont Cenis: 45.28 6.35; 45.29 6.88; 45.25 6.90; 45.14 7.05
+Montgenevre: 44.90 6.64; 44.93 6.72; 45.03 6.83; 45.14 7.05
+Splugen: 46.85 9.53; 46.70 9.44; 46.55 9.32; 46.51 9.33; 46.32 9.40
+Septimer: 46.66 9.58; 46.47 9.65; 46.42 9.64; 46.39 9.67; 46.32 9.40
+Tarvis: 46.61 13.85; 46.51 13.58; 46.51 13.30; 46.28 13.14
+Semmering: 47.67 15.94; 47.63 15.83; 47.61 15.67; 47.41 15.27
+Radstadter Tauern: 47.38 13.46; 47.25 13.56; 47.10 13.64; 46.80 13.50; 46.61 13.85
+Pyhrn: 47.85 14.13; 47.65 14.33; 47.55 14.25; 47.42 14.30

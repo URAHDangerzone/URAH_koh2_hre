@@ -1,0 +1,10 @@
+quest,why
+ConquerGermanyQuest,replaced by the regional Germany quests of union_quests.csv
+UniteKalmarQuest,only Zealand and Scania are on the map: Denmark owned the whole goal at the start of 1110 and 1224
+UniteSerbiaQuest,only Branichevo of its goal is on the map
+ConquerSerbiaQuest,only Branichevo of its goal is on the map
+UniteBulgariaQuest,only Branichevo and Severin of its goal are on the map
+UniteWallachiaQuest,only Severin of its goal is on the map
+UniteGreatWalesQuest,no Welsh kingdom on the map
+ConquerEnglandQuest,only England is English and it is excluded; England has UniteAngevinQuest
+UnitePortugalQuest,Portugal is not on the map

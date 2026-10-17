@@ -1,0 +1,22 @@
+# High plateaus and pastures in the Alps (tools/make_hre_terrain.py): kept free of mountain massifs and
+# flattened to their mean height, so they look like Alpine high ground and leave flat land for villages
+# (tools/import_hre.py places villages only where the slope stays under 14 degrees). One per line:
+#   name: lat lon radius_km
+# Centres keep ~r + 10 world units (~5 km) from water courses: the river banks stay as they are, so a
+# plateau on the valley side would be cut away. Some sit a little uphill of the real place for that.
+
+Innsbrucker Mittelgebirge: 47.20 11.44 4
+Mieminger Plateau: 47.36 10.89 4
+Wildschoenau: 47.41 12.03 4.5
+Villgraten: 46.82 12.35 3.5
+Ritten: 46.55 11.43 5.5
+Seiser Alm: 46.54 11.63 6
+Crans-Montana: 46.37 7.45 4
+Valle Vigezzo: 46.14 8.46 5.5
+Teglio: 46.17 10.07 5
+Bormio: 46.47 10.37 5
+Saint-Barthelemy: 45.84 7.46 3.5
+Asiago: 45.87 11.51 8
+Lessinia: 45.65 11.05 6
+Vercors: 45.05 5.50 8
+Ramsau: 47.42 13.65 5

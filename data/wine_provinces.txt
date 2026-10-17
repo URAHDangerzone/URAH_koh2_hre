@@ -1,0 +1,126 @@
+# Provinces with a notable medieval wine region (Vineyard settlements only appear here, see
+# URAH_HRE/Defs/hre_settlements.def). One realm key per line, # comments.
+
+# Austria, Styria, Burgenland: Wachau, Weinviertel, Vienna, Thermenregion, Styrian hills
+Austria
+Weinviertel
+Waldviertel
+Niederosterreich_Sud
+Nordburgenland
+Oststeiermark
+West_und_Sudsteiermark
+# Switzerland: Lake Geneva, Valais, Neuchatel, Lake Zurich, Ticino
+Vaud
+Valais
+Freiburg
+Zurich
+Ticino
+# Bohemia and Moravia: Melnik, southern Moravia (Znojmo, Mikulov)
+Bohemia
+Moravia
+# Rhine, Mosel, Nahe, Ahr, Saar, Main, Neckar, Baden, Lake Constance
+Pfalz
+Sudwestpfalz
+Bergstrasse
+Main_Kinzig_Kreis
+Rhein_Hunsruck_Kreis
+Westerwaldkreis
+Eifelkreis_Bitburg_Prum
+Merzig_Wadern
+Rhineland
+Main_Spessart
+Rhon_Grabfeld
+Main_Tauber_Kreis
+Heilbronn
+Neckar_Odenwald_Kreis
+Freudenstadt
+Ortenaukreis
+Breisgau_Hochschwarzwald
+Swabia
+Ravensburg
+Luxembourg
+# Danube at Regensburg, Saale-Unstrut, Elbe at Meissen, Gruenberg (Zielona Gora)
+Regensburg
+Mansfeld_Sudharz
+Meissen
+Zielonogorski
+# Meuse at Huy
+Verviers
+# Alsace, Lorraine (Metz, Toul), Jura, Bugey, Savoy, Rhone valley, Beaujolais, Forez
+Alsace
+Haut_Rhin
+Moselle
+Lorraine
+Jura
+Ain
+Savoie
+Isere
+Drome
+Ardeche
+Lyonnais
+Loire
+# Northern Italy (not the high Alps of Belluno)
+Savoy
+Verbano_Cusio_Ossola
+Alessandria
+Cuneo
+Asti
+Vercelli
+Aosta
+Liguria
+Brescia
+Pavia
+Lombardy
+Sondrio
+Cremona
+Mantova
+Bozen
+Trento
+Verona
+Vicenza
+Veneto
+Udine
+Emilia
+Parma
+Modena
+Latium
+Piacenza
+Massa_Carrara
+# Slovenia
+Podravska
+Jugovzhodna_Slovenija
+Goriska
+# France outside the Empire: Champagne, Burgundy, Paris basin, Loire, Bordeaux, Cahors, Provence
+Champagne
+Burgundy
+Yonne
+Ile_de_France
+Aisne
+Orleannais
+Indre
+Anjou
+Aquitaine
+Dordogne
+Poitou
+Charente
+Aveyron
+Auvergne
+Hautes_Alpes
+# Hungary, Slovakia, Transylvania, Slavonia: Tokaj, Eger, Sopron, Villany, Small Carpathians
+Borsod_Abauj_Zemplen
+Abauj
+Komarom
+Baranya
+Buda
+Nitra
+Osjecko_baranjska_zupanija
+Bihor
+Alba
+Banat
+# Croatia, Serbia, Bulgaria: coast, Srem, Zupa, Vidin
+Zagreb
+Dalmatia
+Branichevo
+Branicevska_oblast
+Vidin
+Severin

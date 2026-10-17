@@ -1,0 +1,36 @@
+// Holy sites of the HRE map. The vanilla rules point at Jerusalem,
+// Constantinople, Mecca, Medina and Baghdad, which are not on this map.
+// Catholic: the papacy stays on Latium (Rome). Crusades "for the holy lands" go against the pagans
+// of the Northern Crusades; the URAH_HRE plugin picks the target from holy_lands_realm_per_period
+// (keys of Periods.europe) after Catholic.Init, holy_lands_realm is the fallback. Both must be
+// valid realms: Crusade reads the holy-lands realm without a null check.
+// Orthodox: the patriarch sits in Vidin (Byzantine 1110, Bulgarian 1224, Tsardom of Vidin 1360).
+// Sunni / Shia: no holy lands. An empty value leaves the game's list / realm empty; the plugin makes
+// the Muslim holy-land checks safe for that.
+
+Catholic
+{
+	holy_lands_realm = "Prussia"
+	holy_lands_realm_per_period
+	{
+		early = "Vorpommern_Rugen"
+		mid = "Prussia"
+		late = "Trakai"
+	}
+}
+
+Orthodox
+{
+	hq_realm = "Vidin"
+	hq_kingdom = "Byzantium"
+}
+
+Sunni
+{
+	holy_lands_realms = ""
+}
+
+Shia
+{
+	holy_lands_realm = ""
+}

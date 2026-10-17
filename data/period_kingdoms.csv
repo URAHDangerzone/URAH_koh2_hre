@@ -1,0 +1,246 @@
+kingdom,period,name,govern,ruler,vassal_of,capital,culture,titles,level,king_class,provinces,note
+Anhalt,E,County of Ballenstedt (Ascanians),Monarchy,Otto,Saxony,Harz,Saxon,County,Duchy,,2,"new; Otto the Rich, briefly duke of Saxony 1112"
+Anhalt,M,Principality of Anhalt,Monarchy,Heinrich.1,Thuringia,Harz,Saxon,Principality,Duchy,,1,new
+Anhalt,L,Principality of Anhalt,Monarchy,Albrecht.2,Saxony,Harz,Saxon,Principality,Duchy,,1,new
+Aquileia,E,Patriarchate of Aquileia,Order,Ulrich.1,Carinthia,Udine,Italian,Patriarch,Duchy,Cleric,2,"new; Ulrich of Eppenstein, brother of the Carinthian duke"
+Aquileia,M,Patriarchate of Aquileia,Order,Berthold,-,Udine,Italian,Patriarch,Duchy,Cleric,1,new; Andechs-Merania
+Aquileia,L,Patriarchate of Aquileia,Order,Ludovico,Austria,Udine,Italian,Patriarch,Duchy,Cleric,1,new; Ludovico della Torre
+Asti,E,Commune of Asti,Republic,-,Savoy,Asti,Italian,Commune,Duchy,Merchant,1,new
+Asti,M,Commune of Asti,Republic,-,Savoy,Asti,Italian,Commune,Duchy,Merchant,1,new
+Austria,E,Margraviate of Austria (Babenberg),Monarchy,Leopold.3,Bavaria,Austria,Austrian,German,Duchy,,5,new period row; under Bavaria until 1156
+Austria,M,Duchy of Austria and Styria,Monarchy,Leopold.6,-,Austria,Austrian,,Duchy,,13,vanilla (Luitpold.6)
+Austria,L,Duchy of Austria (Habsburg),Monarchy,Rudolf.4,-,Austria,Austrian,,Duchy,,21,vanilla
+Baden,E,Margraviate of Baden,Monarchy,Hermann.2,Swabia,Freudenstadt,German,German,Duchy,,1,new; Zaehringen branch
+Baden,M,Margraviate of Baden,Monarchy,Hermann.5,Swabia,Freudenstadt,German,German,Duchy,,1,new
+Baden,L,Margraviate of Baden,Monarchy,Rudolf.6,Palatinate,Freudenstadt,German,German,Duchy,,1,new
+Bamberg,E,Bishopric of Bamberg,Order,Otto.1,-,Bamberg,German,PrinceBishop,Duchy,Cleric,2,"new; St. Otto, apostle of Pomerania"
+Bamberg,M,Prince-Bishopric of Bamberg,Order,Ekbert,-,Bamberg,German,PrinceBishop,Duchy,Cleric,1,new; Andechs-Merania
+Bamberg,L,Prince-Bishopric of Bamberg,Order,Leopold.3,Zollern,Bamberg,German,PrinceBishop,Duchy,Cleric,1,new
+Bar,E,County of Bar,Monarchy,Renaud.1,Lorraine,Meuse,French,County,Duchy,,1,new
+Bar,M,County of Bar,Monarchy,Henri.2,-,Meuse,French,County,Duchy,,1,new
+Bar,L,Duchy of Bar,Monarchy,Robert.1,-,Meuse,French,,Duchy,,1,new
+Basel,E,Prince-Bishopric of Basel,Order,Rudolf,Swabia,Delemont,Swiss,PrinceBishop,Duchy,Cleric,1,new
+Basel,M,Prince-Bishopric of Basel,Order,Heinrich.2,-,Delemont,Swiss,PrinceBishop,Duchy,Cleric,1,new
+Basel,L,Prince-Bishopric of Basel,Order,Johann,Austria,Delemont,Swiss,PrinceBishop,Duchy,Cleric,1,new
+Bavaria,E,Duchy of Bavaria (Welf),Monarchy,Welf.2,-,Regensburg,Bavarian,,Duchy,,18,vanilla
+Bavaria,M,Duchy of Bavaria (Wittelsbach),Monarchy,Ludwig.1.O,-,Landshut,Bavarian,,Duchy,,12,vanilla row has Otto.2 (duke from 1231): 1224 is Ludwig I the Kelheimer
+Bavaria,L,Duchy of Upper Bavaria and Tyrol,Monarchy,Ludwig.5,-,Rosenheim,Bavarian,,Duchy,,8,vanilla; also count of Tyrol by his wife Margarete
+Berg,E,County of Berg,Monarchy,Adolf.2,Brabant,Viersen,German,County,Duchy,,2,new
+Berg,L,County of Berg and Ravensberg,Monarchy,Wilhelm.2,Cologne,Viersen,German,County,Duchy,,1,new
+Bern,M,Imperial City of Bern,Republic,-,-,Bern,Swiss,FreeCity,Duchy,Merchant,1,new
+Bohemia,E,Duchy of Bohemia,Monarchy,Vladislav.1,-,Bohemia,Bohemian,,Duchy,,9,vanilla
+Bohemia,M,Kingdom of Bohemia,Monarchy,Otakar.1,-,Bohemia,Bohemian,,Kingdom,,9,vanilla
+Bohemia,L,Kingdom of Bohemia (Luxembourg),Monarchy,Karel.4.A,-,Bohemia,Bohemian,,Empire,,9,"vanilla; Charles IV, emperor, rules from Prague"
+Bosnia,M,Banate of Bosnia,Monarchy,Stefan,Hungary,Bacs,Bosnian,,Duchy,,1,"vanilla kingdom, check period rows"
+Bosnia,L,Banate of Bosnia,Monarchy,Tvrtko.1,Hungary,Bacs,Bosnian,,Duchy,,2,"vanilla kingdom, check period rows"
+Brabant,E,Duchy of Lower Lorraine (Leuven),Monarchy,Godfrey.1,-,Leuven,Flemish,,Duchy,,3,new
+Brabant,M,Duchy of Brabant,Monarchy,Henry.1,-,Leuven,Flemish,,Duchy,,3,new
+Brandenburg,M,Margraviate of Brandenburg,Monarchy,Otto.3,-,Potsdam_Mittelmark,German,German,Duchy,,5,"vanilla; co-ruler John I, both minors"
+Brandenburg,L,Electorate of Brandenburg (Wittelsbach),Monarchy,Otto.7,-,Potsdam_Mittelmark,German,Elector,Duchy,,11,vanilla row Otto.7 - historically Louis the Roman with Otto V the Lazy
+Bremen,E,Archbishopric of Hamburg-Bremen,Order,Friedrich.1,Saxony,Bremen,Saxon,Archbishop,Duchy,Cleric,2,new
+Bremen,M,Archbishopric of Bremen,Order,Gerhard.2,-,Bremen,Saxon,Archbishop,Duchy,Cleric,2,new
+Bremen,L,Archbishopric of Bremen,Order,Albrecht.2,-,Bremen,Saxon,Archbishop,Duchy,Cleric,2,new
+Brunswick,M,Welf lands of Brunswick-Lueneburg,Monarchy,Otto,-,Gifhorn,Saxon,Lordship,Duchy,,6,"new; Otto the Child, duchy created 1235"
+Brunswick,L,Duchy of Brunswick,Monarchy,Magnus.1,Luneburg,Gifhorn,Saxon,,Duchy,,2,new; Goettingen and Grubenhagen lines folded in
+Burgundy,L,Duchy and County of Burgundy,Monarchy,Philippe,France,Burgundy,French,,Duchy,,5,vanilla; Philip of Rouvres (d. 1361)
+Burgundy_County,E,County of Burgundy,Monarchy,Guillaume.2,-,Doubs,French,County,Duchy,,3,new; William the German
+Carinthia,E,Duchy of Carinthia (Eppenstein),Monarchy,Heinrich.3,-,Carinthia,Austrian,,Duchy,,8,vanilla; also margrave of Verona
+Carinthia,M,Duchy of Carinthia (Spanheim),Monarchy,Bernhard,-,Carinthia,Austrian,,Duchy,,4,vanilla
+Celje,L,County of Cilli,Monarchy,Ulrich.1,Austria,Jugovzhodna_Slovenija,Austrian,County,Duchy,,1,new
+Chur,E,Prince-Bishopric of Chur,Order,-,Swabia,Graubunden,Swiss,PrinceBishop,Duchy,Cleric,1,new
+Chur,M,Prince-Bishopric of Chur,Order,Arnold,Habsburg,Graubunden,Swiss,PrinceBishop,Duchy,Cleric,1,new
+Chur,L,Prince-Bishopric of Chur,Order,Peter,Bavaria,Graubunden,Swiss,PrinceBishop,Duchy,Cleric,1,new
+Cieszyn,L,Duchy of Cieszyn,Monarchy,Przemyslaw.1,Bohemia,Bielski,Polish,,Duchy,,2,new
+Cleves,E,County of Cleves,Monarchy,Dietrich.2,Brabant,Kleve,German,County,Duchy,,1,new
+Cleves,M,County of Cleves,Monarchy,Dietrich.5,Brabant,Kleve,German,County,Duchy,,1,new
+Cleves,L,County of Cleves,Monarchy,Johann,-,Kleve,German,County,Duchy,,1,new; to the Mark 1368
+Cologne,E,Archbishopric of Cologne,Order,Friedrich.1,-,Rhineland,German,Archbishop,Duchy,Cleric,2,new
+Cologne,M,Archbishopric of Cologne,Order,Engelbert.1,-,Rhineland,German,Archbishop,Duchy,Cleric,3,"new; regent of Germany, murdered Nov 1225"
+Cologne,L,Electorate of Cologne,Order,Wilhelm,-,Rhineland,German,ElectorBishop,Duchy,Cleric,2,new (Wilhelm of Gennep)
+Cremona,M,Imperial cities of Lombardy,Republic,-,-,Cremona,Italian,Commune,Kingdom,Merchant,4,new; Ghibelline cities of Frederick II against the Lombard League
+Dauphine,E,County of Albon / Viennois,Monarchy,Guigues.3,-,Isere,Occitan,County,Duchy,,1,new
+Dauphine,M,Dauphine of Viennois,Monarchy,Andre,-,Isere,Occitan,Dauphin,Duchy,,1,new (Guigues VI)
+Ferrara,L,Lordship of Ferrara and Modena (Este),Monarchy,Aldobrandino.3,Papal_States,Modena,Italian,Lordship,Duchy,,1,new; Ferrara a papal fief
+Flanders,E,County of Flanders,Monarchy,Robert.2,France,West_Flanders,Flemish,County,Duchy,,3,vanilla
+Flanders,M,County of Flanders and Hainaut,Monarchy,Ferrand,France,West_Flanders,Flemish,County,Duchy,,3,"vanilla; Ferrand captive in Paris until 1227, Joan rules"
+Flanders,L,County of Flanders,Monarchy,Lodewijk.2,France,West_Flanders,Flemish,County,Duchy,,3,vanilla
+Florence,M,Republic of Florence,Republic,-,-,Massa_Carrara,Italian,Commune,Kingdom,Merchant,1,new
+Florence,L,Republic of Florence,Republic,-,-,Massa_Carrara,Italian,Commune,Kingdom,Merchant,1,new
+Frisia,E,Frisian Freedom,Confederacy,-,-,Friesland,Frisian,Frisian,Kingdom,,1,new
+Frisia,M,Frisian Freedom,Confederacy,-,-,Friesland,Frisian,Frisian,Kingdom,,1,new
+Frisia,L,Frisian Freedom,Confederacy,-,-,Friesland,Frisian,Frisian,Kingdom,,1,new
+Fulda,E,Prince-Abbey of Fulda,Order,Wolfhelm,Thuringia,Schwalm_Eder_Kreis,German,PrinceAbbot,Duchy,Cleric,1,new
+Fulda,M,Prince-Abbey of Fulda,Order,Konrad.3,Thuringia,Schwalm_Eder_Kreis,German,PrinceAbbot,Duchy,Cleric,1,new
+Fulda,L,Prince-Abbey of Fulda,Order,Heinrich.7,Mainz,Schwalm_Eder_Kreis,German,PrinceAbbot,Duchy,Cleric,1,new
+Geneva,E,County of Geneva,Monarchy,Aymon.1,Savoy,Haute_Savoie,French,County,Duchy,,2,new
+Geneva,M,County of Geneva,Monarchy,Humbert,Savoy,Haute_Savoie,French,County,Duchy,,2,new
+Geneva,L,County of Geneva,Monarchy,Amadeus.3,-,Haute_Savoie,French,County,Duchy,,1,new
+Glogow,L,Duchy of Zagan-Glogow,Monarchy,Henryk.5,Bohemia,Zielonogorski,Polish,,Duchy,,1,new
+Gorizia,E,County of Goerz,Monarchy,Meinhard.1,Carinthia,Goriska,Austrian,County,Duchy,,2,new
+Gorizia,M,County of Goerz,Monarchy,Meinhard.3,Austria,Goriska,Austrian,County,Duchy,,2,new
+Gorizia,L,County of Goerz,Monarchy,Meinhard.6,Austria,Goriska,Austrian,County,Duchy,,2,new
+Greater_Poland,M,Duchy of Greater Poland,Monarchy,Wladyslaw.3,-,Poznan,Polish,,Duchy,,3,new; Spindleshanks vs Odonic
+Guelders,E,County of Guelders,Monarchy,Gerard.1,Brabant,Veluwe,Dutch,County,Duchy,,2,new
+Guelders,M,County of Guelders,Monarchy,Gerard.3,Brabant,Veluwe,Dutch,County,Duchy,,2,new
+Guelders,L,Duchy of Guelders,Monarchy,Reinald.3,-,Veluwe,Dutch,,Duchy,,2,new; brother Edward deposes him 1361
+Habsburg,M,County of Habsburg,Monarchy,Rudolf.2,-,Aargau,Swiss,County,Duchy,,3,new; grandfather of King Rudolf I
+Hainaut,E,County of Hainaut,Monarchy,Baldwin.3,Brabant,Nivelles,French,County,Duchy,,1,new
+Hesse,L,Landgraviate of Hesse,Monarchy,Heinrich.2,Mainz,Waldeck_Frankenberg,German,Landgrave,Duchy,,2,new
+Hevelli,E,Hevelli principality,Monarchy,Meinfried,-,Potsdam_Mittelmark,Pomeranian,Tribal,Duchy,,2,"new; pagan, Pribislav-Henry from 1127"
+Hildesheim,M,Prince-Bishopric of Hildesheim,Order,Konrad.2,Brunswick,Hildesheim,Saxon,PrinceBishop,Duchy,Cleric,1,new
+Hildesheim,L,Prince-Bishopric of Hildesheim,Order,Heinrich.3,Luneburg,Hildesheim,Saxon,PrinceBishop,Duchy,Cleric,1,new
+Holland,E,County of Holland,Monarchy,Floris.2,-,Holland,Dutch,County,Duchy,,1,vanilla
+Holland,M,County of Holland,Monarchy,Floris.4,Brabant,Holland,Dutch,County,Duchy,,1,vanilla
+Holland,L,Counties of Holland and Hainaut,Monarchy,William.5,-,Holland,Dutch,County,Duchy,,2,"vanilla; Albert I regent from 1358, also Bavaria-Straubing"
+Holstein,E,County of Holstein,Monarchy,Adolf.1,Saxony,Hamburg,Saxon,County,Duchy,,2,"new; Schauenburg, enfeoffed 1110/11"
+Holstein,L,County of Holstein-Rendsburg,Monarchy,Heinrich.2,-,Rendsburg_Eckernforde,Saxon,County,Duchy,,2,new; Iron Henry
+Julich,E,County of Juelich,Monarchy,Gerhard.2,Brabant,Euskirchen,German,County,Duchy,,1,new
+Julich,M,County of Juelich,Monarchy,Wilhelm.4,Cologne,Euskirchen,German,County,Duchy,,1,new
+Julich,L,Duchy of Juelich,Monarchy,Wilhelm.1,Cologne,Euskirchen,German,,Duchy,,1,new (duke from 1356)
+Kyburg,M,County of Kyburg,Monarchy,Ulrich.3,Swabia,Zurich,Swiss,County,Duchy,,2,new; Zaehringen heirs 1218
+Legnica,L,Duchy of Legnica,Monarchy,Waclaw.1,Bohemia,Legnicko_glogowski,Polish,,Duchy,,2,new
+Liege,E,Prince-Bishopric of Liege,Order,Otbert,Brabant,Verviers,French,PrinceBishop,Duchy,Cleric,2,new
+Liege,M,Prince-Bishopric of Liege,Order,Hugh,Brabant,Verviers,French,PrinceBishop,Duchy,Cleric,2,new
+Liege,L,Prince-Bishopric of Liege,Order,Engelbert,-,Verviers,French,PrinceBishop,Duchy,Cleric,2,new
+Lippe,M,Lordship of Lippe,Monarchy,Hermann.2,Brunswick,Lippe,Saxon,Lordship,Duchy,,1,new
+Lippe,L,Lordship of Lippe,Monarchy,Bernhard.5,Cologne,Lippe,Saxon,Lordship,Duchy,,1,new
+Lithuania,E,Lithuanian tribes,Monarchy,-,-,Trakai,Lithuanian,Tribal,Kingdom,,2,vanilla
+Lithuania,M,Lithuania,Monarchy,Zivinbudas,-,Trakai,Lithuanian,Tribal,Kingdom,,2,vanilla
+Lithuania,L,Grand Duchy of Lithuania,Monarchy,Algirdas,-,Trakai,Lithuanian,,Kingdom,,4,vanilla
+Liutizi,E,Liutizian federation,Monarchy,-,-,Mecklenburgische_Seenplatte,Pomeranian,Tribal,Kingdom,,4,new; pagan
+Lombard_League,M,Lombard League,Confederacy,-,-,Lombardy,Italian,League,Kingdom.H,Diplomat,12,new; renewed March 1226 against Frederick II
+Lorraine,E,Duchy of Upper Lorraine,Monarchy,Simon,-,Lorraine,French,,Duchy,,3,vanilla; Theoderic II until 1115
+Lorraine,M,Duchy of Lorraine,Monarchy,Matthias.2,-,Lorraine,French,,Duchy,,3,vanilla
+Lorraine,L,Duchy of Lorraine,Monarchy,Johan,-,Lorraine,French,,Duchy,,3,vanilla
+Lower_Bavaria,L,Duchy of Lower Bavaria,Monarchy,Stephan.2,-,Landshut,Bavarian,,Duchy,,4,new; Bavaria-Landshut
+Lubeck,L,Free City of Luebeck,Republic,-,Luneburg,Ostholstein,German,FreeCity,Duchy,Merchant,1,"new; head of the Hanse, war with Denmark from 1361"
+Luneburg,L,Duchy of Lueneburg,Monarchy,Wilhelm.2,-,Uelzen,Saxon,,Duchy,,4,new; succession war from 1370
+Luxembourg,E,County of Luxembourg,Monarchy,Wilhelm,Lorraine,Luxembourg,French,County,Duchy,,2,vanilla
+Luxembourg,M,County of Luxembourg,Monarchy,Walram.3,-,Luxembourg,French,County,Duchy,,2,vanilla
+Luxembourg,L,Duchy of Luxembourg and Brabant,Monarchy,Wenczel,-,Luxembourg,French,,Duchy,,4,vanilla
+Lyon,E,Archbishopric of Lyon,Order,Gaucerand,-,Lyonnais,French,Archbishop,Duchy,Cleric,1,new
+Lyon,M,Archbishopric of Lyon,Order,Renaud,-,Lyonnais,French,Archbishop,Duchy,Cleric,1,new
+Magdeburg,E,Archbishopric of Magdeburg,Order,Adelgot,-,Brandenburg,Saxon,Archbishop,Duchy,Cleric,2,new (realm key Brandenburg = Magdeburg)
+Magdeburg,M,Archbishopric of Magdeburg,Order,Albrecht.1,-,Brandenburg,Saxon,Archbishop,Duchy,Cleric,3,new
+Magdeburg,L,Archbishopric of Magdeburg,Order,Otto,-,Brandenburg,Saxon,Archbishop,Duchy,Cleric,2,new
+Mainz,E,Archbishopric of Mainz,Order,Adalbert.1,-,Pfalz,German,Archbishop,Duchy,Cleric,3,new
+Mainz,M,Archbishopric of Mainz,Order,Siegfried.2,-,Pfalz,German,Archbishop,Duchy,Cleric,3,new
+Mainz,L,Electorate of Mainz,Order,Gerlach,-,Pfalz,German,ElectorBishop,Duchy,Cleric,3,new
+Mantua,L,Lordship of Mantua (Gonzaga),Monarchy,Guido,-,Mantova,Italian,Lordship,Duchy,,1,new
+Mark,M,County of the Mark,Monarchy,Adolf.1,Cologne,Markischer_Kreis,German,County,Duchy,,1,new
+Mark,L,County of the Mark,Monarchy,Engelbert.3,Cologne,Markischer_Kreis,German,County,Duchy,,1,new
+Masovia,M,Duchy of Masovia,Monarchy,Konrad.1,-,Mazovia,Mazovian,,Duchy,,4,new; invites the Teutonic Order 1226
+Masovia,L,Duchy of Masovia,Monarchy,Siemowit.3,Poland,Warsawa,Mazovian,,Duchy,,2,new
+Mecklenburg,E,Obodrite principality,Monarchy,Heinrich,Saxony,Ostholstein,Pomeranian,Tribal,Kingdom,,5,new kingdom row (vanilla uses the Mecklenburg realm as owner); Henry of Old Luebeck
+Mecklenburg,M,Lordship of Mecklenburg,Monarchy,Heinrich_Borwin.1,Denmark,Mecklenburg,Pomeranian,Lordship,Duchy,,3,new kingdom row
+Mecklenburg,L,Duchy of Mecklenburg,Monarchy,Albrecht.2,-,Mecklenburg,German,,Duchy,,4,new kingdom row; son Albert becomes king of Sweden 1364
+Meissen,E,Margraviate of Meissen (Wettin),Monarchy,Heinrich.2,-,Meissen,Saxon,German,Duchy,,6,vanilla; Henry II of Eilenburg (b. 1103)
+Meissen,M,Margraviate of Meissen,Monarchy,Heinrich.3,-,Meissen,Saxon,German,Duchy,,6,"vanilla; Henry the Illustrious, minor"
+Meissen,L,Meissen and Thuringia (Wettin),Monarchy,Wilhelm,-,Meissen,Saxon,German,Duchy,,10,vanilla; ruled jointly with Frederick III and Balthasar
+Merania,M,Duchy of Merania (Andechs),Monarchy,Otto.1,-,Bayreuth,Bavarian,,Duchy,,5,"new; also count palatine of Burgundy, brother Berthold patriarch of Aquileia, brother Ekbert bishop of Bamberg"
+Metz,E,Bishopric of Metz,Order,-,Lorraine,Moselle,French,PrinceBishop,Duchy,Cleric,1,new
+Metz,M,Republic of Metz,Republic,-,-,Moselle,French,FreeCity,Duchy,Merchant,1,new
+Metz,L,Republic of Metz,Republic,-,-,Moselle,French,FreeCity,Duchy,Merchant,1,new
+Milan,E,Commune of Milan,Republic,-,-,Lombardy,Italian,Commune,Duchy,Merchant,4,new
+Milan,L,Lordship of Milan (Visconti),Monarchy,Bernabo,-,Lombardy,Italian,Lordship,Duchy,,11,"new; with Galeazzo II in Pavia, imperial vicars"
+Montferrat,E,Marquisate of Montferrat,Monarchy,Ranieri.1,-,Alessandria,Italian,County,Kingdom,,4,new
+Montferrat,M,Marquisate of Montferrat,Monarchy,Guglielmo.6,-,Alessandria,Italian,County,Kingdom,,1,new
+Montferrat,L,Marquisate of Montferrat,Monarchy,Giovanni.2,-,Asti,Italian,County,Kingdom,,1,new; Palaiologos
+Montfort,M,County of Montfort,Monarchy,Hugo.1,Swabia,Bludenz_Bregenzer_Wald,German,County,Duchy,,1,new
+Montfort,L,County of Montfort-Feldkirch,Monarchy,Rudolf.4,Bavaria,Bludenz_Bregenzer_Wald,German,County,Duchy,,1,new
+Moravia,E,Moravian appanages (Brno),Monarchy,Oldrich,Bohemia,Moravia,Moravian,,Duchy,,5,"new; Brno, Olomouc, Znojmo princes"
+Moravia,M,Margraviate of Moravia,Monarchy,Vladislav,Bohemia,Moravia,Moravian,German,Duchy,,5,new; son of Ottokar I
+Moravia,L,Margraviate of Moravia,Monarchy,Jan_Jindrich,Bohemia,Moravia,Moravian,German,Duchy,,4,new; brother of Charles IV
+Muenster,E,Prince-Bishopric of Muenster,Order,Burchard,-,Steinfurt,Saxon,PrinceBishop,Duchy,Cleric,3,new
+Muenster,M,Prince-Bishopric of Muenster,Order,Dietrich.3,-,Steinfurt,Saxon,PrinceBishop,Duchy,Cleric,3,new
+Muenster,L,Prince-Bishopric of Muenster,Order,Adolf.2,-,Steinfurt,Saxon,PrinceBishop,Duchy,Cleric,3,new
+Namur,E,County of Namur,Monarchy,Godfrey,Brabant,Dinant,French,County,Duchy,,1,new
+Namur,M,Margraviate of Namur,Monarchy,Philippe.2,Brabant,Dinant,French,German,Duchy,,1,new
+Namur,L,County of Namur,Monarchy,Guillaume.1,-,Dinant,French,County,Duchy,,1,new
+Naples,L,Kingdom of Naples (Provence),Monarchy,Louis,-,Hautes_Alpes,Italian,,Kingdom,,1,vanilla; only Provence in the frame
+Nassau,E,County of Laurenburg,Monarchy,Dudo,-,Lahn_Dill_Kreis,German,County,Duchy,,1,new
+Nassau,M,County of Nassau,Monarchy,Heinrich.2,-,Lahn_Dill_Kreis,German,County,Duchy,,1,new
+Nassau,L,County of Nassau-Weilburg,Monarchy,Johann.1,Trier,Lahn_Dill_Kreis,German,County,Duchy,,1,new
+Nordmark,E,Northern March (Udonids),Monarchy,Heinrich.2,Saxony,Stendal,Saxon,German,Duchy,,2,new; Henry II of Stade
+Nysa,L,Bishopric of Wroclaw (Nysa),Order,Przeclaw,Bohemia,Nyski,Polish,PrinceBishop,Duchy,Cleric,1,new
+Oldenburg,E,County of Oldenburg,Monarchy,Egilmar.1,Saxony,Ammerland,Saxon,County,Duchy,,2,new
+Oldenburg,M,County of Oldenburg,Monarchy,Otto.1,Muenster,Ammerland,Saxon,County,Duchy,,2,new
+Oldenburg,L,County of Oldenburg,Monarchy,Konrad.1,-,Ammerland,Saxon,County,Duchy,,2,new
+Opava,L,Duchy of Opava-Raciborz,Monarchy,Nikolaus.2,Bohemia,Moravskoslezsky_kraj,Moravian,,Duchy,,2,new
+Opole,M,Duchy of Opole-Raciborz,Monarchy,Kazimierz.1,-,Opolski,Polish,,Duchy,,4,new
+Opole,L,Duchy of Opole,Monarchy,Wladyslaw,Bohemia,Opolski,Polish,,Duchy,,1,new; Wladyslaw Opolczyk
+Osnabruck,E,Prince-Bishopric of Osnabrueck,Order,Gottschalk,Saxony,Osnabruck,Saxon,PrinceBishop,Duchy,Cleric,1,new
+Osnabruck,M,Prince-Bishopric of Osnabrueck,Order,Engelbert.1,Muenster,Osnabruck,Saxon,PrinceBishop,Duchy,Cleric,1,new
+Osnabruck,L,Prince-Bishopric of Osnabrueck,Order,Johann.2,-,Osnabruck,Saxon,PrinceBishop,Duchy,Cleric,1,new
+Paderborn,E,Prince-Bishopric of Paderborn,Order,Heinrich.2,Saxony,Paderborn,Saxon,PrinceBishop,Duchy,Cleric,1,new
+Paderborn,M,Prince-Bishopric of Paderborn,Order,Oliver,Cologne,Paderborn,Saxon,PrinceBishop,Duchy,Cleric,1,new
+Paderborn,L,Prince-Bishopric of Paderborn,Order,Balduin,Cologne,Paderborn,Saxon,PrinceBishop,Duchy,Cleric,1,new
+Padua,L,Lordship of Padua (Carrara),Monarchy,Francesco.1,-,Vicenza,Italian,Lordship,Duchy,,2,new
+Palatinate,L,Electorate of the Palatinate,Monarchy,Ruprecht.1,-,Neckar_Odenwald_Kreis,German,Elector,Duchy,,4,new; Heidelberg + Upper Palatinate
+Passau,M,Prince-Bishopric of Passau,Order,Gebhard,Bavaria,Passau,Bavarian,PrinceBishop,Duchy,Cleric,1,new
+Passau,L,Prince-Bishopric of Passau,Order,Gottfried.2,-,Passau,Bavarian,PrinceBishop,Duchy,Cleric,1,new
+Piedmont,L,Lordship of Piedmont (Savoy-Achaea),Monarchy,Giacomo,Savoy,Savoy,Italian,Lordship,Duchy,,1,new; Amadeus VI moves against James in 1360
+Poland,E,Duchy of Poland,Monarchy,Boleslaw.3,-,Malopolska,Polish,,Duchy,,23,vanilla (capital Krakow instead of Warsawa)
+Poland,M,Seniorate of Krakow,Monarchy,Leszek,-,Malopolska,Polish,Polish,Kingdom,,4,vanilla; Leszek the White
+Poland,L,Kingdom of Poland,Monarchy,Kazimierz.3,-,Malopolska,Polish,,Kingdom,,9,vanilla
+Pomerania,E,Duchy of Pomerania,Monarchy,Warcislaw.1,-,Pomerania,Pomeranian,,Duchy,,4,vanilla; pagan until Otto of Bamberg's missions 1124/28
+Pomerania,M,Duchy of Pomerania,Monarchy,Barnim.1,Denmark,Pomerania,Pomeranian,,Duchy,,7,vanilla
+Pomerania,L,Duchy of Pomerania,Monarchy,Barnim.4,-,Pomerania,Pomeranian,,Duchy,,5,"vanilla; Pomerania-Wolgast, Stettin line under Barnim III"
+Pomerelia,E,Pomerelia,Monarchy,-,-,Kashubia,Pomeranian,Tribal,Duchy,,1,new; conquered by Boleslaw III 1116-19
+Pomerelia,M,Duchy of Pomerelia,Monarchy,Swietopelk.2,-,Kashubia,Pomeranian,,Duchy,,1,new
+Provence,E,County of Provence,Monarchy,Gerberga,-,Hautes_Alpes,Occitan,County,Duchy,,1,new period row; Douce marries Ramon Berenguer III 1112
+Provence,M,County of Provence,Monarchy,Raimon.4,-,Hautes_Alpes,Occitan,County,Duchy,,1,vanilla
+Prussia,E,Old Prussians,Monarchy,-,-,Prussia,Prussian,Tribal,Kingdom,,3,"realm-named, pagan"
+Prussia,M,Old Prussians,Monarchy,-,-,Prussia,Prussian,Tribal,Kingdom,,3,"realm-named, pagan"
+Rugia,E,Rani of Ruegen,Monarchy,-,-,Vorpommern_Rugen,Pomeranian,Tribal,Duchy,,1,"new; pagan, temple of Arkona"
+Rugia,M,Principality of Ruegen,Monarchy,Wizlaw.1,Denmark,Vorpommern_Rugen,Pomeranian,Principality,Duchy,,1,new
+Saluzzo,E,March of Savona (del Vasto),Monarchy,Bonifacio,-,Cuneo,Italian,County,Kingdom,,1,new; Boniface del Vasto
+Saluzzo,M,Marquisate of Saluzzo,Monarchy,Manfredo.3,Savoy,Cuneo,Italian,County,Kingdom,,1,new
+Saluzzo,L,Marquisate of Saluzzo,Monarchy,Tommaso.2,-,Cuneo,Italian,County,Kingdom,,1,new
+Salzburg,E,Archbishopric of Salzburg,Order,Konrad.1,-,Salzburg_und_Umgebung,Bavarian,Archbishop,Duchy,Cleric,2,new
+Salzburg,M,Archbishopric of Salzburg,Order,Eberhard.2,-,Salzburg_und_Umgebung,Bavarian,Archbishop,Duchy,Cleric,2,new
+Salzburg,L,Archbishopric of Salzburg,Order,Ortolf,-,Salzburg_und_Umgebung,Bavarian,Archbishop,Duchy,Cleric,2,new
+Savoy,E,County of Savoy,Monarchy,Amadeus.3,-,Savoie,French,County,Duchy,,4,vanilla (capital moved from Torino)
+Savoy,M,County of Savoy,Monarchy,Tommaso,-,Savoie,French,County,Duchy,,4,vanilla
+Savoy,L,County of Savoy,Monarchy,Amadeo.6,-,Savoie,French,County,Duchy,,4,vanilla
+Saxony,E,Duchy of Saxony,Monarchy,Lothair.3,-,Gifhorn,Saxon,,Duchy,,8,vanilla
+Saxony,M,Duchy of Saxony (Ascanian),Monarchy,Albrecht.1,-,Wittenberg,Saxon,,Duchy,,1,vanilla
+Saxony,L,Electorate of Saxony,Monarchy,Rudolf.2,-,Wittenberg,Saxon,Elector,Duchy,,1,vanilla
+Silesia,M,Duchy of Silesia,Monarchy,Henryk.1,-,Silesia,Polish,,Duchy,,8,new; Henry the Bearded
+Sion,E,Prince-Bishopric of Sion,Order,-,Savoy,Valais,Swiss,PrinceBishop,Duchy,Cleric,1,new
+Sion,M,Prince-Bishopric of Sion,Order,Landri,Savoy,Valais,Swiss,PrinceBishop,Duchy,Cleric,1,new
+Sion,L,Prince-Bishopric of Sion,Order,Guichard,-,Valais,Swiss,PrinceBishop,Duchy,Cleric,1,new
+St_Gallen,E,Prince-Abbey of St. Gallen,Order,-,Swabia,St_Gallen,Swiss,PrinceAbbot,Duchy,Cleric,1,new
+St_Gallen,M,Prince-Abbey of St. Gallen,Order,Rudolf,Swabia,St_Gallen,Swiss,PrinceAbbot,Duchy,Cleric,1,new
+St_Gallen,L,Prince-Abbey of St. Gallen,Order,Georg,Bavaria,St_Gallen,Swiss,PrinceAbbot,Duchy,Cleric,1,new
+Strasbourg,L,Free City of Strasbourg,Republic,-,-,Alsace,German,FreeCity,Duchy,Merchant,2,new
+Styria,E,Margraviate of Styria (Otakars),Monarchy,Otakar.2,-,West_und_Sudsteiermark,Austrian,German,Duchy,,5,new; formally under Carinthia
+Swabia,E,Duchy of Swabia (Staufer),Monarchy,Friedrich.2,-,Swabia,German,,Duchy,,11,vanilla
+Swabia,M,Duchy of Swabia (Staufer),Monarchy,Heinrich.7,-,Alb_Donau_Kreis,German,,Duchy,,14,vanilla; Ulm as seat
+Swidnica,L,Duchy of Swidnica-Jawor,Monarchy,Bolko.2,-,Walbrzyski,Polish,,Duchy,,2,"new; last independent Silesian duke, to Bohemia 1368/92"
+Switzerland,L,Old Swiss Confederacy,Confederacy,-,-,Luzern,Swiss,,Kingdom,,3,"vanilla base row, no period rows"
+Teutonic_Order,L,Teutonic Order,Order,Winrich,-,Pomerelia,German,,Kingdom.H,,6,vanilla
+Thuringia,E,Ludowingian Thuringia,Monarchy,Ludwig,-,Wartburgkreis,German,County,Duchy,,6,new; Louis the Springer (landgraves from 1131)
+Thuringia,M,Landgraviate of Thuringia and Hesse,Monarchy,Ludwig.4,-,Wartburgkreis,German,Landgrave,Duchy,,6,new; husband of St. Elisabeth
+Trento,E,Prince-Bishopric of Trent,Order,Gebhard,Carinthia,Trento,Italian,PrinceBishop,Duchy,Cleric,2,new
+Trento,M,Prince-Bishopric of Trent,Order,Gerardo,-,Trento,Italian,PrinceBishop,Duchy,Cleric,1,new
+Trento,L,Prince-Bishopric of Trent,Order,Meinardo,-,Trento,Italian,PrinceBishop,Duchy,Cleric,1,new
+Trier,E,Archbishopric of Trier,Order,Bruno,-,Eifelkreis_Bitburg_Prum,German,Archbishop,Duchy,Cleric,3,new
+Trier,M,Archbishopric of Trier,Order,Dietrich.2,-,Eifelkreis_Bitburg_Prum,German,Archbishop,Duchy,Cleric,3,new
+Trier,L,Electorate of Trier,Order,Boemund.2,-,Eifelkreis_Bitburg_Prum,German,ElectorBishop,Duchy,Cleric,3,new
+Tuscany,E,March of Tuscany (Canossa),Monarchy,Matilda,-,Massa_Carrara,Italian,County,Kingdom,,7,"new; Matilda d. 1115, imperial vicar from 1111"
+Tyrol,M,County of Tyrol,Monarchy,Albert.4,-,Bozen,Bavarian,County,Duchy,,1,vanilla
+Utrecht,E,Prince-Bishopric of Utrecht,Order,Godebald,Brabant,Twente,Dutch,PrinceBishop,Duchy,Cleric,1,new
+Utrecht,M,Prince-Bishopric of Utrecht,Order,Otto.2,Muenster,Twente,Dutch,PrinceBishop,Duchy,Cleric,1,new; killed at Ane 1227
+Utrecht,L,Prince-Bishopric of Utrecht,Order,Jan,-,Twente,Dutch,PrinceBishop,Duchy,Cleric,1,new
+Valentinois,L,County of Valentinois and Diois,Monarchy,Aymar.6,-,Drome,Occitan,County,Duchy,,1,new
+Verona,L,Lordship of Verona (della Scala),Monarchy,Cansignorio,-,Verona,Italian,Lordship,Duchy,,1,new; murdered his brother Cangrande II Dec 1359
+Vidin,L,Tsardom of Vidin,Monarchy,Ivan_Stratsimir,-,Vidin,Bulgarian,,Kingdom,,1,"vanilla kingdom, check period rows"
+Wurttemberg,L,County of Wuerttemberg,Monarchy,Eberhard.2,-,Heilbronn,German,County,Duchy,,6,new
+Wurzburg,E,Bishopric of Wuerzburg,Order,Erlung,-,Main_Spessart,German,PrinceBishop,Duchy,Cleric,5,new
+Wurzburg,M,Prince-Bishopric of Wuerzburg,Order,Dietrich,-,Main_Spessart,German,PrinceBishop,Duchy,Cleric,3,new
+Wurzburg,L,Prince-Bishopric of Wuerzburg,Order,Albrecht.2,-,Main_Spessart,German,PrinceBishop,Duchy,Cleric,3,new
+Yotvingia,E,Yotvingians,Monarchy,-,-,Grodno,Yotvingian,,Kingdom,,1,vanilla
+Yotvingia,M,Yotvingians,Monarchy,-,-,Grodno,Yotvingian,,Kingdom,,1,vanilla
+Zahringen,E,Duchy of Zaehringen,Monarchy,Berthold.2,-,Breisgau_Hochschwarzwald,German,,Duchy,,5,new; Berthold II d. April 1111
+Zollern,L,Burgraviate of Nuremberg,Monarchy,Friedrich.5,-,Bayreuth,German,Burgrave,Duchy,,3,"new; Hohenzollern, Plassenburg"

@@ -1,0 +1,53 @@
+// Settlement types by terrain for the HRE map. tools/import_hre.py marks every realm in realms.def
+// with terrain_flat / terrain_hills / terrain_mountains (from the relief slope; has_mountains = the
+// mountainous ones) and wine_region (data/wine_provinces.txt). A weight's sub-entries are added when
+// the realm def has that bool set (ProvinceFeatureDistribution.SettlementCountMap.GetWeight), so
+// these only nudge the base weights of vanilla or URAH Balance. Features follow the settlement
+// types: mines give iron and the chance of gold / silver / lodestone, quarries marble / lime,
+// vineyards wine, crop and cattle farms food.
+
+SettlementsRandomizationWeights
+{
+	Farm
+	{
+		terrain_flat = 8
+		terrain_mountains = -8
+	}
+}
+
+SpecialSettlementsRandomizationWeights
+{
+	Mine
+	{
+		terrain_mountains = 45  // the mining regions of the Alps (gold, silver, lodestone: hre_features.def)
+		terrain_hills = 5
+		terrain_flat = -6
+	}
+	Quarry = 8  // vanilla 5: marble (the quarry's default feature) in ~28 provinces
+	{
+		terrain_mountains = 4
+		terrain_hills = 2
+	}
+	SheepFarm
+	{
+		terrain_hills = 2
+		terrain_mountains = 2
+	}
+	CattleFarm
+	{
+		terrain_flat = 3
+	}
+	FlaxField
+	{
+		terrain_flat = 2
+	}
+	// vineyards only where wine was really grown (rarely elsewhere)
+	Vineyard = 1
+	{
+		wine_region = 28
+	}
+}
+
+// at most 2 special settlements (mines, farms, vineyards ...) per province instead of 3: each brings a
+// province feature, and 3 left a quarter of the provinces with 4+ features (hre_features.def)
+Settlement.max_specal_settlements_per_realm = 2

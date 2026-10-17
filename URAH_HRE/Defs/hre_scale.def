@@ -1,0 +1,7 @@
+// URAH HRE map: travel speeds for the map's scale. In world units an HRE province is ~1.2x as
+// wide as a vanilla HRE realm (125 vs 103 units across), so armies and travellers move 1.2x as fast
+// to cross a province in vanilla time. Only loaded while the URAH_HRE mod is active.
+Army
+{
+	world_move_speed = 4.8 // vanilla 4
+}
