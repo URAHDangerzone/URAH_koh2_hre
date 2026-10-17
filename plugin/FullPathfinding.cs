@@ -27,10 +27,14 @@ namespace URAH_HRE
 
         /// <summary>
         /// Road bit (1) on the nodes under the mod's RoadsTrapezoidData.bin (tools/make_hre_roads.py), like
-        /// the game's BuildRoads: cheaper travel, walkable on any slope. Sea and coast nodes keep their bits.
+        /// the game's BuildRoads: cheaper travel, walkable on any slope. Sea, lake and coast nodes keep their
+        /// bits. A road over a river makes a bridge: the river bit goes, like the gaps vanilla's rivers
+        /// have under roads, so armies on the road walk across instead of the river jump (a 10 s tent
+        /// stop, Army.HandleRiverCrossing).
         /// </summary>
-        private static int StampRoads(string path, int w, int h, byte[] bits)
+        private static int StampRoads(string path, int w, int h, byte[] bits, out int bridges)
         {
+            bridges = 0;
             if (path == null || !System.IO.File.Exists(path))
             {
                 return 0;
@@ -46,11 +50,17 @@ namespace URAH_HRE
                     continue; // road terminator
                 }
                 int i = (int)z * w + (int)x;
-                if ((int)x < w && (int)z < h && (bits[i] & 0x0E) == 0 && (bits[i] & 1) == 0)
+                if ((int)x >= w || (int)z >= h || (bits[i] & 0x1C) != 0 || (bits[i] & 1) != 0)
                 {
-                    bits[i] |= 1;
-                    stamped++;
+                    continue;
                 }
+                if ((bits[i] & 2) != 0)
+                {
+                    bits[i] &= unchecked((byte)~2);
+                    bridges++;
+                }
+                bits[i] |= 1;
+                stamped++;
             }
             return stamped;
         }
@@ -202,7 +212,7 @@ namespace URAH_HRE
             int mountainNodes = StampMountains(terrain.Mountains, w, h, slope, bits);
             byte[] riverOffsets = new byte[w * h];
             int riverNodes = StampRivers(terrain.Rivers, w, h, bits, riverOffsets, out int crossings);
-            int roads = StampRoads(roadsPath, w, h, bits);
+            int roads = StampRoads(roadsPath, w, h, bits, out int bridges);
             byte[] lsa = BuildLsa(w, h, slope, bits, (int)pf.settings.max_slope, out int areas, out int dropped);
             long lowMs = watch.ElapsedMilliseconds;
 
@@ -229,7 +239,7 @@ namespace URAH_HRE
                 }
             }
             Plugin.Log.LogInfo($"Map pathfinding: {w}x{h} nodes, {land} land, {coast} coast, {areas} land areas " +
-                               $"({dropped} smaller than {MinLandArea} nodes left impassable), {riverNodes} river nodes, {crossings} river crossings, {roads} road nodes, {mountainNodes} mountain nodes, {lowMs} ms");
+                               $"({dropped} smaller than {MinLandArea} nodes left impassable), {riverNodes} river nodes, {crossings} river crossings, {roads} road nodes ({bridges} bridges), {mountainNodes} mountain nodes, {lowMs} ms");
 
             ResetHighGrid(data);
             HighGrid.Patch(pf, 0, w - 1, 0, h - 1, setOcean: true);
