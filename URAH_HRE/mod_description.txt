@@ -1,7 +1,23 @@
+AI disclosure: this mod was made with the help of AI (Claude, by Anthropic).
+
 The campaign map replaced by the Holy Roman Empire at about 2.6x the vanilla detail: 302 provinces
 from the Low Countries to Hungary and from Denmark to northern Italy, with real terrain, rivers,
 roads and mountains, and three historical starting periods (1110, 1224, 1360) with the Empire's
 princes, prince-bishops, free cities and Italian communes.
 
-Requires the URAH_HRE and URAH_MapKit BepInEx plugins (see README / INSTALL.txt). Without it this mod does nothing.
+Requires the URAH_Starter package, installed once: it brings BepInEx 5 and the URAH_Loader plugin
+(unzip into the game folder, see INSTALL.md inside):
+https://github.com/URAHDangerzone/URAH_koh2_releases/releases
+Without it this mod does nothing.
 Do not activate together with URAH Iceland. Experimental.
+
+WARNING: this mod contains program code. Its plugins/ folder holds two DLLs (URAH_HRE.dll,
+URAH_MapKit.dll) that run inside the game with the full rights of your Windows user, like any
+program you start. URAH_Loader only loads them when they carry the URAH release signature, so a
+file changed by anyone else is refused. They are built and signed by GitHub Actions from the public
+source below; the GitHub release lists the SHA-256 of every file.
+
+Source:
+Map and URAH_HRE plugin: https://github.com/URAHDangerzone/URAH_koh2_hre
+URAH_MapKit plugin: https://github.com/URAHDangerzone/URAH_koh2_mapkit
+URAH_Loader: https://github.com/URAHDangerzone/URAH_koh2_loader
