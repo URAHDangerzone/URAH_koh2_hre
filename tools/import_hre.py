@@ -85,11 +85,19 @@ COASTAL_MIN_SHORE = 25    # coastline pixels (world units) a province needs for 
 COAST_PER_VILLAGE = 30    # coastline (world units) per possible coastal village ...
 COASTAL_VILLAGES_MAX = 4  # ... at most this many (vanilla 1-4); the number is drawn from 1 to that
 COASTAL_VILLAGE_DIST = 10  # a village this close to the sea is coastal
+COASTAL_VILLAGE_SPACING = 0.5  # a shore village keeps this share of the province's village spacing
+                               # (sqrt(area / settlements)) from the others; else it goes inland
 SHORE_SLOPE = 20.0  # shore sites may be this steep (the beach ramp is ~25 deg within 3 units of the water)
 STEEP_SHORE_SLOPE = 30.0  # ... or this steep on a cliff coast without such sites (Liguria)
 STEEP_SHORE_MIN = 50  # shore site pixels a province needs before the steep ones are left out
 COASTAL_TOWN_DIST = 15    # a town this close to the sea counts as coastal
 COASTAL_CASTLE_SHIFT = 100  # a coastal castle moves at most this far from its town to reach the shore
+INLAND_CASTLES = {"London"}  # keys whose castle stays at its town although vanilla made it coastal
+CASTLE_BORDER_SHARE = 0.5  # a castle keeps this share of the province's inradius from its land borders ...
+CASTLE_BORDER_MIN, CASTLE_BORDER_MAX = 5, 35  # ... clipped to this (vanilla: castle at 0.71 of the inradius, p10 0.33)
+CASTLE_MAX_SHIFT = 40  # ... moving at most this far from its town (vanilla castles are ~30 units off the real place)
+FRAME_MARGIN_CASTLE = 25  # world units from the map frame (vanilla: no settlement closer than 25)
+FRAME_MARGIN_VILLAGE = 15
 VILLAGE_BORDER_WEIGHT = 2.0  # village spacing score: min(distance to other sites, this * distance to border)
 # villages per province, where there is room: provinces ranked by village_score() get these counts,
 # from the lowest score up (min 4, median 6; vanilla 2-10, median 5)
@@ -101,6 +109,8 @@ VILLAGE_JITTER = 0.12      # ... + gaussian noise of this sd
 MIN_VILLAGES = 4  # fewer on flat land (mountain provinces): fill up on steeper ground ...
 FALLBACK_SLOPES = (18, 22, 26, 30)  # ... under these slope limits (degrees, 5 px window), in turn
 FALLBACK_SPACING = 6  # ... at least this far apart (flat land: 8)
+VILLAGE_MIN_SPACING = 0.3  # share of the province's village spacing (sqrt(area / settlements)) that every
+                           # village keeps from the others, if more than the above (narrow valleys: Valais)
 FLAT_SLOPE = 6.7   # median relief slope (degrees) below which a province counts as flat
 HILL_SLOPE = 10.4  # ... and above which (not mountainous) as hilly
 MOUNTAIN_STEEP = 0.10  # share of the relief steeper than 30 deg above which it counts as mountainous
@@ -638,7 +648,21 @@ def main() -> None:
     edge[:, :-1] |= rid[:, 1:] != rid[:, :-1]
     edge[1:, :] |= rid[1:, :] != rid[:-1, :]
     edge[:-1, :] |= rid[1:, :] != rid[:-1, :]
+    land_edge = np.zeros_like(land)  # borders between two land provinces only (coasts left out)
+    for a, b, sa, sb in ((rid[:, 1:], rid[:, :-1], np.s_[:, 1:], np.s_[:, :-1]),
+                         (rid[1:, :], rid[:-1, :], np.s_[1:, :], np.s_[:-1, :])):
+        d = (a != b) & (a > 0) & (b > 0)
+        land_edge[sa] |= d
+        land_edge[sb] |= d
+    # the map frame is a border too: past it is void, settlements there hang over the edge
+    for e in (edge, land_edge):
+        e[0, :] = e[-1, :] = True
+        e[:, 0] = e[:, -1] = True
     border_dist = ndimage.distance_transform_edt(~edge)
+    land_border_dist = ndimage.distance_transform_edt(~land_edge)
+    yy, xx = np.ogrid[:H, :W]
+    frame_dist = np.minimum(np.minimum(xx, W - 1 - xx), np.minimum(yy, H - 1 - yy))
+    inradius = ndimage.maximum(land_border_dist, rid, index=np.arange(1, n_land + 1))
 
     # political view relief: realmsdata blue channel for every land pixel (fit on vanilla:
     # B ~ 2 + 2.3 * slope in degrees; sea is set to 255 by the plugin)
@@ -654,7 +678,7 @@ def main() -> None:
         return norm(s).replace("ue", "u").replace("oe", "o").replace("ae", "a")
 
     wanted = {i + 1: plain(periods[p["key"]]["suggested_town"]) for i, p in enumerate(provinces)
-              if p["kind"] != "province" and periods[p["key"]]["suggested_town"]}
+              if periods[p["key"]]["suggested_town"]}
     biggest, towns, chosen_town = {}, defaultdict(list), {}
     with open(GEO / "cities5000.txt", encoding="utf-8") as f:
         for line in f:
@@ -701,6 +725,8 @@ def main() -> None:
     next_id = FIRST_NEW_SETTLEMENT_ID
     town_keys = set()
     settlement_defs = []
+    moved_castles = []
+    renamed_towns = []
     for i, p in enumerate(provinces):
         r = i + 1
         mine = rid == r
@@ -708,9 +734,18 @@ def main() -> None:
         vc = vcastles.get(donor["vanilla"]["castle"]) if donor["vanilla"] else None
         if p["kind"] == "province" and vc:
             target = pp.lonlat_to_px(float(p["vanilla"]["lon"]), float(p["vanilla"]["lat"]))
-            if not mine[int(np.clip(target[1], 0, H - 1)), int(np.clip(target[0], 0, W - 1))]:
-                target = biggest.get(r, (0, None, *centroid[r]))[2:]
             town = p["vanilla"]["castle"]
+            at = int(rid[int(np.clip(target[1], 0, H - 1)), int(np.clip(target[0], 0, W - 1))])
+            if at != r:
+                # the vanilla castle's place lies in another land province (Kent's Canterbury in
+                # London's): with a suggested town in data/periods.csv the castle goes there and
+                # takes its name, else it moves to the biggest town and keeps the vanilla name
+                if at > 0 and r in chosen_town:
+                    renamed_towns.append(f"{p['key']} ({town} -> {chosen_town[r][1]})")
+                    _, town, *target = chosen_town[r]
+                    p["renamed_town"] = True
+                else:
+                    target = biggest.get(r, (0, None, *centroid[r]))[2:]
             sid = vc[0]
         else:
             if r in chosen_town:
@@ -724,7 +759,7 @@ def main() -> None:
             sid = next_id
             next_id += 1
         wants_coast = coast_len.get(r, 0) >= COASTAL_MIN_SHORE and (
-            vgeo.get(p["key"], True) if p["kind"] == "province" else True)
+            vgeo.get(p["key"], True) if p["kind"] == "province" else True) and p["key"] not in INLAND_CASTLES
         if r in chosen_town and p["kind"] != "province":  # the suggested town decides
             wants_coast = bool(sea_dist[int(target[1]), int(target[0])] <= COASTAL_TOWN_DIST)
         elif wants_coast and p["kind"] != "province":
@@ -732,16 +767,26 @@ def main() -> None:
             if near:  # the biggest coastal town becomes the castle town
                 _, town, tx, ty = max(near)
                 target = (tx, ty)
-        ok = mine & flat & (sea_dist >= 3) & (border_dist >= 5)
+        ok = mine & flat & (sea_dist >= 3) & (border_dist >= 5) & (frame_dist >= FRAME_MARGIN_CASTLE)
         if wants_coast:  # not to a far shore of the province (London to the Kent coast)
-            yy, xx = np.ogrid[:H, :W]
             ok_coast = ok & (sea_dist <= 9) & \
                 ((xx - target[0]) ** 2 + (yy - target[1]) ** 2 <= COASTAL_CASTLE_SHIFT ** 2)
             if ok_coast.any():
                 ok = ok_coast
-        cx, cy = pick_site(ok, target, mine & (sea_dist >= 2))
+        # away from the land borders like vanilla's castles: the nearest site to the town at least
+        # `margin` inside, within CASTLE_MAX_SHIFT of it; else the site deepest inside there
+        margin = float(np.clip(CASTLE_BORDER_SHARE * inradius[i], CASTLE_BORDER_MIN, CASTLE_BORDER_MAX))
+        reach = ok & ((xx - target[0]) ** 2 + (yy - target[1]) ** 2 <= CASTLE_MAX_SHIFT ** 2)
+        if (reach & (land_border_dist >= margin)).any():
+            ok = reach & (land_border_dist >= margin)
+        elif reach.any():
+            ok = reach & (land_border_dist >= land_border_dist[reach].max() - 1)
+        cx, cy = pick_site(ok, target, mine & (sea_dist >= 2) & (frame_dist >= FRAME_MARGIN_CASTLE))
+        shift = float(np.hypot(cx - target[0], cy - target[1]))
+        if shift > CASTLE_MAX_SHIFT:
+            moved_castles.append(f"{p['key']} ({town}, {shift:.0f})")
         coastal = bool(sea_dist[cy, cx] < 12)
-        if p["kind"] != "province":
+        if p["kind"] != "province" or p.get("renamed_town"):
             tk = ascii_key(town)
             while tk in town_keys or tk in vanilla_names or tk in used:
                 tk += "_town"
@@ -757,9 +802,10 @@ def main() -> None:
         # villages: farthest-point sampling on flat land; the score also counts the distance to the
         # province border, so they spread through the province instead of lining its edge
         n_vill = n_villages[p["key"]]
-        cand = mine & flat & (sea_dist >= 2) & (border_dist >= 4)
+        cand = mine & flat & (sea_dist >= 2) & (border_dist >= 4) & (frame_dist >= FRAME_MARGIN_VILLAGE)
         if coast_len.get(r, 0) >= COASTAL_MIN_SHORE:  # the flat test rules out the whole shore strip
-            strip = mine & (sea_dist >= 3) & (sea_dist < COASTAL_VILLAGE_DIST) & (border_dist >= 4)
+            strip = mine & (sea_dist >= 3) & (sea_dist < COASTAL_VILLAGE_DIST) & (border_dist >= 4) & \
+                (frame_dist >= FRAME_MARGIN_VILLAGE)
             cand |= strip & (shore_ok if (strip & shore_ok).sum() >= STEEP_SHORE_MIN else shore_steep)
         ys, xs = np.nonzero(cand)
         if len(ys) > 4000:  # thin out, but keep every shore site
@@ -776,25 +822,31 @@ def main() -> None:
         n_coast = int(rng.integers(1, 1 + np.clip(coast_len[r] // COAST_PER_VILLAGE, 1, COASTAL_VILLAGES_MAX))) \
             if coast_len.get(r, 0) >= COASTAL_MIN_SHORE else 0
         shore = sea_dist[ys, xs] < COASTAL_VILLAGE_DIST
+        spacing = np.sqrt(p["area"] / (n_vill + 1))
+        shore_spacing = max(8.0, COASTAL_VILLAGE_SPACING * spacing)
+        min_spacing = max(8.0, VILLAGE_MIN_SPACING * spacing)
         for k in range(n_vill):
-            on_shore = k < n_coast and (shore & (d >= 8)).any()
+            on_shore = k < n_coast and (shore & (d >= shore_spacing)).any()
             if len(d) == 0 or d.max() < 8:
                 break
             j = int(np.argmax(np.where(shore, d, -1.0) if on_shore else np.minimum(d, inner)))
+            if d[j] < min_spacing:  # no room left on flat land; the fallback below may add some
+                break
             chosen.append((int(xs[j]), int(ys[j])))
             d = np.minimum(d, np.hypot(xs - xs[j], ys - ys[j]))
         # mountain provinces with little flat land: more villages on steeper ground, flattest first
         for limit in FALLBACK_SLOPES:
             if len(chosen) - 1 >= MIN_VILLAGES:
                 break
-            fys, fxs = np.nonzero(mine & (relief < limit) & ~riverbed & (sea_dist >= 2) & (border_dist >= 3))
+            fys, fxs = np.nonzero(mine & (relief < limit) & ~riverbed & (sea_dist >= 2) & (border_dist >= 3)
+                                  & (frame_dist >= FRAME_MARGIN_VILLAGE))
             if len(fys) == 0:
                 continue
             fd = np.min([np.hypot(fxs - vx, fys - vy) for vx, vy in chosen], axis=0)
             finner = VILLAGE_BORDER_WEIGHT * border_dist[fys, fxs]
             while len(chosen) - 1 < MIN_VILLAGES:
                 j = int(np.argmax(np.minimum(fd, finner)))
-                if fd[j] < FALLBACK_SPACING:
+                if fd[j] < max(FALLBACK_SPACING, VILLAGE_MIN_SPACING * spacing):
                     break
                 chosen.append((int(fxs[j]), int(fys[j])))
                 fd = np.minimum(fd, np.hypot(fxs - fxs[j], fys - fys[j]))
@@ -813,6 +865,10 @@ def main() -> None:
         "// Generated by tools/import_hre.py: replaces every europe settlement.\nSettlements\n{\n\tdelete europe\n\t{\n"
         + "\n".join(settlement_defs) + "\t}\n}\n", encoding="utf-8")
     print(f"{len(settlement_defs)} settlements ({n_land} castles)")
+    if renamed_towns:
+        print(f"vanilla castles named after their suggested town: {', '.join(renamed_towns)}")
+    if moved_castles:
+        print(f"castles more than {CASTLE_MAX_SHIFT} units from their town: {', '.join(moved_castles)}")
 
     # ---- display names: modern administrative names become the province's main town
     taken_names = {p["name"] for p in provinces if not ADMIN_NAME.search(p["name"])}
@@ -942,7 +998,11 @@ def main() -> None:
     for p in provinces:
         donor = provinces[p["donor"] - 1]["key"]
         if p["kind"] == "province" or p["key"] in KEEP_VANILLA_ROWS:
-            table.extend(vrows[p["key"]])
+            for cells in vrows[p["key"]]:
+                if p.get("renamed_town") and "." not in cells[0]:
+                    cells = list(cells)
+                    cells[1] = p["town_key"]
+                table.append(cells)
             continue
         for cells in vrows[donor]:
             cells = list(cells)
@@ -1162,6 +1222,7 @@ def main() -> None:
     for p in provinces:
         if p["kind"] != "province":
             names["tn_" + p["key"]] = p["display"]
+        if "town_key" in p:
             names["tn_" + p["town_key"]] = p["town_name"]
     knames = {k: a for k, a in kingdom_arms.items() if a["name_en"]}
     vchars = set()

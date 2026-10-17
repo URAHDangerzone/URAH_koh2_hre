@@ -31,7 +31,7 @@ color,key,province,country,suggested_town,E_1110,M_1224,L_1360,note
 #caca3f,Neufchateau,Arr. Neufchâteau,BE,,Luxembourg,Luxembourg,Luxembourg,
 #a63ed1,Dinant,Arr. Dinant,BE,,Namur,Namur,Namur,
 #5bb982,Valais,Valais,CH,,Sion,Sion,Sion,Prince-bishopric of Sion; Lower Valais Savoyard
-#b55e52,Vaud,Vaud,CH,,Geneva,Geneva,Savoy,L: Amadeus VI bought Vaud 1359; Geneva city under its bishop
+#b55e52,Vaud,Vaud,CH,Lausanne,Geneva,Geneva,Savoy,L: Amadeus VI bought Vaud 1359; main town Lausanne (bishopric); Geneva and its canton went to Haute-Savoie on the map
 #7a8eef,Bern,Bern,CH,,Zahringen,Bern,Switzerland,"Bern founded 1191 by Zaehringen, free imperial city 1218, joins the Confederacy 1353"
 #95d161,Delemont,Delémont,CH,Porrentruy,Basel,Basel,Basel,Prince-bishopric of Basel (Jura); Solothurn imperial city
 #e563c5,Freiburg,Freiburg,CH,,Zahringen,Kyburg,Austria,"Fribourg founded 1157 (Zaehringen), Kyburg 1218, Habsburg 1277"
@@ -40,7 +40,7 @@ color,key,province,country,suggested_town,E_1110,M_1224,L_1360,note
 #6125c6,Zurich,Zürich,CH,,Zahringen,Kyburg,Switzerland,E: Zaehringen imperial reeves; L: joins 1351
 #4fa055,St_Gallen,St. Gallen,CH,,St_Gallen,St_Gallen,St_Gallen,Prince-abbey; Glarus joins the Confederacy 1352
 #c52346,Luzern,Luzern,CH,,Swabia,Habsburg,Switzerland,Forest cantons + Lucerne (1332) + Zug (1352)
-#6eabe6,Ticino,Ticino,CH,,Milan,Lombard_League,Milan,"Como's lands; Como sided with the emperor 1220s, Visconti from 1335"
+#6eabe6,Ticino,Ticino,CH,Bellinzona,Milan,Lombard_League,Milan,"Como's lands; Como sided with the emperor 1220s, Visconti from 1335"
 #aac63a,Bohemia,Středočeský kraj,CZ,,Bohemia,Bohemia,Bohemia,capital (Prague)
 #ac49b6,Jihocesky_kraj,Jihočeský kraj,CZ,,Bohemia,Bohemia,Bohemia,
 #419072,Plzensky_kraj,Plzeňský kraj,CZ,,Bohemia,Bohemia,Bohemia,
@@ -200,7 +200,7 @@ color,key,province,country,suggested_town,E_1110,M_1224,L_1360,note
 #7197ea,Luxembourg,Luxembourg,LU,,Luxembourg,Luxembourg,Luxembourg,
 #7fae36,Friesland,Noord-Drenthe,NL,Groningen,Frisia,Frisia,Frisia,Frisian freedom; Groningen / Drenthe under the bishop of Utrecht
 #9c1b8f,Twente,Twente,NL,Deventer,Utrecht,Utrecht,Utrecht,"Oversticht (Deventer, Zwolle); Utrecht city lies in the Holland province"
-#339683,Veluwe,Veluwe,NL,Nijmegen,Guelders,Guelders,Guelders,capital (Arnhem / Nijmegen)
+#339683,Veluwe,Veluwe,NL,Arnhem,Guelders,Guelders,Guelders,capital (Arnhem / Nijmegen)
 #c77621,Holland,Utrecht,NL,,Holland,Holland,Holland,The Hague; Utrecht city
 #4427a9,Zuidoost_Noord_Brabant,Zuidoost-Noord-Brabant,NL,'s-Hertogenbosch,Brabant,Brabant,Luxembourg,"'s-Hertogenbosch, Breda"
 #3cd431,Noord_Limburg,Noord-Limburg,NL,Roermond,Guelders,Guelders,Guelders,Upper Quarter (Roermond); Maastricht shared by Liege and Brabant
@@ -294,7 +294,7 @@ color,key,province,country,suggested_town,E_1110,M_1224,L_1360,note
 #6133ea,Yorkshire,North Yorkshire CC,UK,,England,England,England,
 #26cb1f,Nottinghamshire,Lincolnshire,UK,,England,England,England,
 #d13b6d,Warwickshire,Staffordshire CC,UK,,England,England,England,
-#4cb0ed,Kent,Suffolk,UK,,England,England,England,
+#4cb0ed,Kent,Suffolk,UK,Colchester,England,England,England,
 #a4ae36,London,Harrow and Hillingdon,UK,,England,England,England,
 #7b318e,Hampshire,Oxfordshire,UK,,England,England,England,
 #37d386,Wiltshire,Wiltshire CC,UK,,England,England,England,
