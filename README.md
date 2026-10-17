@@ -7,7 +7,7 @@ terrain, rivers and mountains from real elevation data, and three historical sta
 
 It is a data mod (`URAH_HRE/`) plus a BepInEx 5 plugin (`plugin/`, URAH_HRE) that builds the
 terrain, rivers, mountains, trees and pathfinding at runtime. It needs the
-[URAH_MapKit](../URAH_mapkit) plugin, which makes the realm map and the political view moddable.
+[URAH_MapKit](../URAH_koh2_mapkit) plugin, which makes the realm map and the political view moddable.
 
 ## Playing
 

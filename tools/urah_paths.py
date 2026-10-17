@@ -1,6 +1,6 @@
 """Paths of this mod repo and of the URAH_shared python modules, which it puts on sys.path.
 
-URAH_shared is the workspace's shared/ when this repo sits in koh2-knowledge/mods/, else the
+URAH_shared is the workspace's shared/ when this repo sits in URAH_koh2_knowledge/mods/, else the
 submodule external/URAH_shared. VANILLA is the game's data folder as shipped (Maps, Defs, Texts):
 $KOH2_VANILLA, else KoH2Data/Sovereign in the workspace.
 """

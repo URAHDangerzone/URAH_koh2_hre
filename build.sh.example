@@ -5,7 +5,7 @@
 # from the environment. Run with the game closed.
 set -e
 cd "$(dirname "$0")"
-W=$(cd ../.. && pwd)  # the koh2-knowledge workspace, when this repo sits in its mods/
+W=$(cd ../.. && pwd)  # the URAH_koh2_knowledge workspace, when this repo sits in its mods/
 
 # the game's data folder as shipped (Maps, Defs, Texts), extracted from your own install
 KOH2_VANILLA=${KOH2_VANILLA:-$W/KoH2Data/Sovereign}

@@ -4,7 +4,7 @@
     <AssemblyName>URAH_HRE</AssemblyName>
     <RootNamespace>URAH_HRE</RootNamespace>
     <URAHModLink>true</URAHModLink>
-    <!-- shared/ of the workspace (koh2-knowledge) when there, else the submodule -->
+    <!-- shared/ of the workspace (URAH_koh2_knowledge) when there, else the submodule -->
     <URAHShared Condition="'$(URAHShared)' == '' and Exists('$(MSBuildProjectDirectory)/../../../shared/URAH.Plugin.props')">$(MSBuildProjectDirectory)/../../../shared</URAHShared>
     <URAHShared Condition="'$(URAHShared)' == ''">$(MSBuildProjectDirectory)/../external/URAH_shared</URAHShared>
   </PropertyGroup>
