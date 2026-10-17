@@ -10,3 +10,5 @@ data/geo/*.geojson
 data/geo/cities5000.*
 data/fonts/*.ttf
 /build.sh
+# signed plugins of a release (tools/package_hre.py --release), never committed
+URAH_HRE/plugins/

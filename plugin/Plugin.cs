@@ -20,7 +20,7 @@ namespace URAH_HRE
     {
         public const string Guid = "urah.koh2.hre";
         public const string Name = "URAH_HRE";
-        public const string Version = "0.26.0";
+        public const string Version = URAH.BuildVersion.Value; // plugin/version.txt
 
         internal static ManualLogSource Log;
 
