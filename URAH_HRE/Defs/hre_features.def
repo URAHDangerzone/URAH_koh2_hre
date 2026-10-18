@@ -3,28 +3,24 @@
 // Pirates need has_distant_port, which tools/import_hre.py sets from data/pirate_provinces.txt.
 Camels.spawn_chance = 0
 
-// Feature spread (simulated, checked against a campaign save: 2.48 features per province
-// besides Rivers / Mountain / Coastal / Pirates in game, 2.46 simulated). Target ~2 with few above 3:
-// at most 2 special settlements per province (hre_settlements.def) does most of it; castle features a
-// bit more likely to make up for it. Result: mean 2.06, median 2, 9 % with 4 or more (was 2.5 / 26 %),
-// every resource in 9+ provinces.
-RareGame.spawn_chance = 42
-// mining regions: gold, silver and lodestone cluster in the mountains (mostly the Alps), minerals,
-// sulfur and saltpeter in the lowlands, about 3x either way (`Mountains` adds to the chance in realms
-// with has_mountains). The ores come only as a mine's secondary feature, so the mines move to the
-// mountains too (hre_settlements.def)
-MineralsDeposit.spawn_chance = 55
+// Feature spread, weighted by the goods a feature gives when fully built up (tools/hre/sim_features.py
+// GOODS): deep forests 6, cattle 5, herbs 5, sheep 4, flax 4, vines 3, marble 3, horses 2, the ores and
+// deposits 1 each. A merchant trades only 3 goods, so the many-goods features (special settlements,
+// hre_settlements.def) are made more common and the single-good castle resources rarer: those are easy
+// to trade for. The castle tries its resources one after the other until one hits, so the chances have
+// to go well below vanilla to show.
+RareGame.spawn_chance = 18
 {
-	Mountains = -40
+	Mountains = -12  // game of the lowland forests, like horses (hre_settlements.def)
 }
-SulfurDeposits.spawn_chance = 30
-{
-	Mountains = -22
-}
-SaltpeterDeposits.spawn_chance = 24
-{
-	Mountains = -18
-}
+MineralsDeposit.spawn_chance = 19
+SulfurDeposits.spawn_chance = 11
+SaltpeterDeposits.spawn_chance = 9
+SaltDeposit.spawn_chance = 13  // + 12 coastal, + 12 mountains (vanilla); salt is a staple, ~13 % of the provinces
+AmberDeposits.spawn_chance = 30
+// mining regions: gold, silver and lodestone cluster in the mountains (mostly the Alps), about 3x
+// (`Mountains` adds to the chance in realms with has_mountains). The ores come only as a mine's
+// secondary feature, so the mines move to the mountains too (hre_settlements.def)
 GoldOre.spawn_chance = 30
 {
 	Mountains = 45

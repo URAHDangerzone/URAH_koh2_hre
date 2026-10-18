@@ -28,18 +28,26 @@ SpecialSettlementsRandomizationWeights
 		terrain_mountains = 4
 		terrain_hills = 2
 	}
-	SheepFarm
+	LoggingCamp = 36
+	CattleFarm = 15
+	{
+		terrain_flat = 3
+	}
+	HerbsGardens = 14
+	SheepFarm = 11
 	{
 		terrain_hills = 2
 		terrain_mountains = 2
 	}
-	CattleFarm
-	{
-		terrain_flat = 3
-	}
-	FlaxField
+	FlaxField = 11
 	{
 		terrain_flat = 2
+	}
+	// horse breeding in the lowlands
+	HorseFarm = 9
+	{
+		terrain_flat = 5
+		terrain_mountains = -7
 	}
 	// vineyards only where wine was really grown (rarely elsewhere)
 	Vineyard = 1
@@ -50,4 +58,4 @@ SpecialSettlementsRandomizationWeights
 
 // at most 2 special settlements (mines, farms, vineyards ...) per province instead of 3: each brings a
 // province feature, and 3 left a quarter of the provinces with 4+ features (hre_features.def)
-Settlement.max_specal_settlements_per_realm = 2
+Settlement.max_specal_settlements_per_realm = 3
