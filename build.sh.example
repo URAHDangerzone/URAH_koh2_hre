@@ -34,7 +34,11 @@ $P tools/make_hre_roads.py $M && $P tools/make_hre_terrain_types.py $M
 $P tools/paint_hre_coa.py $V/Maps/europe data URAH_HRE --preview out/kingdom_arms.png
 $P tools/paint_hre_bigmap.py "$BIGMAP_WV" $M
 
-rsync -a --delete --exclude /plugins/ URAH_HRE/ "$KOH2_MODS/URAH_HRE/"  # plugins/: signed by tools/sign_plugins.py
+# deployed under its Workshop ID, like the Workshop copy: the game saves the mod selection as
+# "workshop:<folder name>", so the same folder name keeps it when switching between the two
+D="$KOH2_MODS/$(cat URAH_HRE/mod_workshop_id.txt)"
+[ -d "$KOH2_MODS/URAH_HRE" ] && [ ! -e "$D" ] && mv "$KOH2_MODS/URAH_HRE" "$D"  # old deploy name
+rsync -a --delete --exclude /plugins/ URAH_HRE/ "$D/"  # plugins/: signed by tools/sign_plugins.py
 
 # builds and deploys URAH_MapKit too (project reference in the workspace)
 (cd plugin && dotnet build -c Release -p:Deploy=true "-p:GameDir=$GAME_DIR")
