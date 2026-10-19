@@ -21,3 +21,8 @@ Source:
 Map and URAH_HRE plugin: https://github.com/URAHDangerzone/URAH_koh2_hre
 URAH_MapKit plugin: https://github.com/URAHDangerzone/URAH_koh2_mapkit
 URAH_Loader: https://github.com/URAHDangerzone/URAH_koh2_loader
+
+Credits: elevation ETOPO1 (NOAA NCEI, public domain); borders Eurostat GISCO NUTS 2021
+(© EuroGeographics for the administrative boundaries) and Natural Earth (public domain); town names
+GeoNames (CC BY 4.0, geonames.org); map font Pirata One (SIL Open Font License 1.1).
+Coat of arms and paper map art edited from the game, © Black Sea Games / THQ Nordic.

@@ -59,5 +59,14 @@ URAH_MapKit in `BepInEx/plugins/URAH_MapKit/`).
 Elevation: ETOPO1 (NOAA NCEI, public domain). Boundaries: Eurostat GISCO NUTS 2021
 (© EuroGeographics for the administrative boundaries), Natural Earth (public domain). Town names:
 GeoNames (CC BY 4.0, geonames.org). Font: Pirata One (SIL Open Font License 1.1).
-Knights of Honor II: Sovereign is a game by Black Sea Games / THQ Nordic; this mod ships none of its
-files.
+Knights of Honor II: Sovereign is a game by Black Sea Games / THQ Nordic. The built mod contains
+edited game art: the coat of arms atlases (vanilla's with the HRE arms painted over, charges cut from
+vanilla crests) and the paper map tiles (vanilla's paper, sea and mountain glyphs). That art stays
+© Black Sea Games / THQ Nordic and is only for use with the game.
+
+## License
+
+The code and the hand-made data of this repository are under the MIT License (`LICENSE`). Data
+derived from third-party sources keeps their terms: province borders and NUTS codes in `data/`
+from Eurostat GISCO (© EuroGeographics for the administrative boundaries), town names from GeoNames
+(CC BY 4.0). The game art the build edits is not covered by the MIT License.
