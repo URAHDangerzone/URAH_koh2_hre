@@ -18,7 +18,7 @@ install steps. In multiplayer everyone needs exactly the same mod files: the gam
 
 ## Releases
 
-Built and signed releases are in [URAH_koh2_releases](https://github.com/URAHDangerzone/URAH_koh2_releases/releases): [`URAH_HRE-v<version>`](https://github.com/URAHDangerzone/URAH_koh2_releases/releases?q=URAH_HRE&expanded=true) carries
+Built and signed releases are in [URAH_koh2_releases](https://github.com/URAHDangerzone/URAH_koh2_releases/releases?q=URAH_HRE&expanded=true): [`URAH_HRE-v<version>`](https://github.com/URAHDangerzone/URAH_koh2_releases/releases?q=URAH_HRE&expanded=true) carries
 `URAH_HRE-plugins.zip`, the signed `plugins/` folder the mod ships for URAH_Loader. Players get the mod
 itself from the Steam Workshop and need BepInEx 5 with URAH_Loader ([`URAH_Starter`](https://github.com/URAHDangerzone/URAH_koh2_releases/releases?q=URAH_Starter&expanded=true)).
 Every release is signed with the URAH release key; [URAH_koh2_releases](https://github.com/URAHDangerzone/URAH_koh2_releases) explains how to check it.
