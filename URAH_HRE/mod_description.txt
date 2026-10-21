@@ -5,11 +5,11 @@ from the Low Countries to Hungary and from Denmark to northern Italy, with real 
 roads and mountains, and three historical starting periods (1110, 1224, 1360) with the Empire's
 princes, prince-bishops, free cities and Italian communes.
 
-Requires the URAH_Starter package, installed once: it brings BepInEx 5 and the URAH_Loader plugin
+Requires BepInEx 5 and the URAH_Loader plugin installed. 
+Or you can just install the URAH_Starter package, it ships both:
 (unzip into the game folder, see INSTALL.md inside):
 https://github.com/URAHDangerzone/URAH_koh2_releases/releases
 Without it this mod does nothing.
-Do not activate together with URAH Iceland. Experimental.
 
 WARNING: this mod contains program code. Its plugins/ folder holds two DLLs (URAH_HRE.dll,
 URAH_MapKit.dll) that run inside the game with the full rights of your Windows user, like any
