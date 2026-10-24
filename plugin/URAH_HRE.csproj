@@ -14,6 +14,7 @@
   <ItemGroup>
     <Reference Include="UnityEngine.TerrainModule" HintPath="$(ManagedDir)/UnityEngine.TerrainModule.dll" Private="false" />
     <Reference Include="UnityEngine.InputLegacyModule" HintPath="$(ManagedDir)/UnityEngine.InputLegacyModule.dll" Private="false" />
+    <Reference Include="UnityEngine.PhysicsModule" HintPath="$(ManagedDir)/UnityEngine.PhysicsModule.dll" Private="false" />
     <Reference Include="UnityEngine.UI" HintPath="$(ManagedDir)/UnityEngine.UI.dll" Private="false" />
     <Reference Include="UnityEngine.AssetBundleModule" HintPath="$(ManagedDir)/UnityEngine.AssetBundleModule.dll" Private="false" />
     <Reference Include="UnityEngine.ImageConversionModule" HintPath="$(ManagedDir)/UnityEngine.ImageConversionModule.dll" Private="false" />
