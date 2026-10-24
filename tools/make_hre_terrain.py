@@ -44,6 +44,7 @@ from __future__ import annotations
 import argparse
 import gzip
 import struct
+import zlib
 from pathlib import Path
 
 import numpy as np
@@ -90,9 +91,12 @@ MASSIF_SCALES = (14, 6)  # heightmap samples (~10 and ~4 world units)
 PASSES_FILE = Path(__file__).resolve().parent.parent / "data" / "mountain_passes.txt"
 # high plateaus (data/alpine_plateaus.txt): flattened to their mean height and kept free of massifs
 PLATEAUS_FILE = Path(__file__).resolve().parent.parent / "data" / "alpine_plateaus.txt"
-PLATEAU_FADE = 3.0       # world units over which a plateau blends into the terrain around it
+PLATEAU_FADE = 8.0       # world units over which a plateau blends into the terrain around it
 PLATEAU_MARGIN = 6.0     # world units around a plateau kept free of massifs (mesh footprints)
-PLATEAU_RELIEF = 0.6     # world units of gentle rolling relief left on a plateau
+PLATEAU_RELIEF = 0.8     # world units of gentle rolling relief added on a plateau
+PLATEAU_KEEP = 0.2       # share of the real relief kept on a plateau, around its tilted plane ...
+PLATEAU_TILT = 0.08      # ... whose slope is capped at this (rise per world unit, ~4.6 deg)
+PLATEAU_WOBBLE = 0.25    # the outline's radius varies by up to this share around the plateau
 PLATEAU_BED_GAP = 4.0    # world units beside a river bed where a plateau leaves the bank alone
 
 # coastline: smoothed elevation > 0, then islands / lakes smaller than MIN_AREA samples dropped
@@ -195,7 +199,7 @@ def massif_mask(dem):
         lines[np.clip((p[:, 1] / c).astype(int), 0, gh - 1), np.clip((p[:, 0] / c).astype(int), 0, gw - 1)] = True
     open_ |= ndimage.distance_transform_edt(~lines) * c < PASS_WIDTH / 2
     for _, px, pz, r in read_plateaus():
-        open_ |= np.hypot(xs[None, :] - px, zs[:, None] - pz) < r + PLATEAU_FADE + PLATEAU_MARGIN
+        open_ |= np.hypot(xs[None, :] - px, zs[:, None] - pz) < r * (1 + PLATEAU_WOBBLE) + PLATEAU_FADE + PLATEAU_MARGIN
     disk = np.hypot(*np.mgrid[-3:4, -3:4]) <= 3
 
     def clean(m):
@@ -270,24 +274,44 @@ def build_heights(dem):
     return np.clip(g, 0.0, MAX_HEIGHT - 0.5).astype(np.float32), elev
 
 
+def plateau_wobble(name: str, angle):
+    """Outline radius factor 1 +- PLATEAU_WOBBLE at angle (radians): a few low harmonics with phases
+    from the plateau's name, so the outline is irregular but the same on every build."""
+    rng = np.random.default_rng(zlib.crc32(name.encode()))
+    f = sum(a * np.sin(k * angle + rng.uniform(0, 2 * np.pi)) for k, a in ((2, 0.5), (3, 0.3), (5, 0.2)))
+    return 1 + PLATEAU_WOBBLE * f
+
+
 def flatten_plateaus(heights, noise, bed=None):
-    """High plateaus (data/alpine_plateaus.txt) in place: the terrain at its mean height there with a
-    gentle roll, blending into the slopes around them over PLATEAU_FADE. Runs
+    """High plateaus (data/alpine_plateaus.txt) in place: the terrain pulled to a gently tilted plane
+    (least squares, slope capped at PLATEAU_TILT) keeping PLATEAU_KEEP of its real relief plus a gentle
+    roll, inside an irregular outline, blending into the slopes around them over PLATEAU_FADE. Runs
     after the rivers are carved (their valleys reshape the terrain far beside them); river beds (bed
     weight > 0) and PLATEAU_BED_GAP beside them keep their banks."""
     cx, cz = SIZE_X / (HEIGHTMAP_RES - 1), SIZE_Z / (HEIGHTMAP_RES - 1)
-    for _, px, pz, r in read_plateaus():
-        x0, x1 = (int(np.clip(v / cx, 0, HEIGHTMAP_RES)) for v in (px - r - PLATEAU_FADE, px + r + PLATEAU_FADE + cx))
-        z0, z1 = (int(np.clip(v / cz, 0, HEIGHTMAP_RES)) for v in (pz - r - PLATEAU_FADE, pz + r + PLATEAU_FADE + cz))
+    for name, px, pz, r in read_plateaus():
+        reach = r * (1 + PLATEAU_WOBBLE) + PLATEAU_FADE
+        x0, x1 = (int(np.clip(v / cx, 0, HEIGHTMAP_RES)) for v in (px - reach, px + reach + cx))
+        z0, z1 = (int(np.clip(v / cz, 0, HEIGHTMAP_RES)) for v in (pz - reach, pz + reach + cz))
         win = (slice(z0, z1), slice(x0, x1))
-        d = np.hypot(np.arange(x0, x1)[None, :] * cx - px, np.arange(z0, z1)[:, None] * cz - pz)
+        dx = np.arange(x0, x1)[None, :] * cx - px
+        dz = np.arange(z0, z1)[:, None] * cz - pz
+        d = np.hypot(dx, dz) / plateau_wobble(name, np.arctan2(dz, dx))
         w = np.clip((r + PLATEAU_FADE - d) / PLATEAU_FADE, 0, 1)
         w = w * w * (3 - 2 * w)
         if bed is not None and (bed[win] > 0).any():
             gap = ndimage.distance_transform_edt(bed[win] <= 0, sampling=(cz, cx))
             w *= np.clip((gap - PLATEAU_BED_GAP) / PLATEAU_FADE, 0, 1)
-        level = heights[win][d < r].mean()
-        heights[win] = heights[win] * (1 - w) + (level + PLATEAU_RELIEF * noise[win]) * w
+        h = heights[win]
+        inside = d < r
+        gx, gz = np.broadcast_to(dx, h.shape)[inside], np.broadcast_to(dz, h.shape)[inside]
+        (level, sx, sz), *_ = np.linalg.lstsq(np.column_stack([np.ones_like(gx), gx, gz]), h[inside], rcond=None)
+        tilt = np.hypot(sx, sz)
+        if tilt > PLATEAU_TILT:
+            sx, sz = sx * PLATEAU_TILT / tilt, sz * PLATEAU_TILT / tilt
+        plane = level + sx * dx + sz * dz
+        target = plane + PLATEAU_KEEP * (h - plane) + PLATEAU_RELIEF * noise[win]
+        heights[win] = np.minimum(h * (1 - w) + target * w, MAX_HEIGHT - 0.5)
 
 
 def coastline(elev):
