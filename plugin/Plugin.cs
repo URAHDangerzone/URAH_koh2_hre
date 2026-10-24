@@ -11,7 +11,7 @@ namespace URAH_HRE
 {
     /// <summary>
     /// The HRE map's runtime part: whole-map terrain, rivers, mountains, trees and pathfinding from the
-    /// mod's map files, plus the map's gameplay patches (holy sites, fame icons, union races, quest links).
+    /// mod's map files, plus the map's gameplay patches (holy sites, fame icons, union races).
     /// Realm map, paper map and borders come from URAH_MapKit.
     /// </summary>
     [BepInPlugin(Guid, Name, Version)]
