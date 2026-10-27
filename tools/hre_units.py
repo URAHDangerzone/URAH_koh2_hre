@@ -17,7 +17,8 @@ The early periods (867, 999) do not inherit vanilla's LocalUnits as they are: mo
 12th-14th century (crossbows, men-at-arms, feudal knights ...). An empty or "-" period cell falls back
 to the base row in the game, so it cannot clear them. While an early period is active, every province's
 LocalUnits move from the base row into its period rows, and the early rows keep only the units of
-UNIT_FROM that fit their year.
+UNIT_FROM that fit their year. Kingdom-wide Units (kingdoms.csv) get the same treatment, and kingdoms of
+WESTERN_CULTURES recruit EARLY_UNIT_SET in the early periods instead of their culture's WesternUnitSet.
 """
 
 from __future__ import annotations
@@ -129,9 +130,41 @@ def apply_realms(table, hdr, source_key, vanilla_rows, rules, kingdom_keys):
     return f"units: {changed} province period rows got extra LocalUnits{note}"
 
 
+# cultures whose unit set (cultures.csv) is WesternUnitSet: men-at-arms and feudal knights instead of
+# the generic heavy swordsmen and cavalry. Their kingdoms get EARLY_UNIT_SET in the early periods.
+WESTERN_CULTURES = {"German", "Saxon", "Austrian", "English", "Flemish", "Dutch", "French", "Germanic", "WestGermanic"}
+EARLY_UNIT_SET = "EuropeanUnitSet"
+
+
 def apply_kingdoms(kout, khdr, rules):
-    set_col = khdr.index("UnitsSet")
-    by_key = {c[0]: c for c in kout if c and c[0]}
+    set_col, units_col, cult_col = khdr.index("UnitsSet"), khdr.index("Units"), khdr.index("Culture")
+    by_key = {c[0]: c for c in kout if c and c[0] and not c[0].startswith("//")}
+    early = [per for per in hre_periods.PERIODS if hre_periods.is_before(per, "E")]
+    if early:
+        # kingdom-wide Units (vanilla's Germany crossbowmen, England's longbowmen ...) fall back from the
+        # base row like LocalUnits: move them into the period rows, the early rows keep what fits
+        bases = [c for k, c in by_key.items() if "." not in k]
+        for base in bases:
+            k = base[0]
+            inherited = base[units_col] if len(base) > units_col and base[units_col] not in ("", "-") else ""
+            for per in hre_periods.PERIODS:
+                row = by_key.get(f"{k}.{per}")
+                if row is None:
+                    if not inherited:
+                        continue
+                    row = by_key[f"{k}.{per}"] = ["-"] * len(khdr)  # carries only the moved Units
+                    row[0] = f"{k}.{per}"
+                    kout.insert(kout.index(base) + 1, row)
+                row += [""] * (len(khdr) - len(row))
+                if inherited:
+                    units = [u for u in (row[units_col] if row[units_col] not in ("", "-") else inherited).split("/") if u]
+                    row[units_col] = "/".join(u for u in units if _fits(u, per)) or ""
+                if per in early and row[set_col] in ("", "-"):
+                    cult = row[cult_col] if row[cult_col] not in ("", "-") else base[cult_col]
+                    if cult in WESTERN_CULTURES:
+                        row[set_col] = EARLY_UNIT_SET
+            if inherited:
+                base[units_col] = ""
     for r in rules:
         if r["kind"] != "kingdom_set":
             continue

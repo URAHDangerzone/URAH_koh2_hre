@@ -5,3 +5,10 @@ province,Main_Tauber_Kreis,,,,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Sp
 province,Franconia,,,,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,"Nuremberg: commandery 1209, bailiwick of Franconia"
 province,Bozen,,,,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,Teutonic_Knight_Special/Teutonic_Knight_Mounted_Special,"Bolzano: hospital 1202, bailiwick of An der Etsch"
 kingdom_set,Saxony,,,WesternUnitSet,,,the Saxon culture's set like the other Saxon kingdoms; vanilla's EuropeanUnitSet was for a 3-province duchy
+province,Schleswig,Viking_Special,Viking_Special,,,,"867 / 999: Danes (vanilla has Vikings only on the 1110 rows); Hedeby"
+province,Sydjylland,Viking_Special,Viking_Special,,,,867 / 999: Danes
+province,Zealand,Viking_Special,Viking_Special,,,,867 / 999: Danes
+province,Scania,Viking_Special,Viking_Special,,,,867 / 999: Danes
+province,Yorkshire,Viking_Special,,,,,"867: the Great Heathen Army at York"
+province,Friesland,Viking_Special,,,,,"867: Rorik's Danes in Frisia"
+province,Holland,Viking_Special,,,,,"867: Rorik's Danes at Dorestad"

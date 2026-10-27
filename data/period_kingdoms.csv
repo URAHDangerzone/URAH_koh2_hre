@@ -1,12 +1,21 @@
 kingdom,period,name,govern,ruler,vassal_of,capital,culture,titles,level,king_class,provinces,note
+Alsace,C,Duchy of Alsace,Monarchy,Hugo.C,Lotharingia,Alsace,German,,Duchy,,2,"Hugh, son of Lothair II and Waldrada, made duke of Alsace 867"
 Anhalt,E,County of Ballenstedt (Ascanians),Monarchy,Otto,Saxony,Harz,Saxon,County,Duchy,,2,"new; Otto the Rich, briefly duke of Saxony 1112"
 Anhalt,M,Principality of Anhalt,Monarchy,Heinrich.1,Thuringia,Harz,Saxon,Principality,Duchy,,1,new
 Anhalt,L,Principality of Anhalt,Monarchy,Albrecht.2,Saxony,Harz,Saxon,Principality,Duchy,,1,new
+Anjou,C,Neustrian march,Monarchy,Hugo.A,Francia,Anjou,French,County,Duchy,Cleric,3,"Hugh the Abbot, after Robert the Strong († 866 at Brissarthe)"
+Anjou,O,County of Anjou,Monarchy,Fulk.3.A,France,Anjou,French,County,Duchy,Marshal,3,Fulk III Nerra (987-1040)
+Aquileia,O,Patriarchate of Aquileia,Order,Giovanni.4.A,Germany,Udine,Italian,Patriarch,Duchy,Cleric,2,John IV (984-1019)
 Aquileia,E,Patriarchate of Aquileia,Order,Ulrich.1,Carinthia,Udine,Italian,Patriarch,Duchy,Cleric,2,"new; Ulrich of Eppenstein, brother of the Carinthian duke"
 Aquileia,M,Patriarchate of Aquileia,Order,Berthold,-,Udine,Italian,Patriarch,Duchy,Cleric,1,new; Andechs-Merania
 Aquileia,L,Patriarchate of Aquileia,Order,Ludovico,Austria,Udine,Italian,Patriarch,Duchy,Cleric,1,new; Ludovico della Torre
+Aquitaine,C,Kingdom of Aquitaine,Monarchy,Louis.Y,Francia,Poitou,French,,Kingdom,,7,"Louis the Stammerer (b. 846), king of Aquitaine 867"
+Aquitaine,O,Duchy of Aquitaine,Monarchy,William.5.A,France,Poitou,French,,Duchy,Cleric,6,William V the Great (995-1030)
+Arles,O,Kingdom of Burgundy,Monarchy,Rudolf.3.A,-,Vaud,French,,Kingdom,Cleric,8,"Rudolph III (993-1032), Upper and Lower Burgundy; heir to the empire 1032"
 Asti,E,Commune of Asti,Republic,-,Savoy,Asti,Italian,Commune,Duchy,Merchant,1,new
 Asti,M,Commune of Asti,Republic,-,Savoy,Asti,Italian,Commune,Duchy,Merchant,1,new
+Austria,C,Eastern March (Danube march),Monarchy,Wilhelm.2.A,EastFrancia,Austria,Bavarian,County,Duchy,,5,"William II and Engelschalk I, margraves until 871 (verify); under Carloman, flattened"
+Austria,O,March of Austria (Ostarrichi),Monarchy,Heinrich.1.A,Germany,Austria,Austrian,County,Duchy,,5,"Henry I (Babenberg, 994-1018); 'Ostarrichi' 996"
 Austria,E,Margraviate of Austria (Babenberg),Monarchy,Leopold.3,Bavaria,Austria,Austrian,German,Duchy,,5,new period row; under Bavaria until 1156
 Austria,M,Duchy of Austria and Styria,Monarchy,Leopold.6,-,Austria,Austrian,,Duchy,,13,vanilla (Luitpold.6)
 Austria,L,Duchy of Austria (Habsburg),Monarchy,Rudolf.4,-,Austria,Austrian,,Duchy,,21,vanilla
@@ -16,18 +25,23 @@ Baden,L,Margraviate of Baden,Monarchy,Rudolf.6,Palatinate,Freudenstadt,German,Ge
 Bamberg,E,Bishopric of Bamberg,Order,Otto.1,-,Bamberg,German,PrinceBishop,Duchy,Cleric,2,"new; St. Otto, apostle of Pomerania"
 Bamberg,M,Prince-Bishopric of Bamberg,Order,Ekbert,-,Bamberg,German,PrinceBishop,Duchy,Cleric,1,new; Andechs-Merania
 Bamberg,L,Prince-Bishopric of Bamberg,Order,Leopold.3,Zollern,Bamberg,German,PrinceBishop,Duchy,Cleric,1,new
+Banat,O,Ajtony's Banat,Monarchy,Ajtony.A,-,Banat,Hungarian,Hungarian,Duchy,Merchant,2,"Ajtony at Marosvar, Orthodox-baptized, independent until ~1008"
 Bar,E,County of Bar,Monarchy,Renaud.1,Lorraine,Meuse,French,County,Duchy,,1,new
 Bar,M,County of Bar,Monarchy,Henri.2,-,Meuse,French,County,Duchy,,1,new
 Bar,L,Duchy of Bar,Monarchy,Robert.1,-,Meuse,French,,Duchy,,1,new
 Basel,E,Prince-Bishopric of Basel,Order,Rudolf,Swabia,Delemont,Swiss,PrinceBishop,Duchy,Cleric,1,new
 Basel,M,Prince-Bishopric of Basel,Order,Heinrich.2,-,Delemont,Swiss,PrinceBishop,Duchy,Cleric,1,new
 Basel,L,Prince-Bishopric of Basel,Order,Johann,Austria,Delemont,Swiss,PrinceBishop,Duchy,Cleric,1,new
+Bavaria,C,Bavaria (sub-kingdom of Carloman),Monarchy,Karlmann.A,EastFrancia,Regensburg,Bavarian,,Duchy,Marshal,18,"Carloman (b. ~830), Bavaria and the eastern marches by the 865 division; Salzburg (Adalwin) under him"
+Bavaria,O,Duchy of Bavaria,Monarchy,Heinrich.4.Y,Germany,Regensburg,Bavarian,,Duchy,Cleric,14,"Henry IV (b. 973), the later Emperor Henry II"
 Bavaria,E,Duchy of Bavaria (Welf),Monarchy,Welf.2,-,Regensburg,Bavarian,,Duchy,,18,vanilla
 Bavaria,M,Duchy of Bavaria (Wittelsbach),Monarchy,Ludwig.1.O,-,Landshut,Bavarian,,Duchy,,12,vanilla row has Otto.2 (duke from 1231): 1224 is Ludwig I the Kelheimer
 Bavaria,L,Duchy of Upper Bavaria and Tyrol,Monarchy,Ludwig.5,-,Rosenheim,Bavarian,,Duchy,,8,vanilla; also count of Tyrol by his wife Margarete
 Berg,E,County of Berg,Monarchy,Adolf.2,Brabant,Viersen,German,County,Duchy,,2,new
 Berg,L,County of Berg and Ravensberg,Monarchy,Wilhelm.2,Cologne,Viersen,German,County,Duchy,,1,new
 Bern,M,Imperial City of Bern,Republic,-,-,Bern,Swiss,FreeCity,Duchy,Merchant,1,new
+Bohemia,C,Bohemian dukes,Monarchy,Hostivit.A,-,Bohemia,Bohemian,Tribal,Duchy,,8,Czech tribes before Borivoj I (~870); Hostivit legendary; pagan
+Bohemia,O,Duchy of Bohemia,Monarchy,Boleslav.3.A,Germany,Bohemia,Bohemian,,Duchy,,9,"Boleslaus III the Red, duke from February 999; tributary to the empire since 950"
 Bohemia,E,Duchy of Bohemia,Monarchy,Vladislav.1,-,Bohemia,Bohemian,,Duchy,,9,vanilla
 Bohemia,M,Kingdom of Bohemia,Monarchy,Otakar.1,-,Bohemia,Bohemian,,Kingdom,,9,vanilla
 Bohemia,L,Kingdom of Bohemia (Luxembourg),Monarchy,Karel.4.A,-,Bohemia,Bohemian,,Empire,,9,"vanilla; Charles IV, emperor, rules from Prague"
@@ -37,16 +51,28 @@ Brabant,E,Duchy of Lower Lorraine (Leuven),Monarchy,Godfrey.1,-,Leuven,Flemish,,
 Brabant,M,Duchy of Brabant,Monarchy,Henry.1,-,Leuven,Flemish,,Duchy,,3,new
 Brandenburg,M,Margraviate of Brandenburg,Monarchy,Otto.3,-,Potsdam_Mittelmark,German,German,Duchy,,5,"vanilla; co-ruler John I, both minors"
 Brandenburg,L,Electorate of Brandenburg (Wittelsbach),Monarchy,Otto.7,-,Potsdam_Mittelmark,German,Elector,Duchy,,11,vanilla row Otto.7 - historically Louis the Roman with Otto V the Lazy
+Bremen,O,Archbishopric of Hamburg-Bremen,Order,Liawizo.A,Germany,Bremen,Saxon,Archbishop,Duchy,Cleric,2,Liawizo I (988-1013)
 Bremen,E,Archbishopric of Hamburg-Bremen,Order,Friedrich.1,Saxony,Bremen,Saxon,Archbishop,Duchy,Cleric,2,new
 Bremen,M,Archbishopric of Bremen,Order,Gerhard.2,-,Bremen,Saxon,Archbishop,Duchy,Cleric,2,new
 Bremen,L,Archbishopric of Bremen,Order,Albrecht.2,-,Bremen,Saxon,Archbishop,Duchy,Cleric,2,new
+Brittany,C,Kingdom of Brittany,Monarchy,Salomon.A,Francia,Brittany,Breton,,Kingdom,Marshal,2,Salomon; gets the Cotentin by the Treaty of Compiegne 867
+Brittany,O,Duchy of Brittany,Monarchy,Geoffrey.1.A,France,Brittany,Breton,,Duchy,,1,Geoffrey I (992-1008)
 Brunswick,M,Welf lands of Brunswick-Lueneburg,Monarchy,Otto,-,Gifhorn,Saxon,Lordship,Duchy,,6,"new; Otto the Child, duchy created 1235"
 Brunswick,L,Duchy of Brunswick,Monarchy,Magnus.1,Luneburg,Gifhorn,Saxon,,Duchy,,2,new; Goettingen and Grubenhagen lines folded in
+Bulgaria,C,Bulgarian Khanate,Monarchy,Boris.1.A,-,Vidin,Bulgarian,Bulgarian,Kingdom,Cleric,13,"Boris I, baptized 864, turns to Rome 866-870; holds the Tisza and the Banat"
+Bulgaria,O,Bulgarian Empire,Monarchy,Samuel.A,-,Vidin,Bulgarian,Bulgarian,Kingdom,Marshal,5,Tsar Samuel (997-1014) fighting Basil II; Vidin falls 1002/03
+Burgundy,C,Burgundy,Monarchy,Eudes.A,Francia,Burgundy,French,County,Duchy,,2,count of Autun (verify: Bernard Plantapilosa / Eudes)
+Burgundy,O,Duchy of Burgundy,Monarchy,Henry.1.O,France,Burgundy,French,,Duchy,,2,Henry I the Venerable (965-1002)
 Burgundy,L,Duchy and County of Burgundy,Monarchy,Philippe,France,Burgundy,French,,Duchy,,5,vanilla; Philip of Rouvres (d. 1361)
+Burgundy_County,O,County of Burgundy,Monarchy,Otto.A,Arles,Doubs,French,County,Duchy,Marshal,3,"Otto-William (982-1026), also claims the duchy of Burgundy"
 Burgundy_County,E,County of Burgundy,Monarchy,Guillaume.2,-,Doubs,French,County,Duchy,,3,new; William the German
+Canossa,O,Canossa,Monarchy,Tedald.A,Germany,Mantova,Italian,County,Duchy,Marshal,3,"Tedald of Canossa, count of Modena, Reggio, Mantua, Brescia, Ferrara (988-1012); grandfather of Matilda"
+Carinthia,C,March of Carantania,Monarchy,Gundakar.A,EastFrancia,Carinthia,Bavarian,County,Duchy,,10,"Gundakar, count in Carantania (verify); under Carloman, flattened"
+Carinthia,O,Duchy of Carinthia and March of Verona,Monarchy,Otto.A,Germany,Verona,Bavarian,,Duchy,,10,"Otto of Worms (Salian, duke 995-1004), grandson of Otto I"
 Carinthia,E,Duchy of Carinthia (Eppenstein),Monarchy,Heinrich.3,-,Carinthia,Austrian,,Duchy,,8,vanilla; also margrave of Verona
 Carinthia,M,Duchy of Carinthia (Spanheim),Monarchy,Bernhard,-,Carinthia,Austrian,,Duchy,,4,vanilla
 Celje,L,County of Cilli,Monarchy,Ulrich.1,Austria,Jugovzhodna_Slovenija,Austrian,County,Duchy,,1,new
+Champagne,O,Blois-Champagne,Monarchy,Odo.2.Y,France,Champagne,French,County,Duchy,,2,Odo II of Blois (996-1037)
 Chur,E,Prince-Bishopric of Chur,Order,-,Swabia,Graubunden,Swiss,PrinceBishop,Duchy,Cleric,1,new
 Chur,M,Prince-Bishopric of Chur,Order,Arnold,Habsburg,Graubunden,Swiss,PrinceBishop,Duchy,Cleric,1,new
 Chur,L,Prince-Bishopric of Chur,Order,Peter,Bavaria,Graubunden,Swiss,PrinceBishop,Duchy,Cleric,1,new
@@ -54,39 +80,63 @@ Cieszyn,L,Duchy of Cieszyn,Monarchy,Przemyslaw.1,Bohemia,Bielski,Polish,,Duchy,,
 Cleves,E,County of Cleves,Monarchy,Dietrich.2,Brabant,Kleve,German,County,Duchy,,1,new
 Cleves,M,County of Cleves,Monarchy,Dietrich.5,Brabant,Kleve,German,County,Duchy,,1,new
 Cleves,L,County of Cleves,Monarchy,Johann,-,Kleve,German,County,Duchy,,1,new; to the Mark 1368
+Cologne,O,Archbishopric of Cologne,Order,Heribert.A,Germany,Rhineland,German,Archbishop,Duchy,Cleric,1,"Heribert (999-1021), Otto III's chancellor"
 Cologne,E,Archbishopric of Cologne,Order,Friedrich.1,-,Rhineland,German,Archbishop,Duchy,Cleric,2,new
 Cologne,M,Archbishopric of Cologne,Order,Engelbert.1,-,Rhineland,German,Archbishop,Duchy,Cleric,3,"new; regent of Germany, murdered Nov 1225"
 Cologne,L,Electorate of Cologne,Order,Wilhelm,-,Rhineland,German,ElectorBishop,Duchy,Cleric,2,new (Wilhelm of Gennep)
 Cremona,M,Imperial cities of Lombardy,Republic,-,-,Cremona,Italian,Commune,Kingdom,Merchant,4,new; Ghibelline cities of Frederick II against the Lombard League
+Croatia,C,Duchy of Croatia,Monarchy,Domagoj.A,-,Dalmatia,Croatian,,Duchy,Marshal,3,Domagoj (864-876)
+Croatia,O,Kingdom of Croatia,Monarchy,Svetoslav.A,-,Zagreb,Croatian,,Kingdom,,4,"Svetoslav Suronja (997-1000), against his brothers Kresimir and Gojslav"
 Dauphine,E,County of Albon / Viennois,Monarchy,Guigues.3,-,Isere,Occitan,County,Duchy,,1,new
 Dauphine,M,Dauphine of Viennois,Monarchy,Andre,-,Isere,Occitan,Dauphin,Duchy,,1,new (Guigues VI)
+Denmark,C,Kingdom of the Danes,Monarchy,Horik.2.A,-,Zealand,Danish,Nordic,Kingdom,Marshal,5,Horik II (verify; sources thin); pagan
+Denmark,O,Kingdom of Denmark,Monarchy,Sweyn.1.A,-,Zealand,Danish,Nordic,Kingdom,Marshal,4,"Sweyn Forkbeard (986-1014), Schleswig Danish again since 983"
+EastFrancia,C,Kingdom of East Francia,Monarchy,Ludwig.O,-,Main_Kinzig_Kreis,German,,Kingdom,,9,"Louis the German (b. ~806); crown lands Rhine-Main Franconia, Worms, Lorsch, Hesse"
+England,O,Kingdom of England,Monarchy,Ethelred.2.A,-,Hampshire,English,,Kingdom,Spy,9,"Aethelred the Unready (978-1016); Viking raids, Danegeld"
 Ferrara,L,Lordship of Ferrara and Modena (Este),Monarchy,Aldobrandino.3,Papal_States,Modena,Italian,Lordship,Duchy,,1,new; Ferrara a papal fief
+Flanders,C,County of Flanders,Monarchy,Baldwin.1.A,Francia,West_Flanders,Flemish,County,Duchy,Marshal,3,Baldwin I Iron Arm
+Flanders,O,County of Flanders,Monarchy,Baldwin.4.Y,France,West_Flanders,Flemish,County,Duchy,,3,Baldwin IV (988-1035)
 Flanders,E,County of Flanders,Monarchy,Robert.2,France,West_Flanders,Flemish,County,Duchy,,3,vanilla
 Flanders,M,County of Flanders and Hainaut,Monarchy,Ferrand,France,West_Flanders,Flemish,County,Duchy,,3,"vanilla; Ferrand captive in Paris until 1227, Joan rules"
 Flanders,L,County of Flanders,Monarchy,Lodewijk.2,France,West_Flanders,Flemish,County,Duchy,,3,vanilla
 Florence,M,Republic of Florence,Republic,-,-,Massa_Carrara,Italian,Commune,Kingdom,Merchant,1,new
 Florence,L,Republic of Florence,Republic,-,-,Massa_Carrara,Italian,Commune,Kingdom,Merchant,1,new
+France,O,Kingdom of France,Monarchy,Robert.2.A,-,Ile_de_France,French,,Kingdom,Cleric,2,Robert II the Pious (996-1031)
+Francia,C,Kingdom of West Francia,Monarchy,Charles.2.A,-,Ile_de_France,French,,Kingdom,Spy,5,Charles the Bald (b. 823)
+Franconia,C,Franconia (sub-kingdom of Louis the Younger),Monarchy,Ludwig.A,EastFrancia,Main_Spessart,German,,Duchy,,8,"Louis the Younger (b. ~835): Franconia, Thuringia and Saxony by the 865 division; here only East Franconia"
+Frisia,C,Frisia (Rorik's fief),Monarchy,Rorik.O,Lotharingia,Holland,Frisian,Nordic,Duchy,Marshal,2,"Rorik of Dorestad, Danish Viking with Frisia as fief"
+Frisia,O,West Frisia,Monarchy,Dirk.3.C,Germany,Friesland,Frisian,County,Duchy,,1,"Dirk III (b. ~981, count 993) under his mother's regency"
 Frisia,E,Frisian Freedom,Confederacy,-,-,Friesland,Frisian,Frisian,Kingdom,,1,new
 Frisia,M,Frisian Freedom,Confederacy,-,-,Friesland,Frisian,Frisian,Kingdom,,1,new
 Frisia,L,Frisian Freedom,Confederacy,-,-,Friesland,Frisian,Frisian,Kingdom,,1,new
+Friuli,C,March of Friuli,Monarchy,Unruoch.3.Y,Italy,Udine,Italian,County,Duchy,,6,"Unruoch III, after Eberhard († 866) (verify); Verona and Trento with the march"
 Fulda,E,Prince-Abbey of Fulda,Order,Wolfhelm,Thuringia,Schwalm_Eder_Kreis,German,PrinceAbbot,Duchy,Cleric,1,new
 Fulda,M,Prince-Abbey of Fulda,Order,Konrad.3,Thuringia,Schwalm_Eder_Kreis,German,PrinceAbbot,Duchy,Cleric,1,new
 Fulda,L,Prince-Abbey of Fulda,Order,Heinrich.7,Mainz,Schwalm_Eder_Kreis,German,PrinceAbbot,Duchy,Cleric,1,new
+Geneva,O,County of Geneva,Monarchy,Konrad.A,Arles,Haute_Savoie,French,County,Duchy,,1,counts of Geneva (verify ruler)
 Geneva,E,County of Geneva,Monarchy,Aymon.1,Savoy,Haute_Savoie,French,County,Duchy,,2,new
 Geneva,M,County of Geneva,Monarchy,Humbert,Savoy,Haute_Savoie,French,County,Duchy,,2,new
 Geneva,L,County of Geneva,Monarchy,Amadeus.3,-,Haute_Savoie,French,County,Duchy,,1,new
+Genoa,O,Obertenghi march,Monarchy,Oberto.2.A,Germany,Liguria,Italian,County,Duchy,Merchant,1,Otbert II (Obertenghi) (verify)
+Germany,O,Kingdom of Germany (Otto III),Monarchy,Otto.3.Y,-,Main_Kinzig_Kreis,German,,Empire,Cleric,26,"Otto III (b. 980), in Rome with Sylvester II; regnum Italiae as crown lands (one ruler per kingdom in game); Willigis of Mainz regent in Germany"
 Glogow,L,Duchy of Zagan-Glogow,Monarchy,Henryk.5,Bohemia,Zielonogorski,Polish,,Duchy,,1,new
 Gorizia,E,County of Goerz,Monarchy,Meinhard.1,Carinthia,Goriska,Austrian,County,Duchy,,2,new
 Gorizia,M,County of Goerz,Monarchy,Meinhard.3,Austria,Goriska,Austrian,County,Duchy,,2,new
 Gorizia,L,County of Goerz,Monarchy,Meinhard.6,Austria,Goriska,Austrian,County,Duchy,,2,new
+Great_Army,C,Kingdom of Jorvik (Great Heathen Army),Monarchy,Ivar.A,-,Yorkshire,Danish,Nordic,Kingdom,Marshal,1,Ivar the Boneless and Halfdan take York 866/867; pagan
+Greater_Poland,C,Polans,Monarchy,Siemowit.A,-,Poznan,Polish,Tribal,Duchy,,6,"Polans at Gniezno, legendary Piast Siemowit (verify); pagan"
 Greater_Poland,M,Duchy of Greater Poland,Monarchy,Wladyslaw.3,-,Poznan,Polish,,Duchy,,3,new; Spindleshanks vs Odonic
+Guelders,O,County of Hamaland,Monarchy,Balderich.A,Germany,Veluwe,Dutch,County,Duchy,Spy,4,Balderich and Adela of Hamaland (verify)
 Guelders,E,County of Guelders,Monarchy,Gerard.1,Brabant,Veluwe,Dutch,County,Duchy,,2,new
 Guelders,M,County of Guelders,Monarchy,Gerard.3,Brabant,Veluwe,Dutch,County,Duchy,,2,new
 Guelders,L,Duchy of Guelders,Monarchy,Reinald.3,-,Veluwe,Dutch,,Duchy,,2,new; brother Edward deposes him 1361
 Habsburg,M,County of Habsburg,Monarchy,Rudolf.2,-,Aargau,Swiss,County,Duchy,,3,new; grandfather of King Rudolf I
+Hainaut,O,County of Hainaut,Monarchy,Reginar.4.A,Germany,Maaseik,Flemish,County,Duchy,Marshal,1,Reginar IV (998-1013) (verify lands)
 Hainaut,E,County of Hainaut,Monarchy,Baldwin.3,Brabant,Nivelles,French,County,Duchy,,1,new
 Hesse,L,Landgraviate of Hesse,Monarchy,Heinrich.2,Mainz,Waldeck_Frankenberg,German,Landgrave,Duchy,,2,new
+Hevelli,C,Hevelli,Monarchy,Slavomir.A,-,Potsdam_Mittelmark,Pomeranian,Tribal,Kingdom,,2,Hevelli at Brandenburg an der Havel (invented ruler); pagan
 Hevelli,E,Hevelli principality,Monarchy,Meinfried,-,Potsdam_Mittelmark,Pomeranian,Tribal,Duchy,,2,"new; pagan, Pribislav-Henry from 1127"
+Hildesheim,O,Bishopric of Hildesheim,Order,Bernward.A,Germany,Hildesheim,Saxon,PrinceBishop,Duchy,Cleric,1,"Bernward (993-1022), Otto III's tutor"
 Hildesheim,M,Prince-Bishopric of Hildesheim,Order,Konrad.2,Brunswick,Hildesheim,Saxon,PrinceBishop,Duchy,Cleric,1,new
 Hildesheim,L,Prince-Bishopric of Hildesheim,Order,Heinrich.3,Luneburg,Hildesheim,Saxon,PrinceBishop,Duchy,Cleric,1,new
 Holland,E,County of Holland,Monarchy,Floris.2,-,Holland,Dutch,County,Duchy,,1,vanilla
@@ -94,66 +144,94 @@ Holland,M,County of Holland,Monarchy,Floris.4,Brabant,Holland,Dutch,County,Duchy
 Holland,L,Counties of Holland and Hainaut,Monarchy,William.5,-,Holland,Dutch,County,Duchy,,2,"vanilla; Albert I regent from 1358, also Bavaria-Straubing"
 Holstein,E,County of Holstein,Monarchy,Adolf.1,Saxony,Hamburg,Saxon,County,Duchy,,2,"new; Schauenburg, enfeoffed 1110/11"
 Holstein,L,County of Holstein-Rendsburg,Monarchy,Heinrich.2,-,Rendsburg_Eckernforde,Saxon,County,Duchy,,2,new; Iron Henry
+Hungary,O,Grand Principality of Hungary,Monarchy,Stephen.1.Y,-,Komarom,Hungarian,,Kingdom,Cleric,11,"Stephen (b. ~975), crowned Christmas 1000; Esztergom"
+Italy,C,Kingdom of Italy (Emperor Louis II),Monarchy,Louis.2.A,-,Pavia,Italian,,Empire,Marshal,20,Emperor Louis II (b. ~825); Provence since 863; fights the Saracens in the south
+Ivrea,O,March of Ivrea,Monarchy,Arduin.A,Germany,Vercelli,Italian,County,Duchy,Marshal,2,"Arduin, excommunicated 999 after the death of bishop Peter of Vercelli; king of Italy 1002"
 Julich,E,County of Juelich,Monarchy,Gerhard.2,Brabant,Euskirchen,German,County,Duchy,,1,new
 Julich,M,County of Juelich,Monarchy,Wilhelm.4,Cologne,Euskirchen,German,County,Duchy,,1,new
 Julich,L,Duchy of Juelich,Monarchy,Wilhelm.1,Cologne,Euskirchen,German,,Duchy,,1,new (duke from 1356)
 Kyburg,M,County of Kyburg,Monarchy,Ulrich.3,Swabia,Zurich,Swiss,County,Duchy,,2,new; Zaehringen heirs 1218
+Kyiv,C,Kyiv (Askold and Dir),Monarchy,Askold.A,-,Kyiv,Kyivan,,Kingdom,Marshal,1,"Askold and Dir, Varangians at Kyiv, raid Constantinople 860; pagan"
+Kyiv,O,Kyivan Rus,Monarchy,Vladimir.1.A,-,Kyiv,Kyivan,,Kingdom,Marshal,3,"Vladimir the Great (980-1015), baptized 988; Cherven towns since 981"
 Legnica,L,Duchy of Legnica,Monarchy,Waclaw.1,Bohemia,Legnicko_glogowski,Polish,,Duchy,,2,new
+Liege,O,Prince-Bishopric of Liege,Order,Notger.O,Germany,Verviers,French,PrinceBishop,Duchy,Cleric,1,"Notger (972-1008), first prince-bishop"
 Liege,E,Prince-Bishopric of Liege,Order,Otbert,Brabant,Verviers,French,PrinceBishop,Duchy,Cleric,2,new
 Liege,M,Prince-Bishopric of Liege,Order,Hugh,Brabant,Verviers,French,PrinceBishop,Duchy,Cleric,2,new
 Liege,L,Prince-Bishopric of Liege,Order,Engelbert,-,Verviers,French,PrinceBishop,Duchy,Cleric,2,new
 Lippe,M,Lordship of Lippe,Monarchy,Hermann.2,Brunswick,Lippe,Saxon,Lordship,Duchy,,1,new
 Lippe,L,Lordship of Lippe,Monarchy,Bernhard.5,Cologne,Lippe,Saxon,Lordship,Duchy,,1,new
+Lithuania,C,Lithuanian tribes,Monarchy,Ringold.A,-,Lithuania,Lithuanian,Tribal,Kingdom,,2,invented ruler; pagan
+Lithuania,O,Lithuanian tribes,Monarchy,Ringold.A,-,Lithuania,Lithuanian,Tribal,Kingdom,,2,"invented ruler; pagan, first named 1009"
 Lithuania,E,Lithuanian tribes,Monarchy,-,-,Trakai,Lithuanian,Tribal,Kingdom,,2,vanilla
 Lithuania,M,Lithuania,Monarchy,Zivinbudas,-,Trakai,Lithuanian,Tribal,Kingdom,,2,vanilla
 Lithuania,L,Grand Duchy of Lithuania,Monarchy,Algirdas,-,Trakai,Lithuanian,,Kingdom,,4,vanilla
+Liutizi,C,Wilzi (Veleti),Monarchy,Dragovit.A,-,Mecklenburgische_Seenplatte,Pomeranian,Tribal,Kingdom,Marshal,6,"Wilzi federation (invented ruler, Dragovit was 789); pagan"
+Liutizi,O,Liutizian federation,Monarchy,-,-,Mecklenburgische_Seenplatte,Pomeranian,Tribal,Kingdom,Cleric,8,"pagan federation free since the rising of 983, Radogost temple; no prince"
 Liutizi,E,Liutizian federation,Monarchy,-,-,Mecklenburgische_Seenplatte,Pomeranian,Tribal,Kingdom,,4,new; pagan
 Lombard_League,M,Lombard League,Confederacy,-,-,Lombardy,Italian,League,Kingdom.H,Diplomat,12,new; renewed March 1226 against Frederick II
+Lorraine,O,Duchy of Upper Lorraine,Monarchy,Theodoric.1.A,Germany,Lorraine,French,,Duchy,,5,Theodoric I of Bar (978-1027)
 Lorraine,E,Duchy of Upper Lorraine,Monarchy,Simon,-,Lorraine,French,,Duchy,,3,vanilla; Theoderic II until 1115
 Lorraine,M,Duchy of Lorraine,Monarchy,Matthias.2,-,Lorraine,French,,Duchy,,3,vanilla
 Lorraine,L,Duchy of Lorraine,Monarchy,Johan,-,Lorraine,French,,Duchy,,3,vanilla
+Lotharingia,C,Kingdom of Lotharingia,Monarchy,Lothar.2.A,-,Euskirchen,German,,Kingdom,Spy,26,"Lothair II (b. 835), Aachen; divorce fight with Nicholas I over Theutberga and Waldrada"
 Lower_Bavaria,L,Duchy of Lower Bavaria,Monarchy,Stephan.2,-,Landshut,Bavarian,,Duchy,,4,new; Bavaria-Landshut
+Lower_Lorraine,O,Duchy of Lower Lorraine,Monarchy,Otto.Y,Germany,Leuven,Flemish,,Duchy,,4,"Otto, the last Carolingian (991-1012)"
 Lubeck,L,Free City of Luebeck,Republic,-,Luneburg,Ostholstein,German,FreeCity,Duchy,Merchant,1,"new; head of the Hanse, war with Denmark from 1361"
+Lublin,C,Lendians,Monarchy,Lech.A,-,Lublin,Polish,Tribal,Duchy,,1,Lendians (invented ruler); pagan
 Luneburg,L,Duchy of Lueneburg,Monarchy,Wilhelm.2,-,Uelzen,Saxon,,Duchy,,4,new; succession war from 1370
+Lusatia,O,Saxon Eastern March (Lusatia),Monarchy,Gero.2.A,Germany,Elbe_Elster,Saxon,County,Duchy,,2,Gero II (993-1015) (verify)
+Luxembourg,O,County of Luxembourg,Monarchy,Heinrich.1.Y,Germany,Luxembourg,German,County,Duchy,,2,"Henry I, son of Siegfried († 998) (verify)"
 Luxembourg,E,County of Luxembourg,Monarchy,Wilhelm,Lorraine,Luxembourg,French,County,Duchy,,2,vanilla
 Luxembourg,M,County of Luxembourg,Monarchy,Walram.3,-,Luxembourg,French,County,Duchy,,2,vanilla
 Luxembourg,L,Duchy of Luxembourg and Brabant,Monarchy,Wenczel,-,Luxembourg,French,,Duchy,,4,vanilla
+Lyon,C,Lyon and Vienne,Monarchy,Gerard.O,Lotharingia,Isere,French,County,Duchy,Marshal,5,"Gerard of Roussillon (Girart de Vienne), Lothair II's since 863"
 Lyon,E,Archbishopric of Lyon,Order,Gaucerand,-,Lyonnais,French,Archbishop,Duchy,Cleric,1,new
 Lyon,M,Archbishopric of Lyon,Order,Renaud,-,Lyonnais,French,Archbishop,Duchy,Cleric,1,new
+Magdeburg,O,Archbishopric of Magdeburg,Order,Giselher.O,Germany,Brandenburg,Saxon,Archbishop,Duchy,Cleric,3,Giselher (981-1004)
 Magdeburg,E,Archbishopric of Magdeburg,Order,Adelgot,-,Brandenburg,Saxon,Archbishop,Duchy,Cleric,2,new (realm key Brandenburg = Magdeburg)
 Magdeburg,M,Archbishopric of Magdeburg,Order,Albrecht.1,-,Brandenburg,Saxon,Archbishop,Duchy,Cleric,3,new
 Magdeburg,L,Archbishopric of Magdeburg,Order,Otto,-,Brandenburg,Saxon,Archbishop,Duchy,Cleric,2,new
+Mainz,O,Archbishopric of Mainz,Order,Willigis.O,Germany,Pfalz,German,Archbishop,Duchy,Cleric,1,"Willigis (975-1011), arch-chancellor, regent of Germany"
 Mainz,E,Archbishopric of Mainz,Order,Adalbert.1,-,Pfalz,German,Archbishop,Duchy,Cleric,3,new
 Mainz,M,Archbishopric of Mainz,Order,Siegfried.2,-,Pfalz,German,Archbishop,Duchy,Cleric,3,new
 Mainz,L,Electorate of Mainz,Order,Gerlach,-,Pfalz,German,ElectorBishop,Duchy,Cleric,3,new
+Malopolska,C,Vistulans,Monarchy,Wislan.A,-,Malopolska,Polish,Tribal,Duchy,,6,"Vistulans at Krakow, 'a very mighty pagan prince' of the Life of Methodius (invented name); pagan"
 Mantua,L,Lordship of Mantua (Gonzaga),Monarchy,Guido,-,Mantova,Italian,Lordship,Duchy,,1,new
 Mark,M,County of the Mark,Monarchy,Adolf.1,Cologne,Markischer_Kreis,German,County,Duchy,,1,new
 Mark,L,County of the Mark,Monarchy,Engelbert.3,Cologne,Markischer_Kreis,German,County,Duchy,,1,new
+Masovia,C,Masovians,Monarchy,Mazos.A,-,Mazovia,Mazovian,Tribal,Duchy,,3,Masovian tribes (invented ruler); pagan
 Masovia,M,Duchy of Masovia,Monarchy,Konrad.1,-,Mazovia,Mazovian,,Duchy,,4,new; invites the Teutonic Order 1226
 Masovia,L,Duchy of Masovia,Monarchy,Siemowit.3,Poland,Warsawa,Mazovian,,Duchy,,2,new
+Mecklenburg,C,Obodrites,Monarchy,Tabomysl.A,-,Mecklenburg,Pomeranian,Tribal,Kingdom,Marshal,5,"Obodrite prince (Tabomysl, verify; partly invented); pagan"
+Mecklenburg,O,Obodrites,Monarchy,Mstislav.A,-,Mecklenburg,Pomeranian,Tribal,Kingdom,Marshal,4,"Obodrite prince Mstislav (verify), half pagan"
 Mecklenburg,E,Obodrite principality,Monarchy,Heinrich,Saxony,Ostholstein,Pomeranian,Tribal,Kingdom,,5,new kingdom row (vanilla uses the Mecklenburg realm as owner); Henry of Old Luebeck
 Mecklenburg,M,Lordship of Mecklenburg,Monarchy,Heinrich_Borwin.1,Denmark,Mecklenburg,Pomeranian,Lordship,Duchy,,3,new kingdom row
 Mecklenburg,L,Duchy of Mecklenburg,Monarchy,Albrecht.2,-,Mecklenburg,German,,Duchy,,4,new kingdom row; son Albert becomes king of Sweden 1364
+Meissen,O,March of Meissen,Monarchy,Ekkehard.1.A,Germany,Meissen,Saxon,County,Duchy,Marshal,10,"Ekkehard I (985-1002), also leads the Thuringians; pretender 1002"
 Meissen,E,Margraviate of Meissen (Wettin),Monarchy,Heinrich.2,-,Meissen,Saxon,German,Duchy,,6,vanilla; Henry II of Eilenburg (b. 1103)
 Meissen,M,Margraviate of Meissen,Monarchy,Heinrich.3,-,Meissen,Saxon,German,Duchy,,6,"vanilla; Henry the Illustrious, minor"
 Meissen,L,Meissen and Thuringia (Wettin),Monarchy,Wilhelm,-,Meissen,Saxon,German,Duchy,,10,vanilla; ruled jointly with Frederick III and Balthasar
 Merania,M,Duchy of Merania (Andechs),Monarchy,Otto.1,-,Bayreuth,Bavarian,,Duchy,,5,"new; also count palatine of Burgundy, brother Berthold patriarch of Aquileia, brother Ekbert bishop of Bamberg"
+Mercia,C,Kingdom of Mercia,Monarchy,Burgred.A,-,Warwickshire,English,Brit,Kingdom,,4,"Burgred, married to Aethelswith of Wessex"
 Metz,E,Bishopric of Metz,Order,-,Lorraine,Moselle,French,PrinceBishop,Duchy,Cleric,1,new
 Metz,M,Republic of Metz,Republic,-,-,Moselle,French,FreeCity,Duchy,Merchant,1,new
 Metz,L,Republic of Metz,Republic,-,-,Moselle,French,FreeCity,Duchy,Merchant,1,new
 Milan,E,Commune of Milan,Republic,-,-,Lombardy,Italian,Commune,Duchy,Merchant,4,new
 Milan,L,Lordship of Milan (Visconti),Monarchy,Bernabo,-,Lombardy,Italian,Lordship,Duchy,,11,"new; with Galeazzo II in Pavia, imperial vicars"
+Montferrat,O,March of Montferrat,Monarchy,Guglielmo.3.A,Germany,Alessandria,Italian,County,Duchy,,1,Aleramici (verify ruler)
 Montferrat,E,Marquisate of Montferrat,Monarchy,Ranieri.1,-,Alessandria,Italian,County,Kingdom,,4,new
 Montferrat,M,Marquisate of Montferrat,Monarchy,Guglielmo.6,-,Alessandria,Italian,County,Kingdom,,1,new
 Montferrat,L,Marquisate of Montferrat,Monarchy,Giovanni.2,-,Asti,Italian,County,Kingdom,,1,new; Palaiologos
 Montfort,M,County of Montfort,Monarchy,Hugo.1,Swabia,Bludenz_Bregenzer_Wald,German,County,Duchy,,1,new
 Montfort,L,County of Montfort-Feldkirch,Monarchy,Rudolf.4,Bavaria,Bludenz_Bregenzer_Wald,German,County,Duchy,,1,new
+Moravia,C,Great Moravia,Monarchy,Rastislav.A,-,Moravia,Moravian,,Kingdom,Cleric,5,Rastislav (846-870); Cyril and Methodius since 863
 Moravia,E,Moravian appanages (Brno),Monarchy,Oldrich,Bohemia,Moravia,Moravian,,Duchy,,5,"new; Brno, Olomouc, Znojmo princes"
 Moravia,M,Margraviate of Moravia,Monarchy,Vladislav,Bohemia,Moravia,Moravian,German,Duchy,,5,new; son of Ottokar I
 Moravia,L,Margraviate of Moravia,Monarchy,Jan_Jindrich,Bohemia,Moravia,Moravian,German,Duchy,,4,new; brother of Charles IV
 Muenster,E,Prince-Bishopric of Muenster,Order,Burchard,-,Steinfurt,Saxon,PrinceBishop,Duchy,Cleric,3,new
 Muenster,M,Prince-Bishopric of Muenster,Order,Dietrich.3,-,Steinfurt,Saxon,PrinceBishop,Duchy,Cleric,3,new
 Muenster,L,Prince-Bishopric of Muenster,Order,Adolf.2,-,Steinfurt,Saxon,PrinceBishop,Duchy,Cleric,3,new
+Namur,O,County of Namur,Monarchy,Albert.1.A,Germany,Dinant,French,County,Duchy,,1,Albert I (981-1011)
 Namur,E,County of Namur,Monarchy,Godfrey,Brabant,Dinant,French,County,Duchy,,1,new
 Namur,M,Margraviate of Namur,Monarchy,Philippe.2,Brabant,Dinant,French,German,Duchy,,1,new
 Namur,L,County of Namur,Monarchy,Guillaume.1,-,Dinant,French,County,Duchy,,1,new
@@ -161,7 +239,11 @@ Naples,L,Kingdom of Naples (Provence),Monarchy,Louis,-,Hautes_Alpes,Italian,,Kin
 Nassau,E,County of Laurenburg,Monarchy,Dudo,-,Lahn_Dill_Kreis,German,County,Duchy,,1,new
 Nassau,M,County of Nassau,Monarchy,Heinrich.2,-,Lahn_Dill_Kreis,German,County,Duchy,,1,new
 Nassau,L,County of Nassau-Weilburg,Monarchy,Johann.1,Trier,Lahn_Dill_Kreis,German,County,Duchy,,1,new
+Nitra,C,Principality of Nitra,Monarchy,Svatopluk.Y,Moravia,Nitra,Moravian,,Duchy,Marshal,4,"Svatopluk, Rastislav's nephew"
+Nordmark,O,Northern March,Monarchy,Lothar.A,Germany,Stendal,Saxon,County,Duchy,,2,Lothair of Walbeck (993-1003); the rest of the march lost to the Liutizi 983
 Nordmark,E,Northern March (Udonids),Monarchy,Heinrich.2,Saxony,Stendal,Saxon,German,Duchy,,2,new; Henry II of Stade
+Normandy,O,Duchy of Normandy,Monarchy,Richard.2.Y,France,Normandy,Norman,Norman,Duchy,Marshal,2,Richard II (996-1026)
+Northumbria,C,Northumbria (Bernicia),Monarchy,Ecgberht.A,-,Northumberland,English,Brit,Kingdom,,2,"Ecgberht I, set up by the Danes after York fell (March 867)"
 Nysa,L,Bishopric of Wroclaw (Nysa),Order,Przeclaw,Bohemia,Nyski,Polish,PrinceBishop,Duchy,Cleric,1,new
 Oldenburg,E,County of Oldenburg,Monarchy,Egilmar.1,Saxony,Ammerland,Saxon,County,Duchy,,2,new
 Oldenburg,M,County of Oldenburg,Monarchy,Otto.1,Muenster,Ammerland,Saxon,County,Duchy,,2,new
@@ -177,69 +259,107 @@ Paderborn,M,Prince-Bishopric of Paderborn,Order,Oliver,Cologne,Paderborn,Saxon,P
 Paderborn,L,Prince-Bishopric of Paderborn,Order,Balduin,Cologne,Paderborn,Saxon,PrinceBishop,Duchy,Cleric,1,new
 Padua,L,Lordship of Padua (Carrara),Monarchy,Francesco.1,-,Vicenza,Italian,Lordship,Duchy,,2,new
 Palatinate,L,Electorate of the Palatinate,Monarchy,Ruprecht.1,-,Neckar_Odenwald_Kreis,German,Elector,Duchy,,4,new; Heidelberg + Upper Palatinate
+Pannonia,C,Principality of Lower Pannonia,Monarchy,Kocel.A,EastFrancia,Baranya,Croatian,Slav,Duchy,Cleric,5,"Kocel, son of Pribina, at Mosaburg (Zalavar); hosts Cyril and Methodius 867"
+Papal_States,C,Papal States,Papacy,-,-,Latium,Italian,,,,1,Nicholas I (papacy.csv)
+Papal_States,O,Papal States,Papacy,-,-,Latium,Italian,,,,1,Sylvester II (papacy.csv)
 Passau,M,Prince-Bishopric of Passau,Order,Gebhard,Bavaria,Passau,Bavarian,PrinceBishop,Duchy,Cleric,1,new
 Passau,L,Prince-Bishopric of Passau,Order,Gottfried.2,-,Passau,Bavarian,PrinceBishop,Duchy,Cleric,1,new
+Piedmont,O,March of Turin,Monarchy,Manfred.1.A,Germany,Savoy,Italian,County,Duchy,,2,"Manfred I († ~1000), then Ulric Manfred II (verify)"
 Piedmont,L,Lordship of Piedmont (Savoy-Achaea),Monarchy,Giacomo,Savoy,Savoy,Italian,Lordship,Duchy,,1,new; Amadeus VI moves against James in 1360
+Poland,O,Duchy of Poland,Monarchy,Boleslaw.1.A,-,Poznan,Polish,,Duchy,Marshal,32,Boleslaw I Chrobry (992-1025); Gniezno 1000; Krakow and Moravia from Bohemia ~999 (verify)
 Poland,E,Duchy of Poland,Monarchy,Boleslaw.3,-,Malopolska,Polish,,Duchy,,23,vanilla (capital Krakow instead of Warsawa)
 Poland,M,Seniorate of Krakow,Monarchy,Leszek,-,Malopolska,Polish,Polish,Kingdom,,4,vanilla; Leszek the White
 Poland,L,Kingdom of Poland,Monarchy,Kazimierz.3,-,Malopolska,Polish,,Kingdom,,9,vanilla
+Pomerania,C,Pomeranians,Monarchy,Swietopelk.A,-,Pomerania,Pomeranian,Tribal,Duchy,,5,Pomeranian tribes (invented ruler); pagan
 Pomerania,E,Duchy of Pomerania,Monarchy,Warcislaw.1,-,Pomerania,Pomeranian,,Duchy,,4,vanilla; pagan until Otto of Bamberg's missions 1124/28
 Pomerania,M,Duchy of Pomerania,Monarchy,Barnim.1,Denmark,Pomerania,Pomeranian,,Duchy,,7,vanilla
 Pomerania,L,Duchy of Pomerania,Monarchy,Barnim.4,-,Pomerania,Pomeranian,,Duchy,,5,"vanilla; Pomerania-Wolgast, Stettin line under Barnim III"
 Pomerelia,E,Pomerelia,Monarchy,-,-,Kashubia,Pomeranian,Tribal,Duchy,,1,new; conquered by Boleslaw III 1116-19
 Pomerelia,M,Duchy of Pomerelia,Monarchy,Swietopelk.2,-,Kashubia,Pomeranian,,Duchy,,1,new
+Provence,O,County of Provence,Monarchy,Guillaume.2.Y,Arles,Drome,Occitan,County,Duchy,,3,"William II, son of William the Liberator († 993) (verify)"
 Provence,E,County of Provence,Monarchy,Gerberga,-,Hautes_Alpes,Occitan,County,Duchy,,1,new period row; Douce marries Ramon Berenguer III 1112
 Provence,M,County of Provence,Monarchy,Raimon.4,-,Hautes_Alpes,Occitan,County,Duchy,,1,vanilla
+Prussia,C,Old Prussians,Monarchy,Widewuto.A,-,Prussia,Prussian,Tribal,Kingdom,,2,Prussian tribes (Widewuto legendary); pagan
+Prussia,O,Old Prussians,Monarchy,Widewuto.A,-,Prussia,Prussian,Tribal,Kingdom,,2,killed Adalbert of Prague 997 (invented ruler); pagan
 Prussia,E,Old Prussians,Monarchy,-,-,Prussia,Prussian,Tribal,Kingdom,,3,"realm-named, pagan"
 Prussia,M,Old Prussians,Monarchy,-,-,Prussia,Prussian,Tribal,Kingdom,,3,"realm-named, pagan"
+Rugia,C,Rani of Rugia,Monarchy,Jaromar.A,-,Vorpommern_Rugen,Pomeranian,Tribal,Kingdom,Cleric,1,"Rani, Svantevit's temple at Arkona (invented ruler); pagan"
+Rugia,O,Rani of Rugia,Monarchy,Jaromar.A,-,Vorpommern_Rugen,Pomeranian,Tribal,Kingdom,Cleric,1,Rani (invented ruler); pagan
 Rugia,E,Rani of Ruegen,Monarchy,-,-,Vorpommern_Rugen,Pomeranian,Tribal,Duchy,,1,"new; pagan, temple of Arkona"
 Rugia,M,Principality of Ruegen,Monarchy,Wizlaw.1,Denmark,Vorpommern_Rugen,Pomeranian,Principality,Duchy,,1,new
 Saluzzo,E,March of Savona (del Vasto),Monarchy,Bonifacio,-,Cuneo,Italian,County,Kingdom,,1,new; Boniface del Vasto
 Saluzzo,M,Marquisate of Saluzzo,Monarchy,Manfredo.3,Savoy,Cuneo,Italian,County,Kingdom,,1,new
 Saluzzo,L,Marquisate of Saluzzo,Monarchy,Tommaso.2,-,Cuneo,Italian,County,Kingdom,,1,new
+Salzburg,O,Archbishopric of Salzburg,Order,Hartwig.A,Germany,Salzburg_und_Umgebung,Bavarian,Archbishop,Duchy,Cleric,2,Hartwig (991-1023)
 Salzburg,E,Archbishopric of Salzburg,Order,Konrad.1,-,Salzburg_und_Umgebung,Bavarian,Archbishop,Duchy,Cleric,2,new
 Salzburg,M,Archbishopric of Salzburg,Order,Eberhard.2,-,Salzburg_und_Umgebung,Bavarian,Archbishop,Duchy,Cleric,2,new
 Salzburg,L,Archbishopric of Salzburg,Order,Ortolf,-,Salzburg_und_Umgebung,Bavarian,Archbishop,Duchy,Cleric,2,new
+Savoy,O,Maurienne (Humbertines),Monarchy,Umberto.1.A,Arles,Savoie,French,County,Duchy,Marshal,1,"Humbert White-Hands, first of Savoy (attested 1003)"
 Savoy,E,County of Savoy,Monarchy,Amadeus.3,-,Savoie,French,County,Duchy,,4,vanilla (capital moved from Torino)
 Savoy,M,County of Savoy,Monarchy,Tommaso,-,Savoie,French,County,Duchy,,4,vanilla
 Savoy,L,County of Savoy,Monarchy,Amadeo.6,-,Savoie,French,County,Duchy,,4,vanilla
+Saxony,C,Duchy of Saxony (Liudolfings),Monarchy,Bruno.A,EastFrancia,Gottingen,Saxon,,Duchy,Marshal,25,"Bruno, son of Liudolf († 866); Gandersheim; dies against the Danes 880"
+Saxony,O,Duchy of Saxony (Billungs),Monarchy,Bernhard.1.A,Germany,Saxony,Saxon,,Duchy,Marshal,18,Bernhard I Billung (973-1011)
 Saxony,E,Duchy of Saxony,Monarchy,Lothair.3,-,Gifhorn,Saxon,,Duchy,,8,vanilla
 Saxony,M,Duchy of Saxony (Ascanian),Monarchy,Albrecht.1,-,Wittenberg,Saxon,,Duchy,,1,vanilla
 Saxony,L,Electorate of Saxony,Monarchy,Rudolf.2,-,Wittenberg,Saxon,Elector,Duchy,,1,vanilla
+Schweinfurt,O,March of the Nordgau,Monarchy,Heinrich.A,Germany,Bamberg,Bavarian,County,Duchy,Marshal,4,"Henry of Schweinfurt, margrave of the Nordgau (994-1017), rebels 1003"
+Scotland,O,Kingdom of Alba,Monarchy,Kenneth.3.A,-,Scottish_Borders,Scottish,,Kingdom,,1,Kenneth III (997-1005); Lothian Scottish since ~973
+Silesia,C,Silesians,Monarchy,Slezan.A,-,Silesia,Polish,Tribal,Duchy,,6,Slezanie and Opolanie (invented ruler); pagan
 Silesia,M,Duchy of Silesia,Monarchy,Henryk.1,-,Silesia,Polish,,Duchy,,8,new; Henry the Bearded
+Sion,O,Bishopric of Sion,Order,Hugo.A,Arles,Valais,French,PrinceBishop,Duchy,Cleric,1,Rudolph III gives the county of Valais to bishop Hugh 999
 Sion,E,Prince-Bishopric of Sion,Order,-,Savoy,Valais,Swiss,PrinceBishop,Duchy,Cleric,1,new
 Sion,M,Prince-Bishopric of Sion,Order,Landri,Savoy,Valais,Swiss,PrinceBishop,Duchy,Cleric,1,new
 Sion,L,Prince-Bishopric of Sion,Order,Guichard,-,Valais,Swiss,PrinceBishop,Duchy,Cleric,1,new
+Sorbs,C,Sorbs,Monarchy,Ciminislav.A,-,Meissen,Pomeranian,Tribal,Kingdom,,8,"Sorbs, Daleminzi, Milceni, Lusici (invented ruler; dux Ciminislav 839); pagan"
 St_Gallen,E,Prince-Abbey of St. Gallen,Order,-,Swabia,St_Gallen,Swiss,PrinceAbbot,Duchy,Cleric,1,new
 St_Gallen,M,Prince-Abbey of St. Gallen,Order,Rudolf,Swabia,St_Gallen,Swiss,PrinceAbbot,Duchy,Cleric,1,new
 St_Gallen,L,Prince-Abbey of St. Gallen,Order,Georg,Bavaria,St_Gallen,Swiss,PrinceAbbot,Duchy,Cleric,1,new
 Strasbourg,L,Free City of Strasbourg,Republic,-,-,Alsace,German,FreeCity,Duchy,Merchant,2,new
+Styria,O,Carantanian march,Monarchy,Markward.A,Germany,West_und_Sudsteiermark,Bavarian,County,Duchy,Marshal,5,"Markward (Eppenstein), margrave (verify)"
 Styria,E,Margraviate of Styria (Otakars),Monarchy,Otakar.2,-,West_und_Sudsteiermark,Austrian,German,Duchy,,5,new; formally under Carinthia
+Swabia,C,Alemannia (sub-kingdom of Charles the Fat),Monarchy,Karl.3.Y,EastFrancia,Bavaria,German,,Duchy,,17,Charles the Fat (b. 839): Alemannia and Raetia by the 865 division; capital Augsburg
+Swabia,O,Duchy of Swabia,Monarchy,Hermann.2.A,Germany,Swabia,German,,Duchy,,19,"Hermann II (997-1003), rival of Henry II in 1002"
 Swabia,E,Duchy of Swabia (Staufer),Monarchy,Friedrich.2,-,Swabia,German,,Duchy,,11,vanilla
 Swabia,M,Duchy of Swabia (Staufer),Monarchy,Heinrich.7,-,Alb_Donau_Kreis,German,,Duchy,,14,vanilla; Ulm as seat
 Swidnica,L,Duchy of Swidnica-Jawor,Monarchy,Bolko.2,-,Walbrzyski,Polish,,Duchy,,2,"new; last independent Silesian duke, to Bohemia 1368/92"
 Switzerland,L,Old Swiss Confederacy,Confederacy,-,-,Luzern,Swiss,,Kingdom,,3,"vanilla base row, no period rows"
 Teutonic_Order,L,Teutonic Order,Order,Winrich,-,Pomerelia,German,,Kingdom.H,,6,vanilla
+Thuringia,C,Thuringian (Sorbian) march,Monarchy,Thachulf.A,EastFrancia,Thuringia,German,,Duchy,Marshal,5,"Thachulf, dux Sorabici limitis († 873)"
 Thuringia,E,Ludowingian Thuringia,Monarchy,Ludwig,-,Wartburgkreis,German,County,Duchy,,6,new; Louis the Springer (landgraves from 1131)
 Thuringia,M,Landgraviate of Thuringia and Hesse,Monarchy,Ludwig.4,-,Wartburgkreis,German,Landgrave,Duchy,,6,new; husband of St. Elisabeth
+Toulouse,O,County of Toulouse,Monarchy,William.3.A,France,Aveyron,Occitan,County,Duchy,,1,William III Taillefer (978-1037)
+Transcarpathia,C,White Croats,Monarchy,Chrobat.A,-,Transcarpathia,Croatian,Tribal,Duchy,,1,White Croats (invented ruler); pagan
+Transjurane_Burgundy,C,Transjurane Burgundy,Monarchy,Konrad.A,Lotharingia,Valais,French,County,Duchy,,7,"Conrad the Younger (Welf), after Hubert († 864) (verify); Saint-Maurice"
+Transylvania,O,Gyula's Transylvania,Monarchy,Gyula.A,-,Alba,Hungarian,Hungarian,Duchy,Marshal,3,"Gyula the Younger, Stephen's uncle, independent until 1003"
 Trento,E,Prince-Bishopric of Trent,Order,Gebhard,Carinthia,Trento,Italian,PrinceBishop,Duchy,Cleric,2,new
 Trento,M,Prince-Bishopric of Trent,Order,Gerardo,-,Trento,Italian,PrinceBishop,Duchy,Cleric,1,new
 Trento,L,Prince-Bishopric of Trent,Order,Meinardo,-,Trento,Italian,PrinceBishop,Duchy,Cleric,1,new
+Trier,O,Archbishopric of Trier,Order,Liudolf.A,Germany,Eifelkreis_Bitburg_Prum,German,Archbishop,Duchy,Cleric,2,Liudolf (994-1008)
 Trier,E,Archbishopric of Trier,Order,Bruno,-,Eifelkreis_Bitburg_Prum,German,Archbishop,Duchy,Cleric,3,new
 Trier,M,Archbishopric of Trier,Order,Dietrich.2,-,Eifelkreis_Bitburg_Prum,German,Archbishop,Duchy,Cleric,3,new
 Trier,L,Electorate of Trier,Order,Boemund.2,-,Eifelkreis_Bitburg_Prum,German,ElectorBishop,Duchy,Cleric,3,new
+Tuscany,C,March of Tuscany,Monarchy,Adalbert.1.A,Italy,Massa_Carrara,Italian,County,Duchy,,2,Adalbert I; Lucca out of the frame
+Tuscany,O,March of Tuscany,Monarchy,Ugo.A,Germany,Massa_Carrara,Italian,County,Duchy,,1,Hugh the Great (961-1001)
 Tuscany,E,March of Tuscany (Canossa),Monarchy,Matilda,-,Massa_Carrara,Italian,County,Kingdom,,7,"new; Matilda d. 1115, imperial vicar from 1111"
 Tyrol,M,County of Tyrol,Monarchy,Albert.4,-,Bozen,Bavarian,County,Duchy,,1,vanilla
+Utrecht,O,Bishopric of Utrecht,Order,Ansfried.O,Germany,Holland,Dutch,PrinceBishop,Duchy,Cleric,2,"Ansfried (995-1010), former count"
 Utrecht,E,Prince-Bishopric of Utrecht,Order,Godebald,Brabant,Twente,Dutch,PrinceBishop,Duchy,Cleric,1,new
 Utrecht,M,Prince-Bishopric of Utrecht,Order,Otto.2,Muenster,Twente,Dutch,PrinceBishop,Duchy,Cleric,1,new; killed at Ane 1227
 Utrecht,L,Prince-Bishopric of Utrecht,Order,Jan,-,Twente,Dutch,PrinceBishop,Duchy,Cleric,1,new
 Valentinois,L,County of Valentinois and Diois,Monarchy,Aymar.6,-,Drome,Occitan,County,Duchy,,1,new
+Venice,C,Duchy of Venice,Republic,Orso.1.A,-,Veneto,Italian,,,Merchant,1,doge Orso I Participazio
+Venice,O,Duchy of Venice,Republic,Pietro.2.A,-,Veneto,Italian,,,Merchant,1,"doge Pietro II Orseolo (991-1009), Dalmatia expedition 1000"
 Verona,L,Lordship of Verona (della Scala),Monarchy,Cansignorio,-,Verona,Italian,Lordship,Duchy,,1,new; murdered his brother Cangrande II Dec 1359
 Vidin,L,Tsardom of Vidin,Monarchy,Ivan_Stratsimir,-,Vidin,Bulgarian,,Kingdom,,1,"vanilla kingdom, check period rows"
+Volhynia,C,Dulebes,Monarchy,Mezamir.A,-,Berestia,Kyivan,Tribal,Duchy,,2,Dulebes / Volhynians (invented ruler); pagan
+Wessex,C,Kingdom of Wessex,Monarchy,Ethelred.1.Y,-,Hampshire,English,Brit,Kingdom,,3,"Aethelred I (865-871), brother Alfred"
 Wurttemberg,L,County of Wuerttemberg,Monarchy,Eberhard.2,-,Heilbronn,German,County,Duchy,,6,new
 Wurzburg,E,Bishopric of Wuerzburg,Order,Erlung,-,Main_Spessart,German,PrinceBishop,Duchy,Cleric,5,new
 Wurzburg,M,Prince-Bishopric of Wuerzburg,Order,Dietrich,-,Main_Spessart,German,PrinceBishop,Duchy,Cleric,3,new
 Wurzburg,L,Prince-Bishopric of Wuerzburg,Order,Albrecht.2,-,Main_Spessart,German,PrinceBishop,Duchy,Cleric,3,new
+Yotvingia,C,Yotvingians,Monarchy,Skomand.A,-,Grodno,Yotvingian,Tribal,Kingdom,,1,invented ruler (Skomand was 13th c.); pagan
+Yotvingia,O,Yotvingians,Monarchy,Skomand.A,-,Grodno,Yotvingian,Tribal,Kingdom,,1,invented ruler; pagan
 Yotvingia,E,Yotvingians,Monarchy,-,-,Grodno,Yotvingian,,Kingdom,,1,vanilla
 Yotvingia,M,Yotvingians,Monarchy,-,-,Grodno,Yotvingian,,Kingdom,,1,vanilla
 Zahringen,E,Duchy of Zaehringen,Monarchy,Berthold.2,-,Breisgau_Hochschwarzwald,German,,Duchy,,5,new; Berthold II d. April 1111

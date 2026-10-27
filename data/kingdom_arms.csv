@@ -13,20 +13,25 @@ Bern,,,,
 Brabant,Brabant,Brabantine,Brabant,field:black charge:lion:gold
 Brunswick,Brunswick,Brunswick,Braunschweig,field:red charge:lions3:gold
 Burgundy_County,Free County of Burgundy,Burgundian,Freigrafschaft Burgund,field:blue billets:gold charge:lion:gold
+Canossa,Canossa,Canossan,Canossa,field:blue charge:griffin:silver
+Carolingian_Empire,Carolingian Empire,Carolingian,Karolingerreich,perpale:gold:blue charge:eagle:black
 Celje,Cilli,Cilli,Cilli,field:blue chief:silver stars3:gold
 Chur,Chur,Chur,Chur,field:silver charge:oxhead:black
 Cieszyn,Cieszyn,Cieszyn,Teschen,field:blue charge:eagle:gold bordure:gold
 Cleves,Cleves,Cleves,Kleve,field:red escarbuncle:gold
 Cologne,Cologne,Cologne,Köln,field:silver cross:black
 Dauphine,Viennois,Dauphinois,Viennois,field:gold charge:fish:blue
+EastFrancia,East Francia,East Frankish,Ostfrankenreich,same:Germany
 Ferrara,Ferrara,Ferrarese,Ferrara,field:blue charge:eagle:silver
 Florence,Florence,Florentine,Florenz,field:silver charge:fleur:red
 Francia,Francia,Frankish,Franzien,field:blue chief:gold charge:fleur:gold:0.6:0.5:0.6
 Frisia,Frisia,Frisian,Friesland,field:blue charge:lions3:gold
+Friuli,Friuli,Friulian,Friaul,field:gold charge:eagle:blue
 Fulda,Fulda,Fulda,Fulda,field:silver cross:black bordure:red
 Geneva,Geneva,Genevan,Genf,chequy:gold:blue
 Glogow,Głogów,Głogów,Glogau,field:silver charge:eagle:black bordure:red
 Gorizia,Gorizia,Gorizian,Görz,perbend:silver:blue charge:lion:gold:0.45:0.68:0.28
+Great_Army,Jorvik,Viking,Jorvik,same:Denmark
 Greater_Poland,Greater Poland,Greater Polish,Großpolen,field:red charge:eagle:silver bordure:gold
 Guelders,Guelders,Guelders,Geldern,field:blue charge:lion:gold
 Habsburg,Habsburg,Habsburg,Habsburg,field:gold charge:lion:red
@@ -36,6 +41,7 @@ Hevelli,Hevelli,Hevellian,Heveller,field:green star:gold
 Hildesheim,Hildesheim,Hildesheim,Hildesheim,perpale:gold:red
 Holstein,Holstein,Holstein,Holstein,field:red inescutcheon:silver
 Hungary_Croatia,Hungary-Croatia,Hungarian-Croatian,Ungarn-Kroatien,chequy:red:silver bordure:gold
+Ivrea,Ivrea,Ivrean,Ivrea,field:red cross:silver
 Julich,Jülich,Jülich,Jülich,field:gold charge:lion:black bordure:black
 Kyburg,Kyburg,Kyburg,Kyburg,field:red bend:gold charge:lion:gold:0.42:0.7:0.28
 Legnica,Legnica,Legnica,Liegnitz,field:gold charge:eagle:black bordure:red
@@ -44,8 +50,10 @@ Lippe,Lippe,Lippe,Lippe,field:silver rose:red
 Liutizi,Liutizi,Liutizian,Lutizen,field:red star:gold
 Lombard_League,Lombard League,Lombard,Lombardischer Bund,field:gold cross:red
 Lower_Bavaria,Lower Bavaria,Lower Bavarian,Niederbayern,lozengy:silver:lightblue bordure:red
+Lower_Lorraine,Lower Lorraine,Lower Lotharingian,Niederlothringen,same:Brabant
 Lubeck,Lübeck,Lübeck,Lübeck,perfess:silver:red
 Luneburg,Lüneburg,Lüneburg,Lüneburg,field:gold charge:lion:blue
+Lusatia,Lusatia,Lusatian,Lausitz,field:silver charge:oxhead:red
 Lyon,Lyon,Lyonnais,Lyon,field:red charge:lion:silver
 Magdeburg,Magdeburg,Magdeburg,Magdeburg,perfess:red:silver
 Mainz,Mainz,Mainz,Mainz,field:red wheel:silver
@@ -53,6 +61,7 @@ Mantua,Mantua,Mantuan,Mantua,barry:gold:black:6
 Mark,Mark,Mark,Mark,field:gold checkyfess:red:silver
 Masovia,Masovia,Masovian,Masowien,field:red charge:eagle:silver bordure:blue
 Merania,Merania,Meranian,Meranien,perfess:red:silver charge:eagle:black
+Mercia,Mercia,Mercian,Mercien,field:blue cross:gold
 Metz,Metz,Metz,Metz,perpale:silver:black
 Milan,Milan,Milanese,Mailand,field:silver cross:red
 Montferrat,Montferrat,Montferrat,Montferrat,field:silver chief:red
@@ -61,6 +70,7 @@ Muenster,Münster,Münster,Münster,field:blue fess:gold
 Namur,Namur,Namur,Namur,field:gold charge:lion:black bend:red
 Nassau,Nassau,Nassau,Nassau,field:blue billets:gold charge:lion:gold:0.8
 Nordmark,Northern March,Northern March,Nordmark,field:blue charge:eagle:silver bordure:silver
+Northumbria,Northumbria,Northumbrian,Northumbrien,barry:gold:red:6
 Nysa,Nysa,Nysa,Neisse,field:red charge:fleur:silver
 Oldenburg,Oldenburg,Oldenburg,Oldenburg,barry:gold:red:5
 Opava,Opava,Opava,Troppau,perpale:silver:red
@@ -69,24 +79,29 @@ Osnabruck,Osnabrück,Osnabrück,Osnabrück,field:silver wheel:red
 Paderborn,Paderborn,Paderborn,Paderborn,field:red cross:gold
 Padua,Padua,Paduan,Padua,field:red wheel:gold
 Palatinate,Palatinate,Palatine,Pfalz,field:black charge:lion:gold
+Pannonia,Lower Pannonia,Pannonian,Unterpannonien,field:green cross:silver
 Passau,Passau,Passau,Passau,field:silver charge:lion:red bordure:red
 Piedmont,Piedmont,Piedmontese,Piemont,field:red cross:silver chief:blue
 Rugia,Rügen,Rugian,Rügen,field:gold charge:lion:black:0.6:0.5:0.4 base:red
 Saluzzo,Saluzzo,Saluzzese,Saluzzo,field:silver chief:blue
 Salzburg,Salzburg,Salzburg,Salzburg,perpale:gold:red fess:silver
+Schweinfurt,Nordgau,Nordgau,Nordgau,field:silver charge:eagle:black
 Sion,Sion,Sion,Sitten,perpale:silver:red stars3:gold
+Sorbs,Sorbia,Sorbian,Sorbenland,field:blue charge:fish:silver
 St_Gallen,St. Gallen,St. Gallen,St. Gallen,field:gold charge:bear:black
 Strasbourg,Strasbourg,Strasbourg,Straßburg,field:silver bend:red
 Styria,Styria,Styrian,Steiermark,field:green charge:griffin:silver
 Swidnica,Świdnica,Świdnica,Schweidnitz,field:silver charge:eagle:black
 Teutonic_State,Teutonic Prussia,Teutonic,Ordensland Preußen,field:silver cross:black charge:eagle:gold:0.35
 Thuringia,,,,
+Transjurane_Burgundy,Transjurane Burgundy,Transjurane,Hochburgund,same:Arles
 Trento,Trent,Trentine,Trient,field:silver charge:eagle:black bordure:red
 Trier,Trier,Trier,Trier,field:silver cross:red
 Tuscany,,,,
 Utrecht,Utrecht,Utrecht,Utrecht,perbend:silver:red
 Valentinois,Valentinois,Valentinois,Valentinois,field:blue chief:gold
 Verona,Verona,Veronese,Verona,field:blue cross:gold
+Wessex,Wessex,West Saxon,Wessex,field:red charge:griffin:gold
 Wurttemberg,Württemberg,Württemberg,Württemberg,field:gold antlers:black
 Wurzburg,Würzburg,Würzburg,Würzburg,dancetty:red:silver
 Zahringen,Zähringen,Zähringen,Zähringen,field:gold charge:eagle:red

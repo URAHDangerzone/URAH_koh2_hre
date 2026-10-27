@@ -26,9 +26,10 @@ europe realm and settlement set:
                                 <hre_dir>/union_quests_deleted.csv; feature_presets.def switches the
                                 vanilla presets off and fixes the settlements of
                                 <hre_dir>/fixed_settlements.csv (church, trade, castle provinces)
-  Maps/europe/periods.def, Defs/hre_periods.def
+  Maps/europe/periods.def, Defs/hre_periods.def, papacy.csv
                                 early starting periods (867, 999) once their data is complete
-                                (tools/hre_periods.py): suffixes and new-campaign options
+                                (tools/hre_periods.py): suffixes, new-campaign options, pope and
+                                cardinals (<hre_dir>/papacy.csv)
   Texts/languages.csv           texts of those quests and period options (en, de)
   Maps/europe/CoA.csv           crests and map colours of new provinces and kingdoms
   Texts/<lang>/<lang>_teritories.csv  names of new provinces, towns and kingdoms
@@ -510,6 +511,27 @@ def write_period_defs(mod: Path, out: Path) -> list[list[str]]:
     return texts
 
 
+def write_papacy(hre: Path, out: Path) -> set[str]:
+    """Pope and cardinals of the early periods (data/papacy.csv, rows C / O): vanilla's papacy.csv has
+    E / M / L only. The mod file merges with it (DT.ReadMapsCsv), so only the active early rows are
+    written; without one the file is removed. Returns the names used (for the character name texts)."""
+    path = out / "papacy.csv"
+    rows = list(csv.DictReader(open(hre / "papacy.csv", encoding="utf-8")))
+    cols = [c for c in rows[0] if c != "note"] if rows else []
+    keep = [r for r in rows if r["Period"] in hre_periods.PERIODS and r["Period"] not in hre_periods.VANILLA_PERIODS]
+    missing = [per for per in hre_periods.PERIODS
+               if per not in hre_periods.VANILLA_PERIODS and per not in {r["Period"] for r in keep}]
+    if missing:
+        raise SystemExit(f"data/papacy.csv: no row for period {', '.join(missing)}")
+    if not keep:
+        path.unlink(missing_ok=True)
+        return set()
+    buf = io.StringIO()
+    csv.writer(buf, lineterminator="\n").writerows([cols] + [[r[c] for c in cols] for r in keep])
+    path.write_text(buf.getvalue(), encoding="utf-8")
+    return {r[c].split(".")[0] for r in keep for c in cols[1:] if r[c]}
+
+
 def union_targets(text: str, dropped, realm_keys, descendants, kingdoms) -> set[str]:
     """Kingdoms that the union quests of a union_quest.def text unlock, leaving out dropped quests and
     quests no kingdom can receive (none of their eligible realms or kingdoms is left)."""
@@ -537,15 +559,20 @@ QUEST_TEXTS = ("name", "short_description", "long_description")
 
 def union_quests(hre: Path, provinces, realm_keys, vanilla_quests):
     """Hand-made union quests (data/union_quests.csv). A row with a new key becomes a `def … : UnionQuest`
-    block; a row with a vanilla key overrides that quest's lists (and culture) where its columns are
-    filled. Eligible realms: the provinces of the `regions` (prefixes of the NUTS codes in
+    block; a row with a vanilla key overrides that quest's lists (culture, active_period) where its
+    columns are filled. active_period: period keys of Periods.europe (hre_periods.ALL_PERIODS), empty =
+    vanilla's three. Eligible realms: the provinces of the `regions` (prefixes of the NUTS codes in
     data/provinces.csv) plus `eligible_realms`. The game requires every activate condition, so a quest
     with eligible realms and kingdoms reaches only the listed kingdoms that hold a listed realm. Returns new def blocks, overrides for
     rewrite_union_quests, texts (key, en, de), the kingdoms the new quests unlock, and the vanilla
     quests to delete (data/union_quests_deleted.csv)."""
     defs, overrides, texts, unions = [], {}, [], set()
+    period_keys = {k for k, _ in hre_periods.ALL_PERIODS.values()}
     for q in csv.DictReader(open(hre / "union_quests.csv", encoding="utf-8")):
         key = q["quest"]
+        bad = [p for p in q["active_period"].split() if p not in period_keys]
+        if bad:
+            raise SystemExit(f"data/union_quests.csv {key}: unknown active_period {bad}")
         regions = q["regions"].split()
         eligible = [p["key"] for p in provinces if any(p["row"]["region"].startswith(r) for r in regions)]
         eligible += [k for k in q["eligible_realms"].split() if k not in eligible]
@@ -562,14 +589,15 @@ def union_quests(hre: Path, provinces, realm_keys, vanilla_quests):
                 lists[(("activate_conditions",), name)] = q[col].split()
         if goal:
             lists[(("complete_conditions",), "own_realms")] = goal
+        periods = ", ".join(f'"{p}"' for p in (q["active_period"] or UNION_QUEST_DEFAULTS["active_period"]).split())
         if key in vanilla_quests:
-            overrides[key] = {"lists": lists, "values": {("activate_conditions",): f"culture = [{cultures}]"}
-                              if cultures else {}}
+            lines = ([f"culture = [{cultures}]"] if cultures else []) + \
+                    ([f"active_period = [{periods}]"] if q["active_period"] else [])
+            overrides[key] = {"lists": lists, "values": {("activate_conditions",): "\n".join(lines)} if lines else {}}
         else:
             if not goal or not (eligible or q["eligible_kingdoms"]) or not q["unlock_union"]:
                 raise SystemExit(f"data/union_quests.csv {key}: a new quest needs own_realms, eligible realms "
                                  f"or kingdoms, and unlock_union")
-            periods = ", ".join(f'"{p}"' for p in (q["active_period"] or UNION_QUEST_DEFAULTS["active_period"]).split())
             act = "".join(f"\t\t{name} {{ {'; '.join(v)}; }}\n" for (path, name), v in lists.items()
                           if path == ("activate_conditions",))
             defs.append(
@@ -1166,11 +1194,18 @@ def main() -> None:
     for c in kcells:
         if c and c[0] in union_only:
             c[cap_col] = "-"
+    # a union kingdom with land only in some periods (Germany 999, Italy, Lotharingia and Francia 867) has
+    # no capital on its base row and keeps no vanilla rows (rulers) for the periods it has no land in
+    for c in kcells:
+        if c and c[0] in unions and not all(owned[per].get(c[0]) for per in hre_periods.VANILLA_PERIODS):
+            c[cap_col] = "-"
+    kcells = [c for c in kcells if not c or not c[0] or "." not in c[0] or c[0].split(".", 1)[0] not in unions
+              or c[0].split(".", 1)[1] not in hre_periods.PERIODS or owned[c[0].split(".", 1)[1]].get(c[0].split(".", 1)[0])]
     # landless kingdoms that only a union quest creates (data/union_kingdoms.csv): a base row like
     # vanilla's Germany
     have = {c[0] for c in kcells if c and c[0]}
     for r in csv.DictReader(open(args.hre / "union_kingdoms.csv", encoding="utf-8")):
-        if r["kingdom"] in have or r["kingdom"] in landed:
+        if r["kingdom"] in have:
             raise SystemExit(f"data/union_kingdoms.csv {r['kingdom']}: already a kingdom of the map")
         if r["kingdom"] not in unions or r["kingdom"] not in kingdom_arms:
             raise SystemExit(f"data/union_kingdoms.csv {r['kingdom']}: no union quest unlocks it, or no "
@@ -1227,7 +1262,11 @@ def main() -> None:
     for k in sorted(gone_keys, key=lambda k: np.hypot(*(np.subtract(loc.get(k, (0, 0)), (50, 11))))):
         if k in base and base[k][1] not in in_use and base[k][1] not in {f[1] for f in free}:
             free.append(base[k])
-    painted = [k for k, a in kingdom_arms.items() if a["arms"]]
+    # arms "same:<key>": the crest of another kingdom (a vanilla one, or one painted here), own map colour.
+    # Only kingdoms of kingdoms.csv get a tile (arms of a period still being filled in wait)
+    copies = {k: a["arms"][5:] for k, a in kingdom_arms.items() if a["arms"].startswith("same:") and k in kept_kingdoms}
+    painted = [k for k, a in kingdom_arms.items()
+               if a["arms"] and not a["arms"].startswith("same:") and k in kept_kingdoms]
     # kingdom map colours: as far as possible (palette index, as the game picks) from every neighbour
     adjacency = defaultdict(set)
     for (a, b) in segs:
@@ -1239,12 +1278,19 @@ def main() -> None:
                     adjacency[ka].add(kb)
                     adjacency[kb].add(ka)
     fixed = {k: int(base[k][2]) for k in kept_kingdoms if k in base and k not in painted and int(base[k][2]) >= 0}
-    size = {k: sum(len(owned[per].get(k, ())) for per in hre_periods.PERIODS) for k in painted}
-    colors = hre_periods.pick_colors(sorted(painted, key=lambda k: -size[k]), fixed, adjacency)
+    size = {k: sum(len(owned[per].get(k, ())) for per in hre_periods.PERIODS) for k in painted + list(copies)}
+    colors = hre_periods.pick_colors(sorted(painted + list(copies), key=lambda k: -size[k]), fixed, adjacency)
     new_rows = []
+    tile = {}
     for k in painted:
         crest = free.pop()  # farthest from the HRE first: keeps the nearby crests for provinces
+        tile[k] = crest[1]
         new_rows.append([k, crest[1], str(colors[k]), "-1", "-1"])
+        new_rows += [[f"{k}.{per}", "0", "-1", "-1", "-1"] for per in hre_periods.PERIODS]
+    for k, src in copies.items():
+        if src not in tile and src not in base:
+            raise SystemExit(f"data/kingdom_arms.csv {k}: same:{src} has no crest")
+        new_rows.append([k, tile.get(src) or base[src][1], str(colors[k]), "-1", "-1"])
         new_rows += [[f"{k}.{per}", "0", "-1", "-1", "-1"] for per in hre_periods.PERIODS]
     for p in provinces:
         if p["kind"] == "province" or p["key"] in base or p["key"] in kingdom_arms:
@@ -1257,8 +1303,8 @@ def main() -> None:
     buf = io.StringIO()
     csv.writer(buf, lineterminator="\n").writerows([chdr] + new_rows)
     (out / "CoA.csv").write_text(buf.getvalue(), encoding="utf-8")
-    print(f"{len(painted)} new kingdoms got an atlas tile for their arms, "
-          f"{len(new_rows) // (len(hre_periods.PERIODS) + 1) - len(painted)} new provinces a crest freed by deleted realms ({len(free)} left)")
+    print(f"{len(painted)} new kingdoms got an atlas tile for their arms ({len(copies)} share one), "
+          f"{len(new_rows) // (len(hre_periods.PERIODS) + 1) - len(painted) - len(copies)} new provinces a crest freed by deleted realms ({len(free)} left)")
 
     # ---- defs that name deleted realms
     gone = sorted(vanilla_names - realm_keys - {s["key"] for s in sea_realms})
@@ -1268,8 +1314,10 @@ def main() -> None:
         "// Generated by tools/import_hre.py: realm lists of union quests without the realms the HRE map\n"
         "// does not have; eligible realms also list the new provinces carved from them.\n"
         + nested(("UnionQuests", "europe"), "\n".join(quest_parts + new_quest_defs)) + "\n", encoding="utf-8")
-    # early starting periods (periods.def, Defs/hre_periods.def); their option texts go with the quest texts
+    # early starting periods (periods.def, Defs/hre_periods.def, papacy.csv); their option texts go with
+    # the quest texts
     quest_texts += write_period_defs(args.mod, out)
+    papal_names = write_papacy(args.hre, out)
     # quest texts: languages.csv of the mod merges with the game's (Defs.LoadTextFileWithMods)
     buf = io.StringIO()
     wr = csv.writer(buf, delimiter=";", lineterminator="\n", quoting=csv.QUOTE_ALL)
@@ -1326,6 +1374,7 @@ def main() -> None:
                 v = c[kcol[h]] if len(c) > kcol[h] else ""
                 if v not in ("", "-"):
                     rulers.add((v.split(".")[0], "m" if h == "KingNameAge" else "f"))
+    rulers |= {(n, "m") for n in papal_names}
     new_chars = sorted((n, s) for n, s in rulers if n not in vchars)
     de_dir = sovereign / "Texts" / "de"
     for lang_dir in sorted((sovereign / "Texts").iterdir()):

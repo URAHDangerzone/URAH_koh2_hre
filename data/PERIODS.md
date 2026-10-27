@@ -16,7 +16,8 @@ The early periods 867 and 999 (columns `C_867` / `O_999`, off until filled) are 
   `.H` hides the type), `king_class`, province count and notes. Edge kingdoms used unchanged from
   vanilla (England, France, Hungary, Denmark, Venice ...) are not listed
 - `kingdom_arms.csv`: English name and adjective, German name and arms (layers, see
-  `tools/paint_hre_coa.py`) of the kingdoms without a vanilla crest or name
+  `tools/paint_hre_coa.py`; `same:<key>` shares that kingdom's crest) of the kingdoms without a
+  vanilla crest or name
 
 What the importer does with them:
 

@@ -13,6 +13,8 @@ Catholic
 	holy_lands_realm = "Prussia"
 	holy_lands_realm_per_period
 	{
+		carolingian = "Vorpommern_Rugen" // the Rani of Rugia, pagan until 1168
+		ottonian = "Prussia" // Adalbert of Prague killed by the Prussians in 997
 		early = "Vorpommern_Rugen"
 		mid = "Prussia"
 		late = "Trakai"

@@ -1,6 +1,6 @@
 # HRE map: early starting periods 867 and 999
 
-Status: **code groundwork done (branch `early-periods`), data not started, not tested in game**. Two
+Status: **code and first data done (branch `early-periods`), first in-game test pending**. Two
 more periods before vanilla's 1110 / 1224 / 1360: **867** (Carolingian, before the Treaty of Meerssen)
 and **999** (Ottonian, Otto III and Sylvester II). The data goes into the `C_867` / `O_999` columns of
 `periods.csv`, `C` / `O` rows of `period_kingdoms.csv` and the `C` / `O` columns of `units.csv` and
@@ -37,16 +37,36 @@ Built:
 - `validate_hre.py` checks the active early periods too and wants an own `<kingdom>.C` / `.O` row for
   every owner (the dry run lists England, Champagne, Brittany, Scotland ... without one)
 
+Done with the data (2026-10-27):
+
+- `periods.csv` `C_867` / `O_999`: an owner for all 302 provinces (52 kingdoms in 867, 68 in 999)
+- `period_kingdoms.csv` `C` / `O` rows for every owner, edge kingdoms included (rulers, overlords,
+  capitals, title sets; unsure ones marked (verify) / (invented) in the note)
+- `kingdom_arms.csv`: new kingdoms. Arms `same:<key>` (new, import_hre / paint_hre_coa) share another
+  kingdom's crest without an atlas tile: East Francia (Germany), Transjurane Burgundy (Arles), Jorvik
+  (Denmark), Lower Lorraine (Brabant). 10 atlas tiles are left after the painted ones
+- `papacy.csv` (new): Nicholas I / Sylvester II with cardinals; the importer writes the active early rows
+  to `Maps/europe/papacy.csv` (merges with vanilla's E / M / L)
+- `union_quests.csv` `active_period`, now also read for vanilla quests: the Bavarian, Swabian and
+  Bohemian crown quests and Arles run in 867 too (not in 999: Germany and Burgundy exist), the Saxon one
+  not (Saxony would start with 6 of 8 realms); Lotharingia, Italy, Francia, St Stephen in 999 too.
+  New `UniteCarolingianQuest` (867 only) for the Carolingian kings: Charlemagne's empire
+  (`Carolingian_Empire`, union_kingdoms.csv)
+- `hre_religion.def`: crusade target 867 Rugia, 999 Prussia; `PAGAN` sets for C / O
+- `units.csv`: Vikings for the Danes (867, 999), York and Rorik's Frisia (867). `hre_units` also moves
+  kingdom-wide `Units` (vanilla's Germany crossbows, England's longbows) into the period rows and gives
+  the Western cultures' kingdoms `EuropeanUnitSet` in 867 / 999
+- Union kingdoms with land only in an early period (Germany, Italy, Lotharingia, Francia, Arles) keep
+  no capital on the base row and no rows for the periods they have no land in. Checked: the effective
+  1110 / 1224 / 1360 values of realms.csv and kingdoms.csv are the same as without the early periods
+
 Still open:
 
-- Every **edge kingdom** (England, France, Hungary, Denmark, Venice ...) needs `C` / `O` rows in
-  `period_kingdoms.csv`; the papacy needs rows in a mod `papacy.csv` (vanilla's has E / M / L only; the
-  importer does not write one yet)
-- `union_quest.def` `active_period` lists (vanilla quests name only early / mid / late; the HRE quests
-  with an empty `active_period` run in every period); `holy_lands_realm_per_period` entries for
-  `carolingian` / `ottonian` (HolySitesPatches falls back to `holy_lands_realm` with a warning)
-- `PAGAN` sets for C / O in `hre_periods.py`
-- In game: options show up, csv rows load, save / load and multiplayer lobby with a new period
+- In game: options show up, csv rows load (log: "Unknown period suffix"), save / load and multiplayer
+  lobby with a new period
+- Saxony 867 (25 provinces) and Lotharingia's crown lands (26) are big: more vassals (Westphalian
+  counts, Maasgau, Hamaland) once rulers are found
+- No 999 quests of their own yet (Polish / Hungarian crown, Renovatio imperii)
 - Settlements are the same in every period: Lübeck, Munich, Berlin, Bern ... exist in 867 too.
   Accepted, vanilla does the same
 - Kingdom names do **not** follow the period: `Kingdom.NameKey` is `"tn_" + Name`, no suffix. Only crest
@@ -274,10 +294,8 @@ patch).
 
 ## Decisions taken
 
-1. **Keys**: vanilla keys reused (`Germany` = East Francia 867 / Kingdom of Germany 999, `Lorraine` =
-   Lotharingia, `France` = West Francia, `Italy` if vanilla has it), for colours and crests. Names do
-   not follow the period (see Engine side): East Francia would read "Kingdom of Germany" in 867 unless
-   it gets its own key or a `NameKey` patch (open)
+1. **Keys**: vanilla / existing keys where the name fits (`Germany` 999, `Lotharingia`, `Italy`,
+   `Francia` = West Francia 867, `France` 999); `EastFrancia` new (see 7)
 3. **999 Italy**: no separate Italian kingdom. Otto III holds both crowns, and the game has one ruler
    per kingdom, so a vassal "Italy" would need an invented king. Pavia / Lombardy are crown lands of
    `Germany`, the Italian margraves and bishops are direct vassals of `Germany`
@@ -289,7 +307,7 @@ patch).
    `Bavarian` in every period
 6. **999 church states**: about 10
 
-## Open decisions
-
-2. 867 ecclesiastical vassals: none, or only Mainz / Salzburg, or the royal abbeys?
-7. East Francia / Lotharingia names in 867: accept "Germany" / "Lorraine", new keys, or `NameKey` patch?
+2. **867 church**: no ecclesiastical vassals (Salzburg under Bavaria, Mainz under the crown); the
+   imperial church starts in 999
+7. **867 names**: new key `EastFrancia` with Germany's crest; Lotharingia, Italy and Francia use their
+   (union) keys, whose names fit

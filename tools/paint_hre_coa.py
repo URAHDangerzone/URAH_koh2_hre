@@ -15,7 +15,8 @@ Arms: space-separated layers, painted in order, `name:arg:arg`:
   fess|pale|bend|chief|base|cross|chevron|bordure|inescutcheon|billets:C   checkyfess:C1:C2
   wheel|escarbuncle|rose|star|stars3|crosier|pillar|gonfanon|antlers:C
   charge:NAME:C[:scale[:x:y]]   (C may be C1/C2: a charge striped in two tinctures)
-Tinctures: gold silver red blue lightblue black green. On banners (tall) horizontal partitions and
+Tinctures: gold silver red blue lightblue black green. `same:<key>` (another kingdom's crest, no tile
+of its own) is left to import_hre.py. On banners (tall) horizontal partitions and
 ordinaries turn vertical, as vanilla's banners do.
 """
 
@@ -330,8 +331,9 @@ def main() -> None:
     args = ap.parse_args()
     out = args.mod / "Maps" / "europe"
     arms = {r["kingdom"]: r["arms"] for r in csv.DictReader(open(args.hre / "kingdom_arms.csv", encoding="utf-8"))
-            if r["arms"]}
+            if r["arms"] and not r["arms"].startswith("same:")}  # same:<key> shares that kingdom's crest
     crest = {r[0]: int(r[1]) for r in csv.reader(open(out / "CoA.csv", encoding="utf-8")) if r and r[0] in arms}
+    arms = {k: a for k, a in arms.items() if k in crest}  # no tile: no land in the active periods
     missing = sorted(set(arms) - set(crest))
     if missing:
         raise SystemExit(f"no CoA.csv tile for {', '.join(missing)} (run import_hre.py first)")

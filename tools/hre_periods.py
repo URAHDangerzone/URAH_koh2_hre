@@ -33,8 +33,10 @@ PERIOD_COLS = {per: f"{per}_{year}" for per, (_, year) in ALL_PERIODS.items()}
 PERIODS = VANILLA_PERIODS  # active periods, set by load()
 
 # kingdoms whose people are pagan in a period (their provinces' religion follows)
-PAGAN = {"C": set(),  # filled with the 867 / 999 kingdoms (PERIODS_EARLY.md)
-         "O": set(),
+PAGAN = {"C": {"Denmark", "Great_Army", "Mecklenburg", "Liutizi", "Hevelli", "Rugia", "Sorbs", "Bohemia", "Silesia",
+               "Greater_Poland", "Malopolska", "Masovia", "Lublin", "Pomerania", "Prussia", "Yotvingia", "Lithuania",
+               "Volhynia", "Kyiv", "Transcarpathia"},
+         "O": {"Mecklenburg", "Liutizi", "Rugia", "Prussia", "Yotvingia", "Lithuania"},
          "E": {"Liutizi", "Hevelli", "Rugia", "Mecklenburg", "Pomerania", "Prussia", "Yotvingia", "Lithuania"},
          "M": {"Prussia", "Yotvingia", "Lithuania"},
          "L": {"Lithuania"}}
@@ -232,7 +234,8 @@ def apply_kingdoms(kcells, khdr, kings, owned):
     for k, pers in kings.items():
         if k not in rows:
             order.append(k)
-            first = pers[next(p for p in PERIODS if p in pers)]
+            # base row from vanilla's periods first, so the 1110-1360 fallbacks stay as without early periods
+            first = pers[next(p for p in sorted(PERIODS, key=lambda p: p not in VANILLA_PERIODS) if p in pers)]
             base = blank(k)
             base[col["Culture"]] = first["culture"]
             base[col["Religion"]] = "Catholic"
