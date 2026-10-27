@@ -1,28 +1,28 @@
-key,E,M,L,place,why
-Latium,200,200,200,Rome,papacy
-Rhineland,200,200,100,Cologne,"E: greatest and richest city north of the Alps; M: archbishop Engelbert regent for Henry (VII) 1220-25; L: still one of the greatest cities"
-Pfalz,200,50,0,"Mainz, Worms, Speyer","Mainz: see of the arch-chancellor, decisive in royal elections; Worms: Salian heartland; Speyer: imperial cathedral, Salian tombs"
-Regensburg,100,100,50,Regensburg,"leading city of the south, Danube and eastern trade; L: already in decline"
-Lombardy,100,100,0,Milan,"E: likely the greatest city of the Empire, first city of imperial Italy; M: head of the Lombard League"
-Bohemia,0,0,200,Prague,"residence of Charles IV, de facto capital, university"
-Alsace,0,100,50,Strasbourg,"metropolis of the Upper Rhine, in the Staufer heartland; L: great imperial city"
-Ostholstein,0,50,100,Lübeck,"M: rising Baltic trade city, imperial city from 1226; L: queen of the Hanse"
-Franconia,0,50,100,Nuremberg,"M: Staufer palace, charter of 1219; L: first diet under the Golden Bull, trade centre"
-Euskirchen,50,50,50,Aachen,coronation city
-Main_Kinzig_Kreis,0,50,50,Frankfurt,"election city, centre of the imperial lands in the Wetterau"
-Bavaria,50,50,50,Augsburg,trade and episcopal city in Swabia
-Brandenburg,50,50,0,Magdeburg,"archbishopric, gate to the east, Magdeburg law"
-Eifelkreis_Bitburg_Prum,50,0,0,Trier,"archbishopric, old Roman city"
-Gottingen,50,0,0,Goslar,"favourite palace of the Salians, silver mines of the Rammelsberg"
-Pavia,50,0,0,Pavia,old coronation city of Italy
-Moselle,0,50,0,Metz,great rich city in the west
-Silesia,0,0,50,Wrocław,"trade city in the east, Bohemian"
-Austria,0,0,50,Vienna,residence of the Habsburgs
-Thuringia,0,0,50,Erfurt,greatest city of central Germany
-Veneto,50,50,50,Venice,great trade city
-Liguria,50,50,50,Genoa,great trade city
-West_Flanders,50,50,50,Bruges,great trade city
-Ile_de_France,50,50,50,Paris,capital
-London,50,50,50,London,capital
-Malopolska,50,50,50,Kraków,capital
-Buda,50,50,50,Buda,capital
+key,C,O,E,M,L,place,why
+Latium,,,200,200,200,Rome,papacy
+Rhineland,,,200,200,100,Cologne,E: greatest and richest city north of the Alps; M: archbishop Engelbert regent for Henry (VII) 1220-25; L: still one of the greatest cities
+Pfalz,,,200,50,0,"Mainz, Worms, Speyer","Mainz: see of the arch-chancellor, decisive in royal elections; Worms: Salian heartland; Speyer: imperial cathedral, Salian tombs"
+Regensburg,,,100,100,50,Regensburg,"leading city of the south, Danube and eastern trade; L: already in decline"
+Lombardy,,,100,100,0,Milan,"E: likely the greatest city of the Empire, first city of imperial Italy; M: head of the Lombard League"
+Bohemia,,,0,0,200,Prague,"residence of Charles IV, de facto capital, university"
+Alsace,,,0,100,50,Strasbourg,"metropolis of the Upper Rhine, in the Staufer heartland; L: great imperial city"
+Ostholstein,,,0,50,100,Lübeck,"M: rising Baltic trade city, imperial city from 1226; L: queen of the Hanse"
+Franconia,,,0,50,100,Nuremberg,"M: Staufer palace, charter of 1219; L: first diet under the Golden Bull, trade centre"
+Euskirchen,,,50,50,50,Aachen,coronation city
+Main_Kinzig_Kreis,,,0,50,50,Frankfurt,"election city, centre of the imperial lands in the Wetterau"
+Bavaria,,,50,50,50,Augsburg,trade and episcopal city in Swabia
+Brandenburg,,,50,50,0,Magdeburg,"archbishopric, gate to the east, Magdeburg law"
+Eifelkreis_Bitburg_Prum,,,50,0,0,Trier,"archbishopric, old Roman city"
+Gottingen,,,50,0,0,Goslar,"favourite palace of the Salians, silver mines of the Rammelsberg"
+Pavia,,,50,0,0,Pavia,old coronation city of Italy
+Moselle,,,0,50,0,Metz,great rich city in the west
+Silesia,,,0,0,50,Wrocław,"trade city in the east, Bohemian"
+Austria,,,0,0,50,Vienna,residence of the Habsburgs
+Thuringia,,,0,0,50,Erfurt,greatest city of central Germany
+Veneto,,,50,50,50,Venice,great trade city
+Liguria,,,50,50,50,Genoa,great trade city
+West_Flanders,,,50,50,50,Bruges,great trade city
+Ile_de_France,,,50,50,50,Paris,capital
+London,,,50,50,50,London,capital
+Malopolska,,,50,50,50,Kraków,capital
+Buda,,,50,50,50,Buda,capital

@@ -1,10 +1,15 @@
 """Starting periods of the HRE map: owners, cultures, kingdoms, titles and names (used by import_hre.py).
 
 Reads the hand-researched tables in data/:
-  periods.csv          owner kingdom of every province in E (1110), M (1224), L (1360), suggested main town
+  periods.csv          owner kingdom of every province per period (ALL_PERIODS), suggested main town
   period_kingdoms.csv  kingdom rows per period: ruler, overlord, capital, culture, titles, level
   kingdom_arms.csv     names (English, German) and arms of kingdoms without a vanilla crest
-See data/PERIODS.md.
+See data/PERIODS.md and data/PERIODS_EARLY.md.
+
+Vanilla's periods E / M / L are always on. The early periods C (867) and O (999) are switched on
+by their data: a period is active once every province has an owner in its periods.csv column; an
+empty column leaves it off (the map then builds exactly as with three periods), a partly filled one
+too, with a note. PERIODS holds the active suffixes in game order after load().
 """
 
 from __future__ import annotations
@@ -13,11 +18,24 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
-PERIODS = ("E", "M", "L")
-PERIOD_COLS = {"E": "E_1110", "M": "M_1224", "L": "L_1360"}
+# suffix -> key in Periods.europe (CampaignVars start_period option), year; game order, earliest first.
+# Suffixes are one letter: the game reads only the last character of papacy.csv keys. C and O are not
+# vanilla's: the URAH_HRE plugin resolves them (PeriodSuffixPatch).
+ALL_PERIODS = {
+    "C": ("carolingian", 867),
+    "O": ("ottonian", 999),
+    "E": ("early", 1110),
+    "M": ("mid", 1224),
+    "L": ("late", 1360),
+}
+VANILLA_PERIODS = ("E", "M", "L")
+PERIOD_COLS = {per: f"{per}_{year}" for per, (_, year) in ALL_PERIODS.items()}
+PERIODS = VANILLA_PERIODS  # active periods, set by load()
 
 # kingdoms whose people are pagan in a period (their provinces' religion follows)
-PAGAN = {"E": {"Liutizi", "Hevelli", "Rugia", "Mecklenburg", "Pomerania", "Prussia", "Yotvingia", "Lithuania"},
+PAGAN = {"C": set(),  # filled with the 867 / 999 kingdoms (PERIODS_EARLY.md)
+         "O": set(),
+         "E": {"Liutizi", "Hevelli", "Rugia", "Mecklenburg", "Pomerania", "Prussia", "Yotvingia", "Lithuania"},
          "M": {"Prussia", "Yotvingia", "Lithuania"},
          "L": {"Lithuania"}}
 AGES = set("ICJYAOV")
@@ -26,11 +44,40 @@ RULER_FIXES = {("Bavaria", "M")}
 FAMILY_FIXES = {("Bavaria", "M"): {"QueenNameAge": "Ludmila.O", "Child_1_NameSexAge": "Otto.m.Y"}}
 
 
+def active_periods(periods) -> tuple[str, ...]:
+    """Suffixes of the periods whose periods.csv column names an owner for every province."""
+    out = []
+    for per in ALL_PERIODS:
+        filled = sum(1 for r in periods.values() if (r.get(PERIOD_COLS[per]) or "").strip())
+        if per in VANILLA_PERIODS:
+            if filled < len(periods):
+                raise SystemExit(f"data/periods.csv: {PERIOD_COLS[per]} has no owner for "
+                                 f"{len(periods) - filled} provinces")
+            out.append(per)
+        elif filled == len(periods):
+            out.append(per)
+        elif filled:
+            print(f"period {per} ({ALL_PERIODS[per][1]}) left off: {PERIOD_COLS[per]} names owners for "
+                  f"{filled} of {len(periods)} provinces")
+    return tuple(out)
+
+
+def is_before(per: str, than: str) -> bool:
+    """per is an earlier period than `than` (game order of ALL_PERIODS)."""
+    order = list(ALL_PERIODS)
+    return order.index(per) < order.index(than)
+
+
 def load(hre: Path):
+    global PERIODS
     periods = {r["key"]: r for r in csv.DictReader(open(hre / "periods.csv", encoding="utf-8"))}
+    PERIODS = active_periods(periods)
     kings = defaultdict(dict)
     for r in csv.DictReader(open(hre / "period_kingdoms.csv", encoding="utf-8")):
-        kings[r["kingdom"]][r["period"]] = r
+        if r["period"] not in ALL_PERIODS:
+            raise SystemExit(f"data/period_kingdoms.csv {r['kingdom']}: unknown period '{r['period']}'")
+        if r["period"] in PERIODS:  # rows of a period still being filled in wait
+            kings[r["kingdom"]][r["period"]] = r
     arms = {r["kingdom"]: r for r in csv.DictReader(open(hre / "kingdom_arms.csv", encoding="utf-8"))}
     return periods, dict(kings), arms
 
@@ -45,16 +92,24 @@ def culture_rule(country: str, region: str, key: str, per: str):
     """Culture of an HRE core province in a period, None where the current (vanilla / donor) culture stays."""
     r2, r3 = region[:3], region[:4]
     if country == "AT":
+        # 867: Carantanian and Pannonian Slavs (no Slovene culture; Croatian is the nearest South Slavic
+        # one), Bavarian settlement only in the Danube valley; Ostarrichi is Austrian from 999
+        if per == "C":
+            return "Croatian" if r3 in ("AT11", "AT13", "AT21", "AT22") else "Bavarian"
         return "Bavarian" if r3 in ("AT32", "AT33", "AT34") else "Austrian"
+    if country == "SI":
+        return "Croatian" if is_before(per, "E") else None
     if country == "DE":
         if r3 in ("DE21", "DE22", "DE23"):
             return "Bavarian"
         if r2 in ("DE3", "DE4"):  # Brandenburg: Wends until the Ascanian conquest
-            return "Pomeranian" if per == "E" else "German"
+            return "Pomeranian" if is_before(per, "M") else "German"
         if r2 == "DE8":  # Mecklenburg and Western Pomerania: Slavic until the 13th century settlement
-            return "Pomeranian" if per in ("E", "M") else "German"
+            return "Pomeranian" if is_before(per, "L") else "German"
         if key == "Ostholstein":  # Wagria
-            return "Pomeranian" if per == "E" else "Saxon"
+            return "Pomeranian" if is_before(per, "M") else "Saxon"
+        if r2 == "DED" and is_before(per, "E"):  # Sorbs east of the Saale (867, 999)
+            return "Pomeranian"
         if r2 in ("DE5", "DE6", "DE9", "DED", "DEE", "DEF") or r3 in ("DEA3", "DEA4", "DEA5"):
             return "Saxon"
         return "German"

@@ -4,13 +4,20 @@ A castle recruits its kingdom's unit set (kingdoms.csv UnitsSet, else the cultur
 the kingdom's Units, the LocalUnits of the province whose key is the kingdom's key, and the
 LocalUnits of its own province. Provinces copy their LocalUnits from vanilla (own key or donor), but
 the HRE kingdoms have no Units of their own, so units vanilla gave a whole kingdom (Germany's
-crossbowmen) are lost when that kingdom is split up. Rows of data/units.csv (E / M / L: units joined
-with "/", empty = no change in that period):
+crossbowmen) are lost when that kingdom is split up. Rows of data/units.csv (one column per period
+suffix of hre_periods.ALL_PERIODS, C / O / E / M / L: units joined with "/", empty = no change in that
+period; only the active periods are used):
 
   from_kingdom  key = vanilla kingdom: its units become LocalUnits of every province whose vanilla
                 rows (own key or donor) that kingdom owned in the period
   province      key = HRE province: LocalUnits added in the period
   kingdom_set   key = kingdom: UnitsSet of its period row
+
+The early periods (867, 999) do not inherit vanilla's LocalUnits as they are: most vanilla units are
+12th-14th century (crossbows, men-at-arms, feudal knights ...). An empty or "-" period cell falls back
+to the base row in the game, so it cannot clear them. While an early period is active, every province's
+LocalUnits move from the base row into its period rows, and the early rows keep only the units of
+UNIT_FROM that fit their year.
 """
 
 from __future__ import annotations
@@ -19,8 +26,24 @@ import csv
 import re
 from pathlib import Path
 
-PERIODS = ("E", "M", "L")
+import hre_periods
+
 KINDS = ("from_kingdom", "province", "kingdom_set")
+
+# inherited LocalUnits that fit the early periods: unit -> earliest period suffix it fits. Units not
+# listed are dropped before 1110 (data/units.csv can still add them to a C / O row).
+UNIT_FROM = {
+    "Viking_Special": "C",
+    "Highlander_Special": "C",
+    "Saracen_Special": "C",
+    "Roman_Infantry_Special": "C",
+    "Horse_Archer_CE": "O",  # the Magyars came in 895
+    "Norman_Special": "O",  # Normandy from 911
+}
+
+
+def _fits(unit: str, per: str) -> bool:
+    return not hre_periods.is_before(per, UNIT_FROM.get(unit, "E"))
 
 
 def load(hre: Path, defs: Path):
@@ -30,8 +53,8 @@ def load(hre: Path, defs: Path):
     for r in rows:
         if r["kind"] not in KINDS:
             raise SystemExit(f"data/units.csv {r['key']}: unknown kind '{r['kind']}' ({', '.join(KINDS)})")
-        for per in PERIODS:
-            for u in filter(None, r[per].split("/")):
+        for per in hre_periods.ALL_PERIODS:
+            for u in filter(None, (r.get(per) or "").split("/")):
                 if u not in (sets if r["kind"] == "kingdom_set" else units):
                     raise SystemExit(f"data/units.csv {r['key']} {per}: unknown {'unit set' if r['kind'] == 'kingdom_set' else 'unit'} '{u}'")
     return rows
@@ -51,10 +74,27 @@ def apply_realms(table, hdr, source_key, vanilla_rows, rules, kingdom_keys):
     rows it copied; vanilla_rows: vanilla realms.csv cells by row key. Returns a report line."""
     owner_col, units_col = hdr.index("Owner"), hdr.index("LocalUnits")
     by_key = {c[0]: c for c in table if c and c[0]}
-    add = {per: {} for per in PERIODS}  # per -> province -> units to add
+    periods = hre_periods.PERIODS
+    early = [per for per in periods if hre_periods.is_before(per, "E")]
+    dropped = 0
+    if early:
+        for p in source_key:
+            base = by_key[p]
+            inherited = base[units_col] if units_col < len(base) and base[units_col] not in ("", "-") else ""
+            if not inherited:
+                continue
+            for per in periods:
+                row = by_key[f"{p}.{per}"]
+                row += [""] * (units_col + 1 - len(row))
+                units = [u for u in (row[units_col] if row[units_col] not in ("", "-") else inherited).split("/") if u]
+                keep = [u for u in units if _fits(u, per)]
+                dropped += len(units) - len(keep)
+                row[units_col] = "/".join(keep)
+            base[units_col] = ""
+    add = {per: {} for per in periods}  # per -> province -> units to add
     for r in rules:
-        for per in PERIODS:
-            units = [u for u in r[per].split("/") if u]
+        for per in periods:
+            units = [u for u in (r.get(per) or "").split("/") if u]
             if not units:
                 continue
             if r["kind"] == "from_kingdom":
@@ -71,7 +111,7 @@ def apply_realms(table, hdr, source_key, vanilla_rows, rules, kingdom_keys):
                 add[per].setdefault(p, [])
                 add[per][p] += [u for u in units if u not in add[per][p]]
     changed = 0
-    for per in PERIODS:
+    for per in periods:
         for p, units in add[per].items():
             row = by_key.get(f"{p}.{per}")
             if row is None:
@@ -82,8 +122,10 @@ def apply_realms(table, hdr, source_key, vanilla_rows, rules, kingdom_keys):
                 row += [""] * (units_col + 1 - len(row))
                 row[units_col] = "/".join(new)
                 changed += 1
-    wide = sorted({p for per in PERIODS for p in add[per] if p in kingdom_keys})
+    wide = sorted({p for per in periods for p in add[per] if p in kingdom_keys})
     note = f" (kingdom-wide through the kingdom of the same key: {', '.join(wide)})" if wide else ""
+    if early:
+        note += f"; {dropped} inherited units dropped from the {'/'.join(early)} rows (UNIT_FROM)"
     return f"units: {changed} province period rows got extra LocalUnits{note}"
 
 
@@ -93,8 +135,8 @@ def apply_kingdoms(kout, khdr, rules):
     for r in rules:
         if r["kind"] != "kingdom_set":
             continue
-        for per in PERIODS:
-            if not r[per]:
+        for per in hre_periods.PERIODS:
+            if not r.get(per):
                 continue
             row = by_key.get(f"{r['key']}.{per}")
             if row is None:

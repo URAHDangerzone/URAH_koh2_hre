@@ -3,6 +3,8 @@
 Who owns each of the 302 provinces in the three starting periods, which kingdoms exist, who rules
 them and under whom. Hand-researched tables, read by `tools/import_hre.py` (through
 `tools/hre_periods.py`); `tools/paint_hre_coa.py` paints the new kingdoms' arms.
+The early periods 867 and 999 (columns `C_867` / `O_999`, off until filled) are planned in
+[PERIODS_EARLY.md](PERIODS_EARLY.md).
 
 - `periods.csv`: one row per province (`color` and `key` as in `provinces.csv` and the generated
   realms) with `E_1110`, `M_1224` and `L_1360` (owner kingdom keys), a `suggested_town` where the

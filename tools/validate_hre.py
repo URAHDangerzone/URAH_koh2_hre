@@ -5,11 +5,13 @@ Usage: python tools/validate_hre.py   (after tools/import_hre.py; reads URAH_HRE
 Per period: every owner has a kingdom, capitals are held by their kingdom, overlords hold land and
 are not vassals themselves, cultures exist, title sets exist, ruler names have texts. Union quests:
 goal realms and union kingdoms exist, no kingdom starts with a quest it almost owns; lists the
-kingdoms without a quest.
+kingdoms without a quest. Periods: vanilla's E / M / L plus every early period (hre_periods.ALL_PERIODS)
+the import wrote rows for; there every owner needs its own kingdom row (vanilla has none for 867 / 999).
 """
 import csv, re
 from collections import defaultdict
 import urah_paths
+import hre_periods
 H=str(urah_paths.REPO/'URAH_HRE')+'/'; M=H+'Maps/europe/'; V=str(urah_paths.VANILLA)+'/'
 def rows(p): return [r for r in csv.reader(open(p,encoding='utf-8-sig')) if r and r[0] and not r[0].startswith('//')]
 R=rows(M+'realms.csv'); h=R[0]; R=R[1:]
@@ -30,6 +32,7 @@ def kget(k,p,col):
     v=kp[k].get(p,[None]*99)[kc[col]] if p in kp[k] else None
     if v in (None,'','-'): v=kb.get(k,[None]*99)[kc[col]] if k in kb else None
     return v if v not in (None,'','-') else ''
+PERIODS=[p for p in hre_periods.ALL_PERIODS if p in hre_periods.VANILLA_PERIODS or any(p in d for d in per.values())]
 cultures={r[0] for r in rows(V+'Maps/europe/cultures.csv')[1:]}
 nob=set(re.findall(r'^def (\w+)Nobility', open(V+'Defs/nobility.def').read()+open(H+'Defs/hre_nobility.def').read(), re.M))|{''}
 chars=set()
@@ -39,7 +42,7 @@ for f in [V+'Texts/en/en_character_names.csv',H+'Texts/en/en_hre_character_names
 errs=[]
 realm_keys=set(base)
 owners={}
-for p in 'EML':
+for p in PERIODS:
     own=defaultdict(list)
     for k in base:
         o=per[k].get(p,base[k])[rc['Owner']]
@@ -52,6 +55,7 @@ for p in 'EML':
     for o,rs in own.items():
         if o not in kb and o not in kp and o not in realm_keys: errs.append(f'{p}: owner {o} has no kingdom row')
         if o not in kb and o not in kp: continue
+        if p not in hre_periods.VANILLA_PERIODS and p not in kp[o]: errs.append(f'{p}: owner {o} has no {o}.{p} kingdom row')
         cap=kget(o,p,'CapitalProvince')
         if cap not in rs: errs.append(f'{p}: {o} capital {cap} not owned')
         v=kget(o,p,'VassalOf')
@@ -99,13 +103,13 @@ for k in re.findall(r'(?m)^delete (\w+)$', gq): quests.pop(k,None)
 for k,b in blocks(gq, r'(?m)^(\w+)\n\{'):
     if k in quests: merge(quests[k],lists(b))
 for k,b in blocks(gq, r'def (\w+) : UnionQuest\s*\{'): quests[k]=lists(b)
-PER={'E':'early','M':'mid','L':'late'}
+PER={p:hre_periods.ALL_PERIODS[p][0] for p in PERIODS}
 for q,d in quests.items():
     if d['unlock_union'] not in kb and d['unlock_union'] not in kp: errs.append(f'quest {q}: unlocks {d["unlock_union"]!r}, which has no kingdom row')
     for r in d.get('own_realms',[]):
         if r not in realm_keys: errs.append(f'quest {q}: goal realm {r} not on the map')
 questless={}
-for p in 'EML':
+for p in PERIODS:
     none=[]
     for o,rs in owners[p].items():
         if o not in kb and o not in kp: continue
@@ -124,7 +128,7 @@ for p in 'EML':
         if not got: none.append(o)
     questless[p]=sorted(none)
 print('kingdoms without a union quest:')
-for p in 'EML': print(f'  {p} ({len(questless[p])}): {" ".join(questless[p])}')
+for p in PERIODS: print(f'  {p} ({len(questless[p])}): {" ".join(questless[p])}')
 print(len(errs), 'problems')
 print('\n'.join(errs[:60]))
 raise SystemExit(1 if errs else 0)
